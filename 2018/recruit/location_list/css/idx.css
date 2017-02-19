@@ -109,8 +109,10 @@
 .type_btn[data-type="zenkoku_v"] { background:#40C69F; }
 .type_btn[data-type="zenkoku_a"] { background: #38AD8B; }
 .type_btn[data-type="chiiki_v"] { background: #42CC5F; }
-.type_btn[data-type="chiiki_w"] { background: #D1CB00; }
-.type_btn[data-type="chiiki_a"] { background: #3ECCC8; }
+// .type_btn[data-type="chiiki_w"] { background: #D1CB00; }
+.type_btn[data-type="chiiki_w"] { background: #349943; }
+// .type_btn[data-type="chiiki_a"] { background: #3ECCC8; }
+.type_btn[data-type="chiiki_a"] { background: #2a7f38; }
 .type_btn[data-type="houjin"] { background: #E38FEF; }
 
 
@@ -169,8 +171,10 @@
 .selectArea.zenkoku_v .selectArea_ttl_wrap {  border-color: #40C69F; }
 .selectArea.zenkoku_a .selectArea_ttl_wrap {  border-color: #38AD8B; }
 .selectArea.chiiki_v .selectArea_ttl_wrap {  border-color: #42CC5F; }
-.selectArea.chiiki_w .selectArea_ttl_wrap {  border-color: #D1CB00; }
-.selectArea.chiiki_a .selectArea_ttl_wrap {  border-color: #3ECCC8; }
+// .selectArea.chiiki_w .selectArea_ttl_wrap {  border-color: #D1CB00; }
+.selectArea.chiiki_w .selectArea_ttl_wrap {  border-color: #349943; }
+// .selectArea.chiiki_a .selectArea_ttl_wrap {  border-color: #3ECCC8; }
+.selectArea.chiiki_a .selectArea_ttl_wrap {  border-color: #2a7f38; }
 .selectArea.houjin .selectArea_ttl_wrap {  border-color: #E38FEF; }
 
 @media screen and ( max-width: 768px ){
@@ -193,8 +197,10 @@
 	.selectArea.zenkoku_v .selectArea_ttl_wrap {  background-color: #40C69F; }
 	.selectArea.zenkoku_a .selectArea_ttl_wrap {  background-color: #38AD8B; }
 	.selectArea.chiiki_v .selectArea_ttl_wrap {  background-color: #42CC5F; }
-	.selectArea.chiiki_w .selectArea_ttl_wrap {  background-color: #D1CB00; }
-	.selectArea.chiiki_a .selectArea_ttl_wrap {  background-color: #3ECCC8; }
+	// .selectArea.chiiki_w .selectArea_ttl_wrap {  background-color: #D1CB00; }
+	.selectArea.chiiki_w .selectArea_ttl_wrap {  background-color: #349943; }
+	// .selectArea.chiiki_a .selectArea_ttl_wrap {  background-color: #3ECCC8; }
+	.selectArea.chiiki_a .selectArea_ttl_wrap {  background-color: #2a7f38; }
 	.selectArea.houjin .selectArea_ttl_wrap {  background-color: #E38FEF; }	
 		
 }
@@ -295,9 +301,12 @@
 .selectArea.zenkoku_v .area_btn {  background-color: #40C69F; }
 .selectArea.zenkoku_a .area_btn {  background-color: #38AD8B; }
 .selectArea.chiiki_v .area_btn {  background-color: #42CC5F; }
-.selectArea.chiiki_w .area_btn {  background-color: #D1CB00; }
-.selectArea.chiiki_a .area_btn {  background-color: #3ECCC8; }
+.selectArea.chiiki_w .area_btn {  background-color: #349943; }
+// .selectArea.chiiki_w .area_btn {  background-color: #D1CB00; }
+.selectArea.chiiki_a .area_btn {  background-color: #2a7f38; }
+// .selectArea.chiiki_a .area_btn {  background-color: #3ECCC8; }
 .selectArea.houjin .area_btn {  background-color: #E38FEF; }
+
 
 @media screen and ( max-width: 768px ){
 	.area_btn {
@@ -317,10 +326,12 @@
 	.selectArea.zenkoku_v .area_btn {  border-color: #40C69F; }
 	.selectArea.zenkoku_a .area_btn {  border-color: #38AD8B; }
 	.selectArea.chiiki_v .area_btn {  border-color: #42CC5F; }
-	.selectArea.chiiki_w .area_btn {  border-color: #D1CB00; }
-	.selectArea.chiiki_a .area_btn {  border-color: #3ECCC8; }
+	// .selectArea.chiiki_w .area_btn {  border-color: #D1CB00; }
+	.selectArea.chiiki_w .area_btn {  border-color: #349943; }
+	// .selectArea.chiiki_a .area_btn {  border-color: #3ECCC8; }
+	.selectArea.chiiki_a .area_btn {  border-color: #2a7f38; }
 	.selectArea.houjin .area_btn {  border-color: #E38FEF; }	
-	
+
 }
 
 
@@ -353,12 +364,17 @@
 .selectArea.zenkoku_a .area_btn.arrow_top.active:before { border-bottom-color: #38AD8B; }
 .selectArea.chiiki_v .area_btn.arrow_bottom.active:before { border-top-color: #42CC5F; }
 .selectArea.chiiki_v .area_btn.arrow_top.active:before { border-bottom-color: #42CC5F; }
-.selectArea.chiiki_w .area_btn.arrow_bottom.active:before { border-top-color: #D1CB00; }
-.selectArea.chiiki_w .area_btn.arrow_top.active:before { border-bottom-color: #D1CB00; }
-.selectArea.chiiki_a .area_btn.arrow_bottom.active:before { border-top-color: #3ECCC8; }
-.selectArea.chiiki_a .area_btn.arrow_top.active:before { border-bottom-color: #3ECCC8; }
+// .selectArea.chiiki_w .area_btn.arrow_bottom.active:before { border-top-color: #D1CB00; }
+// .selectArea.chiiki_w .area_btn.arrow_top.active:before { border-bottom-color: #D1CB00; }
+.selectArea.chiiki_w .area_btn.arrow_bottom.active:before { border-top-color: #349943; }
+.selectArea.chiiki_w .area_btn.arrow_top.active:before { border-bottom-color: #349943; }
+// .selectArea.chiiki_a .area_btn.arrow_bottom.active:before { border-top-color: #3ECCC8; }
+// .selectArea.chiiki_a .area_btn.arrow_top.active:before { border-bottom-color: #3ECCC8; }
+.selectArea.chiiki_a .area_btn.arrow_bottom.active:before { border-top-color: #2a7f38; }
+.selectArea.chiiki_a .area_btn.arrow_top.active:before { border-bottom-color: #2a7f38; }
 .selectArea.houjin .area_btn.arrow_bottom.active:before { border-top-color: #E38FEF; }
 .selectArea.houjin .area_btn.arrow_top.active:before { border-bottom-color: #E38FEF; }
+
 
 .area_data {
 	font-size: 12px;

@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /************ utilities ************/
+.ul {
+  background: linear-gradient(transparent 70%, #dcefad 0%);
+}
+
 .sub {
   font-size: 0.85em;
 }
@@ -91,7 +95,7 @@
 
 @media screen and (max-width: 768px) {
   .lead-tiny .lead_ttl {
-    top: 45px;
+    top: 30px;
   }
 }
 

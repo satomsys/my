@@ -722,6 +722,9 @@
     font-size: 12px;
     color: #fff;
   }
+  #headtopright .mysite li .mysite_btn a {
+    color: #fff;
+  }  
   #headtopright .mysite li .mysite_btn.entry {
     background-color: #e8ad02;
     // background-color: #b2b2b2;
