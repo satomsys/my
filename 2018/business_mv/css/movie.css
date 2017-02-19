@@ -1,0 +1,12 @@
+body {
+	background: #000000;
+	}
+
+#movieContainer {
+	width: 640px;
+	height: 380px;
+	background: #000000;
+	overflow: hidden;
+	}
+	
+	

@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1000,user-scalable=yes"><!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes"> -->
+<meta name="description" content="明治安田生命の2018年度 新卒採用サイトです。「感動を生み出す生命保険会社」をめざして、明治安田生命は、成長し続けます。私たちの姿勢や取組みをご紹介します。">
+<meta name="keywords" content="明治安田生命,採用,採用情報,新卒採用情報,総合職,特定総合職,アソシエイト職,生命保険,保険選び,契約内容照会,損害保険,確定拠出年金,金融機関窓口販売商品,ニュースリリース">
+<meta name="copyright" content="Meiji Yasuda Life Insurance Company All Rights Reserved.">
+<meta property="og:site_name" content="明治安田生命：2018年度 新卒採用サイト">
+<meta property="og:title" content="明治安田生命 2018年度 新卒採用サイト">
+<meta property="og:description" content="明治安田生命の2018年度 新卒採用サイトです。「感動を生み出す生命保険会社」をめざして、明治安田生命は、成長し続けます。私たちの姿勢や取組みをご紹介します。">
+<meta property="og:url" content="http://www.meijiyasuda-saiyo.com/2018/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="http://www.meijiyasuda-saiyo.com/2018/common/img2018/ogimage.jpg">
+<meta property="fb:app_id" content="189900141144774">
+<meta name="robots" content="all">
+<title>理系職員の働き方 | Special | 明治安田生命 2018年度 新卒採用サイト</title>
+<link rel="contents" href="index.html" title="Home">
+<!--共通参照-->
+<link href="../../common/css/import.css" rel="stylesheet" type="text/css" media="screen,print"/>
+<script type="text/javascript" src="../../common/js/import.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+common('../');
+//-->
+</script>
+<!--ページ固有-->
+<link href="css/tab_rikei.css" rel="stylesheet" type="text/css" media="screen,print"/>
+<script type="text/javascript">
+	var h;
+	//読み込み時は1つめのタブが開いた状態
+	$(window).load(function(){
+		h = $('.panel.panel-active').height() + 90;
+		$('.panelWrap').height(h);
+	});
+	$(function () {
+		var panel = $("#staffTab .panel");
+		var topTab = $('[id^="trg-panel"]');
+		var footIndex = $('[class^="footTrg-panel"]');
+
+
+		//読み込み時は1つめのタブが開いた状態
+		//$('.panelWrap').height($('.panel.panel-active').height() + 90);
+
+		topTab.mouseenter(function () {
+			if ($(this).hasClass("normal")) {
+				showImg($(this));
+			}
+		}).mouseleave(function () {
+			if ($(this).hasClass("normal")) {
+				hideImg($(this));
+			}
+		});
+
+
+		$(topTab).bind('click', function (e, trg) {
+			var idName = $(this).attr('id');
+			var nextPanel = '#' + idName.split('trg-')[1];
+			var speed = 400;
+			var target;
+			var position;
+
+			var _trg = trg || 'topTRG';
+
+			var prevPanel = $('.panel.panel-active');
+			prevPanel.hide().removeClass('panel-active');
+			$(nextPanel).fadeIn(function () {
+				$(this).addClass('panel-active');
+				$('.panelWrap').height($(this).height() + 90);
+
+				if(_trg == 'topTRG'){
+					target = $(nextPanel);
+					position = target.offset().top - 75;
+
+				}
+				else if(_trg == 'footTRG'){
+					target = $(topTab);
+					position = target.offset().top;
+				}
+				$('body,html').animate({scrollTop: position}, speed, 'swing');
+			});
+
+			topTab.each(function () {
+				$(this).addClass("normal");
+				hideImg($(this));
+			});
+
+			$(this).removeClass("normal");
+			showImg($(this));
+		});
+
+
+		footIndex.click(function () {
+			var cName = $(this).attr('class');
+			var targetTab = '#trg-panel' + cName.split('footTrg-panel')[1];
+			$(targetTab).trigger('click', 'footTRG');
+		});
+
+
+		function showImg(obj) {
+			var img = obj.find("img"),
+					src = img.attr("src"),
+					nsrc;
+			if (src.match(/hide/g)) {
+				nsrc = src.replace(/hide/g, "show");
+			}
+			img.attr("src", nsrc);
+		}
+
+		function hideImg(obj) {
+			var img = obj.find("img"),
+					src = img.attr("src"),
+					nsrc;
+			if (src.match(/show/g)) {
+				nsrc = src.replace(/show/g, "hide");
+			}
+			img.attr("src", nsrc);
+		}
+	});
+</script>
+<script type="text/javascript">$(function(){ currentGnav("special") });</script>
+</head>
+<body id="Special">
+<!--#include virtual="/2018/inc/header/header.html" -->
+<!--#include virtual="/2018/inc/header/gnav.html" -->
+<div id="ContentsWrapTop">
+	<div id="Pankz" class="fS2s">
+		<ul id="topicPath">
+			<li><a class="topicPath" href="../../index.html">トップ</a></li>
+			<li><a class="topicPath" href="../index.html">Special</a></li>
+			<li>理系職員の働き方</li>
+		</ul>
+	</div><!--/div id="Pankz"-->
+<div class="container">
+	<div class="lead lead-bgImage">
+		<h2 class="lead_ttl">
+			理系職員の働き方
+			<span class="lead_ttl_small">理工系学部出身職員の活躍をみなさまにご紹介します</span>
+		</h2>
+	</div>
+
+		<div id="ContentInner">
+			<!--<div id="MainArea">
+			<h3 class="mb30"><img src="img/ttl_seminar.gif" alt="セミナー･説明会スケジュール" width="960" height="91" /></h3>
+			</div>-->
+
+			<div id="ContentsContainer" class="cf">
+				<!--▼▼［contents］===============================================================================================-->
+				<div id="CotegoryCareer">
+
+					<div id="careerArea" class="mb20">
+						<!--ここにコンテンツを組込む-->
+						<div id="staffTab" class="rikei">
+
+							<!-- tab_trg -->
+							<ul class="tab_trg mb75">
+								<li class="mainArea mb40">
+									<div id="trg-panel1"><img src="img/tab_rikei_staff_01_show.jpg" alt="職員紹介1 伊藤 寛 Hiroshi Ito 情報システム部ネットワーク基盤グループ 1991年入社 工学部出身"/></div>
+								</li>
+								<li class="mainArea mb40">
+									<div id="trg-panel2" class="normal"><img src="img/tab_rikei_staff_02_hide.jpg" alt="職員紹介2 佐々木 弘宣 Hironori Sasaki 総合法人業務部 団体年金コンサルティング室 年金数理グループ 1996年入社 理学部出身"/></div>
+								</li>
+								<li class="mainArea mb40">
+									<div id="trg-panel3" class="normal"><img src="img/tab_rikei_staff_03_hide.jpg" alt="職員紹介3 松﨑 泰佑 Taisuke Matsuzaki リスク管理統括部　統合リスク管理Ｇ 2010年入社 工学部出身"/></div>
+								</li>
+							</ul>
+
+							<div class="panelWrap">
+
+							<!-- panel1 -->
+							<div id="panel1" class="panel panel-active">
+								<div class="panel_inner">
+
+									<!-- reason -->
+									<div class="staffTab_contents reason mb5">
+										<div class="mb20">
+											<img src="img/txt_rikei_midasi_01.png" alt="Q. 理系出身のご自身が生命保険会社を選んだ理由とは"/>
+										</div>
+										<p>
+											私が入社した1990年代前半は、文系学生の就職先と考えられていた生命保険会社に、理系学生も就職する動きがでてきた頃でした。私自身も自分の将来を考えたときに、視野をさらに広げ、急激に変化し続ける日本経済の中心に身を置き、挑戦する人生を送りたいと考え、機関投資家としても存在感を示す生命保険会社での活躍をめざして当社へ入社しました。なお、サークル活動などで文系の方々との交流が深かったことも、生命保険会社に入社するきっかけとなりました。</p>
+									</div>
+
+									<div class="mb50">
+										<img src="img/ph_rikei_staff_01_01.jpg" alt=""/>
+									</div>
+
+									<!-- rewarding -->
+									<div class="staffTab_contents rewarding mb45">
+										<div class="mb20">
+											<img src="img/txt_rikei_midasi_02.png" alt="現在担当している業務の具体的な内容とやりがい"/>
+										</div>
+										<p>
+											私が所属する情報システム部ネットワーク基盤グループは、会社を支える重要なシステムインフラの構築・運用を担っています。ＭＹライフプランアドバイザーの営業端末（マイスターモバイル）、職員が日々の業務で使用する端末や電子メール、ファイルサーバ、ポータルサイト等の管理に加え、さまざまな業務システムが稼働する数百台規模のサーバーの構築・運用、そしてこれらをつなぐ全国ネットワーク網の維持・管理を行なっています。IT系新技術を活用した経営戦略立案の重要性が増すなか、10年先の将来を見据え、最新のICT（情報通信技術。Information and Communication Technology）を活用したシステム構築に日々チャレンジできることが、やりがいにつながっています。</p>
+									</div>
+
+									<!-- goal -->
+									<div class="staffTab_contents goal mb90">
+										<div class="mb20">
+											<img src="img/txt_rikei_midasi_00.png" alt="大学時代の専攻が仕事に活きたエピソード"/>
+										</div>
+										<p>
+											大規模なシステム開発案件は、開発までに2～3年かかる場合があります。その内容は、既存システムの変更や入替えだけではなく、新規に業務要件を定義しシステム化するケースも少なくありません。この場合、ゼロベースから開発を行なうため多くの時間を要しますが、試行錯誤を繰り返しながら、希望するシステムを具現化していきます。このように、課題解決に向け、長期にわたり粘り強くアプローチし続けることができるのは、大学時代の研究等で培われた力だと思います。</p>
+									</div>
+
+									<div class="wholebody">
+										<img src="img/ph_rikei_staff_02_01.png" alt=""/>
+									</div>
+
+									<!-- message -->
+									<div class="message staffTab_contents mb50">
+										<div class="midasi_message">
+											<img src="img/txt_rikei_midasi_04.png" alt="学生のみなさんへ"/>
+										</div>
+										<p>
+											就職活動にあたり、“自分は理系だから”という固定観念で自身の可能性を狭めないで欲しいと思います。就職活動は、「これから何がしたいのか」「自分が活きる場所はどこか」をじっくり考えることができる貴重な機会です。高いアンテナを張り、視野を広げ、挑戦をテーマに新たな一歩を踏み出して欲しいと思います。“考える”ことに長け、“粘り強く取り組む”ことができるみなさんと、ぜひ一緒に働きたいと思います。</p>
+									</div>
+
+									<div>
+										<img src="img/index_rikei_midasi.png" alt="理系職員の働き方INDEX" width="320" height="43"/>
+									</div>
+								</div>
+								<!-- panel_inner END -->
+
+								<!-- tab-index -->
+								<div class="tab-index">
+									<span class="footTrg-panel2"><img src="img/index_rikei_staff_02.jpg" alt="佐々木 弘宣 Hironori Sasaki 総合法人業務部 団体年金コンサルティング室 年金数理グループ 1996年入社 理学部出身" width="470" height="130"/></span>
+									<span class="footTrg-panel3"><img src="img/index_rikei_staff_03.jpg" alt="松﨑 泰佑 Taisuke Matsuzaki リスク管理統括部　統合リスク管理Ｇ 2010年入社 工学部出身" width="470" height="130"/></span>
+								</div>
+
+							</div>
+							<!-- panel1 END -->
+
+							<!-- panel2 -->
+							<div id="panel2" class="panel">
+								<div class="panel_inner">
+
+									<!-- reason -->
+									<div class="staffTab_contents reason mb5">
+										<div class="mb20">
+											<img src="img/txt_rikei_midasi_01.png" alt="Q. 理系出身のご自身が生命保険会社を選んだ理由とは"/>
+										</div>
+										<p>
+											私が就職活動を行なっていた当初は、“生命保険業界は文系出身者が働く業界”という印象が強かったのですが、生命保険各社のセミナーや会社説明会等に足を運ぶうちに、多くの理系出身者が活躍されていることを知りました。実際に当社でも、経営層をはじめ、多くの理系出身者が多岐にわたるフィールドで活躍しています。これまでの経験等で培われた論理的思考力や数理的能力などの強みを活かし、今後も会社の発展に貢献していきたいと考えています。</p>
+									</div>
+
+									<div class="mb50">
+										<img src="img/ph_rikei_staff_01_02.jpg" alt=""/>
+									</div>
+
+									<!-- rewarding -->
+									<div class="staffTab_contents rewarding mb45">
+										<div class="mb20">
+											<img src="img/txt_rikei_midasi_02.png" alt="現在担当している業務の具体的な内容とやりがい"/>
+										</div>
+										<p>
+											企業が従業員の退職金を準備する方法として「企業年金制度」がありますが、私は、主に確定給付企業年金の財政計算業務を担っています。お客さまに導入いただいている確定給付企業年金について、適切な年金数理に基づいた積立てが行なわれているかなど、さまざまな検証・確認を行なっています。時には担当企業を訪問し、検証・確認した結果について直接ご説明させていただくこともあります。ご説明に際しては「難しい数字の動きをいかに分かりやすい言葉で伝えられるか」が年金数理の専門家としての腕の見せ所であり、非常にやりがいを感じるところです。</p>
+									</div>
+
+									<!-- goal -->
+									<div class="staffTab_contents goal mb90">
+										<div class="mb20">
+											<img src="img/txt_rikei_midasi_00.png" alt="大学時代の専攻が仕事に活きたエピソード"/>
+										</div>
+										<p>
+											入社後に配属された部署で、当時の上司に「アクチュアリー試験」を勧められ、受験しました。アクチュアリー試験の基礎科目は数理的な素養を問うものであり、確率や統計など、大学時代に学んだことをベースに試験に臨むことができましたので、とても取り組みやすく感じました。その後の専門科目では、論理的に自己の考えを述べることが必要で、論点整理や表現方法など、大学での研究等を通じて学んできたことが役立ちました。今の自分が「アクチュアリー」や「年金数理人」として働くことができているのは、大学で学んできたことと、アクチュアリー試験を勧めてくれた当時の上司のおかげです。</p>
+									</div>
+
+									<div class="wholebody">
+										<img src="img/ph_rikei_staff_02_02.png" alt=""/>
+									</div>
+
+									<!-- message -->
+									<div class="message staffTab_contents mb50">
+										<div class="midasi_message">
+											<img src="img/txt_rikei_midasi_04.png" alt="学生のみなさんへ"/>
+										</div>
+										<p>
+											就職活動は、過ぎてしまえばあっという間ですが、自分自身の将来を真剣に考え、多くの方々と出会い、さまざまな話を伺うことができる、とても貴重な時間だと思います。当社には、理系出身者が活躍できるさまざまなフィールドがあります。これまでに学んできたことを活かし、ぜひ当社での活躍を考えて欲しいと思います。みなさんと一緒に働けることを楽しみにしています。</p>
+									</div>
+
+									<div>
+										<img src="img/index_rikei_midasi.png" alt="理系職員の働き方INDE" width="320" height="43"/>
+									</div>
+								</div>
+								<!-- panel_inner END -->
+
+								<!-- tab-index -->
+								<div class="tab-index">
+									<span class="footTrg-panel1"><img src="img/index_rikei_staff_01.jpg" alt="伊藤 寛 Hiroshi Ito 情報システム部ネットワーク基盤グループ 1991年入社 工学部出身" width="471" height="130"/></span>
+									<span class="footTrg-panel3"><img src="img/index_rikei_staff_03.jpg" alt="松﨑 泰佑 Taisuke Matsuzaki リスク管理統括部　統合リスク管理Ｇ 2010年入社 工学部出身" width="470" height="130"/></span>
+								</div>
+
+							</div>
+							<!-- panel2 END -->
+
+							<!-- panel3 -->
+							<div id="panel3" class="panel">
+
+								<div class="panel_inner">
+
+									<!-- reason -->
+									<div class="staffTab_contents reason mb5">
+										<div class="mb20">
+											<img src="img/txt_rikei_midasi_01.png" alt="Q. 理系出身のご自身が生命保険会社を選んだ理由とは"/>
+										</div>
+										<p>
+											私が当社に入社したのは、さまざまなフィールドで活躍できることに魅力を感じたからです。就職活動にあたり、理系出身の多くの大学の先輩方が、さまざまな企業で活躍されていることを知り、私自身も幅広い業種を視野に就職活動を行ないました。<br />
+		当社には、個人営業や法人営業をはじめ、資産運用や商品開発など、当社の経営戦略を支えるさまざまなフィールドがあります。私にとっての当社の最大の魅力は、大学時代の専攻で学んだことに限らず、さまざまなフィールドの業務を担当することで、自身の幅を広げ、限りなく成長し続けることができる環境があることです。
+
+										</p>
+									</div>
+
+									<div class="mb50">
+										<img src="img/ph_rikei_staff_01_03.jpg" alt="伊藤 寛 Hiroshi Ito 情報システム部ネットワーク基盤グループ 1991年入社 工学部出身" width="863" height="389"/>
+									</div>
+
+									<!-- rewarding -->
+									<div class="staffTab_contents rewarding mb45">
+										<div class="mb20">
+											<img src="img/txt_rikei_midasi_02.png" alt="現在担当している業務の具体的な内容とやりがい"/>
+										</div>
+										<p>
+											リスク管理統括部では、当社や関連会社固有のリスクを把握・認識するとともに、環境変化に伴う事業全体への影響度をモニタリングし、適切なコントロールを行なっています。私は現在、事業全体のリスク量の計量化として、ＶａＲ計測（統計的手法を用いた予想最大損失額の算出）やストレステストといった定量的なモニタリングを担当しています。<br />
+
+		これらの業務は、近年のマーケットの動向の変化等をふまえ、日々高度化が求められているため、先例の少ないことに果敢にチャレンジできるということが、業務遂行のうえで大きなやりがいになっています。
+
+										</p>
+									</div>
+
+									<!-- goal -->
+									<div class="staffTab_contents goal mb90">
+										<div class="mb20">
+											<img src="img/txt_rikei_midasi_03.png" alt="今後の目標"/>
+										</div>
+										<p>
+											当面の目標は、現在担当している業務のスキルをさらにレベルアップすることです。リスク管理統括部では、当社の事業全体や外部環境等のすべてを俯瞰的に捉え、リスクがどの程度起こりうるか、そのリスクが与える影響の度合いを正しく判断しなくてはなりません。そのため、自分自身の専門スキルをさらに向上させ、当社のリスク管理の高度化に寄与していきたいと考えています。<br />
+		また、将来に向けては、営業現場をはじめ、さまざまなフィールドの業務を担当することで自身の幅を広げ、“何でもできる人財”として会社の発展に貢献していきたいと思います。
+
+										</p>
+									</div>
+
+									<div class="wholebody">
+										<img src="img/ph_rikei_staff_02_03.png" alt=""/>
+									</div>
+
+									<!-- message -->
+									<div class="message staffTab_contents mb50">
+										<div class="midasi_message">
+											<img src="img/txt_rikei_midasi_04.png" alt="学生のみなさんへ"/>
+										</div>
+										<p>
+											大学時代に専攻していた専門分野だけが就職活動の選択肢ではありません。むしろ、社会人になるということは人生の新たなスタートですので、広い視野を持ち、さまざまな企業を自分の目で確かめ、新たな一歩を踏み出してください。当社には、みなさんが活躍できる環境が用意されていますので、ぜひ当社で活躍しているご自身の姿をイメージしてください。</p>
+									</div>
+
+									<div>
+										<img src="img/index_rikei_midasi.png" alt="理系職員の働き方INDE" width="320" height="43"/>
+									</div>
+								</div>
+								<!-- panel_inner END -->
+
+								<!-- tab-index -->
+								<div class="tab-index">
+									<span class="footTrg-panel1"><img src="img/index_rikei_staff_01.jpg" alt="伊藤 寛 Hiroshi Ito 情報システム部ネットワーク基盤グループ 1991年入社 工学部出身" width="471" height="130"/></span>
+									<span class="footTrg-panel2"><img src="img/index_rikei_staff_02.jpg" alt="佐々木 弘宣 Hironori Sasaki 総合法人業務部 団体年金コンサルティング室 年金数理グループ 1996年入社 理学部出身" width="470"/></span>
+								</div>
+
+							</div>
+
+							</div>
+
+						</div><!--/class="id="tabs"-->
+
+					</div><!--/id="careerArea"-->
+				</div><!--/div id="CotegoryCareer"-->
+				<!--▲▲［contents］===============================================================================================-->
+
+			</div><!--/div id="ContentConteiner"-->
+		</div><!--/div id="ContentInner"-->
+	</div>
+</div>
+
+<!--#include virtual="/2018/inc/footer/footer.html" -->
+</body>
+</html>

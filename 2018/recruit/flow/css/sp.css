@@ -1,0 +1,138 @@
+@charset 'UTF-8';
+.isSP {
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  .isSP {
+    display: block;
+  }
+  /* layout
+---------------------------------------------------------------------------- */
+  body {
+    position: relative;
+  }
+
+  .lead {
+    min-width: 0;
+    margin-bottom: 30px;
+  }
+  .policy .lead, .history .lead {
+    margin-bottom: 30px;
+  }
+  .lead-bgImage {
+    position: relative;
+    max-height: 200px;
+    background-position: center center;
+  }
+  .lead-catIndex {
+    max-height: 200px;
+  }
+ 
+  .lead {
+    min-width: 0;
+    margin-bottom: 30px;
+  }
+  .policy .lead, .history .lead {
+    margin-bottom: 30px;
+  }
+
+  .lead_ttl{
+    top: 35%;
+    font-size: 24px;
+    letter-spacing: 0;
+  }
+  .lead_ttl:before {
+    bottom: -64%;
+  }
+  .lead-catIndex .lead_txt{
+    top: 105px;
+  }
+  #ContentsWrapTop {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+  #ContentInner,
+  #ContentsContainer,
+  #CategoryFlow,
+  #ContentsBox{
+    overflow: hidden;
+    width: 100%;
+  }
+  #ContentsBox{
+    padding: 0 7%;
+    margin: 0 auto 0;
+    box-sizing: border-box;
+  }
+  #BoxFlow p.list.mb30{
+    margin-bottom: 0 !important;
+  }
+  #BoxFlow p.ttltext{
+    display: none;
+  }  
+  #BoxFlow p.ttltext-sp{
+    margin-bottom: 1em;f
+  }
+
+
+  .leadtext img {
+      margin-top: 30px;
+  }
+  #BoxFlow p.leadtext {
+      padding: 0 0 0 0;
+      border-bottom: none;
+      margin:0 0 20px 0!important;
+  }
+  dl{
+    border-top:#E7E7E7 1px solid;
+    border-left:#E7E7E7 1px solid;
+    border-right:#E7E7E7 1px solid;
+    padding: 0 0 10px 0;
+  }
+  dl:first-child{
+    padding-top: 0;
+  }
+  dt{
+    float:none;
+    width: auto;
+    background:#F9F9F9;
+    padding: 10px;
+  }
+
+  .ttltext{
+    display:none;
+  }
+  dd{
+    float:none;
+    width:90%!important;
+    margin:10px auto!important;
+  }
+  dd img{
+    text-align:center;
+    margin:30px auto 0 auto;
+    display:block;
+  }
+
+  hr{
+  	background: url(../img/hr_sp.png) no-repeat 0 0;
+  	background-size:contain;
+  }
+
+  dd.mark > .link_btn{
+    display: none;
+  }
+
+  dd.mark .isSP{
+    display: inline;
+  }  
+  dd.mark .mark_footer.isSP,
+  {
+    display: block;
+  }    
+
+}
+
+
+@media screen and (max-width:320px) {
+
+}

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* タイトル */
+
+@media (min-width:1781px){
+	.lead{
+		min-width:1780px;
+		background-size: 100% auto;
+	}
+}
+.lead_ttl{
+	top: 60px;
+}
+.lead_txt{
+	top: 145px;
+
+}
+/* コンテンツエリア */
+.notes{
+	display: block;
+  font-size: 13px;
+	margin-top: -13px;
+}
+.main{
+	overflow: hidden;
+	width: 960px;
+	padding: 20px;
+	margin: 0 auto;
+	margin-bottom: 75px;
+}
+
+/******************** パネル ********************/
+
+/*イメージ*/
+.link-naiteisha{
+	background-image: url("../img/link_naiteisha.jpg");
+}
+.link-woman{
+	background-image: url("../img/link_woman.jpg");
+}
+.link-divercity{
+	background-image: url("../img/link_divercity.jpg");
+}
+.link-rikei{
+	background-image: url("../img/link_rikei.jpg");
+}
+.link-message{
+	background-image: url("../img/link_message.jpg");
+}
+.link-introduction{
+	background-image: url("../img/link_introduction.jpg");
+}

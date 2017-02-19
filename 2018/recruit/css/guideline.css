@@ -1,0 +1,415 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#CotegoryGuideline {
+	width:960px;
+	margin:0 auto;
+}
+
+/* フォント */
+.strong{font-weight:bold !important;}
+
+/* 幅 */
+.wd260{width:260px !important;}
+.wd50{width:50px !important;}
+.wd450{width:450px !important;}
+
+/* -------------------------
+	タブ
+--------------------------- */
+.bb-zenkoku{
+	border-bottom:5px solid #1da1a5;
+}
+.bb-chiiki{
+	border-bottom:5px solid #92cc53;
+}
+.bb-hs{
+	border-bottom:5px solid #de5f75;
+}
+
+#guidelineTab ul {
+	width:960px;
+	overflow:hidden;
+	margin:0 0 28px 0;
+}
+
+#guidelineTab ul li {
+	list-style-type:none;
+	float:left;
+	width:314px;
+	height:47px;
+	margin-left:9px;
+	text-indent:-9999px;
+}
+
+#guidelineTab ul li a {
+	width:314px;
+	height:47px;
+	display:block;
+}
+#guidelineTab ul li a:hover {
+	width:314px;
+	height:47px;
+	display:block;
+}
+
+#guidelineTab ul li:first-child {
+	margin-left:0px;
+}
+
+#guidelineTab ul li.zenkoku{background:url(../img/tab_guideline_zenkoku_on.gif) no-repeat  0px 0px;}
+#guidelineTab ul li.zenkoku a {background:url(../img/tab_guideline_zenkoku_off.gif) no-repeat 0px 0px;}
+#guidelineTab ul li.zenkoku a:hover{background:url(../img/tab_guideline_zenkoku_hover.gif) no-repeat  0px 0px;}
+
+#guidelineTab ul li.chiiki {background:url(../img/tab_guideline_chiiki_on.gif) no-repeat  0px 0px;}
+#guidelineTab ul li.chiiki a {background:url(../img/tab_guideline_chiiki_off.gif) no-repeat 0px 0px;}
+#guidelineTab ul li.chiiki a:hover {background:url(../img/tab_guideline_chiiki_hover.gif) no-repeat 0px 0px;}
+
+#guidelineTab ul li.hs {background:url(../img/tab_guideline_hs_on.gif) no-repeat 0px 0px;}
+#guidelineTab ul li.hs a {background:url(../img/tab_guideline_hs_off.gif) no-repeat 0px 0px;}
+#guidelineTab ul li.hs a:hover {background:url(../img/tab_guideline_hs_hover.gif) no-repeat 0px 0px;}
+
+
+/* テキスト */
+#CotegoryGuideline p.txt {
+	font-size:12px;
+	line-height:18px;
+	text-align:left;
+}
+
+
+/* 募集要項一覧表
+------------------------ */
+/* 全国型 */
+#YokoZenkoku dl#SogoList {
+	border-bottom:1px solid #288487;
+	background:url(../img/guide_yoko_bg01.gif) repeat-y;
+}
+#YokoZenkoku dl#SogoList dt {
+	float:left;
+   width:10em;
+   border-top:1px solid #288487;
+   padding-top:10px;
+   padding-left:1em;
+   padding-bottom:0;
+   padding-right:0;
+}
+#YokoZenkoku dl#SogoList dd {
+	text-align:left;
+	margin-left:11em;
+	padding:10px;
+	border-top:1px solid #288487;
+}
+
+/* 地域型 */
+#YokoChiiki dl#SogoList {
+	border-bottom:1px solid #53910f;
+	background:url(../img/guide_yoko_bg02.gif) repeat-y;
+	}
+#YokoChiiki dl#SogoList dt {
+	float:left;
+   width:10em;
+   border-top:1px solid #53910f;
+   padding-top:10px;
+   padding-left:1em;
+   padding-bottom:0;
+   padding-right:0;
+   }
+#YokoChiiki dl#SogoList dd {
+	position:relative;
+	text-align:left;
+	margin-left:11em;
+	padding:10px;
+	border-top:1px solid #53910f;
+}
+
+
+#YokoChiiki dl#SogoList dd .btn-list{
+	position:absolute;
+	top:350px;
+	right:10px;
+	display:block;
+	z-index:100;
+
+}
+
+#YokoChiiki .kinmu .course01 img{
+	padding-top:5px;
+	padding-left:10px;
+}
+#YokoChiiki .kinmu .course02 img{
+	padding-top:5px;
+	padding-left:10px;
+	padding-right:0px;
+	vertical-align:-4px;
+}
+
+#YokoChiiki .course02 .notes-shisha{
+	font-size:11px;	
+}
+
+
+/* 法人総合営業職(地域型) */
+#YokoHs dl#SogoList {
+	border-bottom:1px solid #c76677;
+	background:url(../img/guide_yoko_bg03.gif) repeat-y;
+	}
+#YokoHs dl#SogoList dt {
+	float:left;
+   width:10em;
+   border-top:1px solid #c76677;
+   padding-top:10px;
+   padding-left:1em;
+   padding-bottom:0;
+   padding-right:0;
+   }
+#YokoHs dl#SogoList dd {
+	position:relative;
+	text-align:left;
+	margin-left:11em;
+	padding:10px;
+	border-top:1px solid #c76677;
+}
+
+#YokoHs dl#SogoList dd .btn-list{
+	position:absolute;
+	top:160px;
+	right:10px;
+
+}
+
+
+
+/* 表内枠 */
+#SogoList dd ul li {
+	margin:9px 0 0 0;
+}
+#SogoList dd ul li:first-child {
+	margin:5px 0 0 0;
+}
+#SogoList dd ul li.kyuyo_waku {
+	border:1px solid #000;
+	padding:3px 5px;
+	margin:0;
+}
+
+#SogoList dd .area_waku {
+	border:1px solid #000;
+	padding:2px 5px;
+	margin-right:10px;
+}
+#SogoList dd .area_waku02 {
+	background-color:#dfdfdf;
+	padding:2px 5px;
+	margin-right:10px;
+	font-weight:bold;
+}
+
+#SogoList dd .kyuyo01 {
+	/* border:1px solid #000; */
+	padding:3px 5px;
+}
+#SogoList dd .kyuyo02 {
+	/* border-left:1px solid #000;
+	border-right:1px solid #000;
+	border-bottom:1px solid #000; */
+	padding:3px 5px;
+}
+
+#SogoList dd .kinmu {
+	/*border:1px solid #000;*/
+	padding:3px 5px;
+}
+
+
+/*所在地一覧*/
+
+#CotegoryLocation{
+	width:820px;
+	margin:0 auto;
+	padding-bottom:40px;
+	font-size:14px;
+}
+
+#CotegoryLocation .nav{
+	overflow:hidden;
+	
+}
+
+#CotegoryLocation .nav dl.space{
+	padding-top:15px;	
+}
+
+#CotegoryLocation .nav dl dt{
+	float:left;
+	
+}
+
+#CotegoryLocation .nav dl dd{
+	float:left;
+
+}
+
+#CotegoryLocation .nav dl dd ul li{
+	float:left;
+	margin-left:5px;
+
+}
+
+#CotegoryLocation .section.top h4{
+	text-align:left;
+	margin-top:45px;
+}
+
+#CotegoryLocation .section{
+	text-align:left;
+	overflow: hidden;/*IE8対策*/
+
+}
+
+#CotegoryLocation .section dl{
+	overflow: hidden;/*IE8対策*/
+}
+
+
+#CotegoryLocation .section dt{
+	height:60px;
+	background:url(../img/nav_location_arrow_open.png) no-repeat 780px 25px;
+}
+
+
+#CotegoryLocation .section dt.slide02{
+	background:url(../img/nav_location_arrow_close.png) no-repeat 780px 25px;
+}
+
+#CotegoryLocation .section dt img{
+	
+}
+
+
+#CotegoryLocation .section dl.gray dt{
+	margin-top:10px;
+	background-color:#dedede;
+	display:block;
+	width:820px;
+	height:60px;
+	cursor:pointer;
+	overflow: hidden;
+	
+}
+#CotegoryLocation .section dl.green dt{
+	margin-top:10px;
+	background-color:#daf2e4;
+	display:block;
+	width:820px;
+	cursor:pointer;
+	overflow: hidden;
+}
+
+
+
+#CotegoryLocation .section dl dd table{
+	border-collapse:collapse;
+	padding:0;	
+}
+
+#CotegoryLocation .section dl dd table th{
+	border-collapse:collapse;
+	height:35px;
+	background-color:#f3f9ff;
+}
+
+#CotegoryLocation .section dl dd table th img{
+	margin-left:20px;
+}
+
+#CotegoryLocation .section dl dd table th.pre{
+	width:80px;
+}
+
+#CotegoryLocation .section dl dd table th.ad{
+	width:360px;
+}
+
+#CotegoryLocation .section dl dd table th.shisha{
+	width:220px;
+}
+
+#CotegoryLocation .section dl dd table th.tel{
+	width:160px;
+}
+
+
+#CotegoryLocation .section dl dd table td{
+	border-bottom:1px dotted #ccc;
+	height:54px;
+	line-height:54px;
+	padding-left:20px;
+}
+
+#CotegoryLocation .section dl dd table td.l2{
+    padding-top:5px;
+	line-height:22px;
+}
+
+#CotegoryLocation .section dl dd table td.nobor{
+	border:none;
+}
+
+#CotegoryLocation .section .notes{
+	margin-top:10px;
+	margin-left:20px;
+	font-size:12px;
+
+}
+
+
+#honsha{
+	margin-top:-132px;
+	padding-top:132px;
+}
+
+#shisha{
+	margin-top:-132px;
+	padding-top:132px;
+}
+
+#houjin{
+	margin-top:-132px;
+	padding-top:132px;
+}
+
+
+#market{
+	margin-top:-132px;
+	padding-top:132px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

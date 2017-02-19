@@ -1,0 +1,156 @@
+/* CSS Document */
+
+/* 職種とキャリア トップページレイアウト */
+.ac-title p.comment {
+	width:960px;
+	margin:0 auto;
+	text-align:center;
+	padding-top:20px;
+	padding-bottom:20px;
+	color: #fff;
+}
+.container{
+	width: 100%;
+	min-width: 100px;
+	margin: 0;
+	overflow: hidden;
+}
+
+.selectArea {
+	width: 33.3%;
+	height: 500px;
+	box-sizing: border-box;
+	background-color: #fff;
+	float: left;
+	text-align: center;
+	border-right: solid 1px #AFAFAF;
+	overflow: hidden;
+}
+.selectArea .contentBox {
+	height: 60%;
+	padding: 30px;
+	box-sizing: border-box;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
+}
+
+.selectArea .imgBox {
+	height: 40%;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100% auto;
+/*	-webkit-background-size: cover;
+	background-size: cover;*/
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+
+@media screen and (min-width: 1280px) {
+	.selectArea {
+		height: 700px;
+	}
+.selectArea .contentBox {
+	height: 55%;}
+.selectArea .imgBox {
+	height: 45%;}
+}
+@media screen and (max-width: 1280px) {
+/*	.selectArea {
+		height: 600px;
+	}	*/
+}
+/* max 1280 */
+@media screen and (max-width: 1000px) {
+	.selectArea .contentBox {
+		display: block;
+	}
+}
+/* max 1080 */
+
+
+
+/*　イメージ */
+#zenkoku.selectArea .imgBox {
+	background-image: url(../images/img_zenkoku.jpg);
+}
+#chiiki.selectArea .imgBox {
+	background-image: url(../images/img_chiiki.jpg);
+}
+#houjin.selectArea .imgBox {
+	background-image: url(../images/img_houjin.jpg);
+}
+
+
+
+/*見出し*/
+.selectArea h3,
+.selectArea .btnDetail {
+	text-align: center;
+}
+.selectArea .text {
+	display:  block;
+	height: 90px;
+	padding: 40px 0 15px;
+	color:#333;
+}
+.selectArea h3{
+	line-height: 1;
+	position: relative;
+	font-size: 24px;
+	letter-spacing: 0.05em;
+ 	font-family:"游明朝", YuMincho, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro',"ＭＳ Ｐ明朝", serif;
+	
+}
+.selectArea h3:after{
+	content: " ";
+	width: 100px;
+	height: 1px;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	bottom: -20px;
+	left: 0;
+	background-color: #E8AD02;;
+}
+@media screen and (max-width: 1000px) {
+	.selectArea h3{
+		font-size: 20px;
+	}
+	.selectArea .text {
+		height: auto;
+		padding: 40px 0 30px;
+	}	
+}
+/* max 1080 */
+
+
+
+/* link */
+
+.link_ank{
+	text-align: center;
+}
+a:link .selectArea {
+	color: #333;
+}
+a:hover .selectArea {
+	color: #333;
+	background-color: #eee;
+}
+a:hover .selectArea .imgBox {
+	opacity: .8;
+	background-size: 110% auto;	
+}
+
+
+
+/* detail button */
+.btnDetail {
+	margin: 10px auto 0;
+	width: 150px;
+	height: 30px;
+	background: url(../images/btn_detail_on.png) no-repeat left top;
+}

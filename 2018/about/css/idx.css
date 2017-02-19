@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* タイトル */
+@media all and (-ms-high-contrast:none){
+  .link_btn{
+		font-family:  "メイリオ", "Meiryo";
+  }
+}
+
+@media (min-width:1781px){
+	.lead{
+		min-width:1780px;
+		background-size: 100% auto;
+	}
+}
+.lead_ttl{
+	position: absolute;
+	top: 60px;
+/*	left: 50%;
+	margin-left: -225px;
+  font-size: 40px;*/
+  color: #fff;
+/*	letter-spacing: 5px;*/
+}
+/*.lead_ttl:before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  margin-left: -50px;
+  width: 100px;
+  height: 2px;
+  background-color: #E8AD02;
+}*/
+.lead_txt{
+	top: 145px;
+/*	position: absolute;
+	left: 50%;
+	margin-left: -287px;
+  font-size: 16px;
+	line-height: 1.5;
+	text-align: center;*/
+  color: #fff;
+}
+/* コンテンツエリア */
+.notes{
+	display: block;
+  font-size: 13px;
+	margin-top: 4px;
+}
+.main{
+	overflow: hidden;
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+
+/******************** パネル ********************/
+
+/*イメージ*/
+.link-message{
+	background-image: url("../img/link_message.jpg");
+}
+.link-torikumi{
+	background-image: url("../img/link_torikumi.jpg");
+}
+.link-field{
+	background-image: url("../img/link_field.jpg");
+}
+.link-policy{
+	background-image: url("../img/link_policy.jpg");
+}
+.link-outline{
+	background-image: url("../img/link_outline.jpg");
+}
+.link-history{
+	background-image: url("../img/link_history.jpg");
+}
+.link-jleague{
+	background-image: url("../img/link_jleague.jpg");
+}
+.link-csr{
+	background-image: url("../img/link_csr.jpg");
+}
+
+

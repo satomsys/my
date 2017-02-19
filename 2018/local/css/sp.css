@@ -1,0 +1,444 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*============================================================
+採用2018 TOP SPレイアウト
+============================================================*/
+
+@media (max-width: 768px){
+
+
+  #mainView ul li a h2 {
+    visibility: hidden;
+  }
+  #mainView ul li a{
+    background-size: 100% auto;
+  }
+  #mainView ul li:nth-of-type(1) a {
+    background-image: url(../images/sp_cover1.jpg);
+  }
+  #mainView ul li:nth-of-type(2) a {
+    background-image: url(../images/sp_cover4.jpg);
+  }
+  #mainView ul li:nth-of-type(3) a {
+    background-image: url(../images/sp_cover3.jpg);
+  }
+  /*.bx-wrapper img {
+    width: 78%;
+    display: block;
+    -webkit-transform: translate(-50% , -50%);
+    transform: translate(-50% , -50%)
+  }*/
+  .bx-controls-direction{
+    display: none;
+  }
+
+  #mainView .bx-wrapper .bx-prev:active,
+  #mainView .bx-wrapper .bx-prev:hover,
+  #mainView .bx-wrapper .bx-next:active,
+  #mainView .bx-wrapper .bx-next:hover{
+    opacity: 1;
+  }
+  #mainView .bx-wrapper .bx-prev:active,
+  #mainView .bx-wrapper .bx-prev:hover{
+    left: 10px;
+  }
+  #mainView .bx-wrapper .bx-next:active,
+  #mainView .bx-wrapper .bx-next:hover{
+    right: 10px;
+  }
+
+  .topics_label {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    padding: 5px 0 0;
+    border-radius: 0;
+    color: #fff;
+    background-color: #009676;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  #topics dl {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0 10px 10px;
+    color: #fff;
+    overflow: hidden;
+    font-size: 12px;
+    letter-spacing: -.4em;
+    clear: both;
+  }
+  #topics dl:not(:first-of-type) {
+    margin: 0 auto;
+  }
+/*
+  #topics dl dt {
+    width: 70px;
+    opacity: .7;
+    letter-spacing: normal;
+  }
+
+  #topics dl dd {
+    width: calc(100% - 70px);
+    letter-spacing: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+  }
+*/
+
+  #topics dl dt {
+    width: 70px;
+    letter-spacing: normal;
+    float: left;
+  }
+
+  #topics dl dd {
+    width: calc(100% - 70px);
+    float: right;
+    letter-spacing: normal;
+  }
+
+
+
+  /*-------------------
+  #enkaku
+  ---------------------*/
+  #enkaku {
+    width: 100%;
+    height: 46.25vw;
+  }
+
+  #enkaku h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 44.3%;
+    height: auto;
+    margin: auto;
+    -webkit-transform: translate(-50% , -50%);
+    transform: translate(-50% , -50%);
+  }
+
+  #enkaku .link_btn {
+    margin-top: 0;
+    visibility: hidden;
+  }
+  .contentContainer,
+  .learnInner,
+  .about2Inner{
+    width: 100% !important;
+    position: relative;
+    border-bottom: 1px solid #fff;
+    float: none;
+  }
+  #mainView.contentContainer{
+    border-bottom: none;
+  }
+  #mainView.contentContainer:after{
+    display: none;
+  }
+  .contentContainer:after,
+  .learnInner:after,
+  .about2Inner:after,
+  .contentBox:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 93%;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid transparent;
+    border-right-color: #fff;
+    border-top-color: #fff;
+    border-radius: 3px 0 3px 0;
+    -webkit-transform: rotate(45deg) translateY(-5%);
+    transform: rotate(45deg) translateY(-5%);
+  }
+
+  /*-------------------
+  #about
+  ---------------------*/
+  #about {
+    overflow: hidden;
+  }
+  #about .link_btn {
+    margin-top: 0;
+    visibility: hidden;
+  }
+  #about .title {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+  #about h3 {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 85%;
+    height: auto;
+    margin: auto;
+    -webkit-transform: translate(0 , -25%);
+    transform: translate(0 , -25%);
+  }
+  #about .title p {
+    display: none;
+  }
+
+  #about2{
+    height: auto;
+  }
+  #about2.contentContainer:after{
+    display: none;
+  }
+
+  /*-------------------
+  #learn #about #company
+  ---------------------*/
+
+  #learn{
+    height: auto;
+  }
+
+  .learnInner h4,
+  .about2Inner h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    margin: 0 !important;
+    -webkit-transform: translate(-50% , -50%);
+    transform: translate(-50% , -50%);
+  }
+
+  .learnInner .link_btn,
+  .about2Inner .link_btn{
+    visibility: hidden;
+  }
+
+  #syokuba,
+  #boshuyoko,
+  #anime,
+  #usarin,
+  #company,
+  #field{
+    height: 46.25vw;
+  }
+  #about {
+    height: 77.5vw;
+  }
+  #learn #usarin {
+    background: url(../images/img_learn_usarin_sp.jpg) no-repeat center center;
+    background-size: cover;
+  }
+
+  #boshuyoko h4{
+    width: 18.75%;
+  }
+  #syokuba h4{
+    width: 72%;
+  }  
+  #anime h4{
+    width: 48.4%;
+  }
+  #usarin h4{
+    width: 54.3%;
+  }
+  #company h4{
+    width: 25%;
+  }
+  #field h4{
+    width: 28%;
+  }
+  #about .title {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+
+
+  #syokuba h4 img,
+  #anime h4 img,
+  #usarin h4 img{
+    width: 100%;
+  }
+
+  #boshuyoko.learnInner:after ,
+  #anime.learnInner:after ,
+  #usarin.learnInner:after,
+  #field.about2Inner:after{
+    border-right-color: #595757;
+    border-top-color: #595757;
+  }
+
+  /*-------------------
+  #career
+  ---------------------*/
+  #career{
+    height: 77vw;
+  }
+  #career .title {
+    position: static;
+    width: auto;
+  }
+  #career h3{
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    left: 00%;
+    display: block;
+    margin: 0 !important;
+    -webkit-transform: translate(0 , -25%);
+    transform: translate(0 , -25%);
+  }
+  #career .title p {
+    display: none;
+  }
+  #career2.contentContainer:after{
+    display: none;
+  }
+  #career2 .selectArea{
+    width: 100%;
+  }
+  #career2 .selectArea .link_btn{
+    visibility: hidden;
+  }
+  #career2 .contentBox{
+    height: 40vw;
+    padding-top: 4%;
+    /*border-bottom: 1px solid #fff;*/
+    box-sizing: border-box;
+  }
+  #career2 .imgBox{
+    height: 40vw;
+    border-bottom: 1px solid #fff;
+    background-position: center top;
+  }
+  #career2 .contentBox h3{
+    margin: 0 auto 15px;
+  }
+  #career2  #zenkoku h3{
+    width: 36%;
+  }
+  #career2  #chiiki h3{
+    width: 36%;
+  }
+  #career2  #houjin h3{
+    width: 55%;
+  }
+  #career2 .contentBox p{
+    width: 85%;
+    margin: 0 7.5%;
+    font-size: 11px;
+  }
+
+  /*-------------------
+  #special
+  ---------------------*/
+  #special{
+    padding: 25px 0 0;
+    background-color: #f4f3f2;
+  }
+
+  #special.contentContainer:after{
+    display: none;
+  }
+
+  #special h3 {
+    width: 85%;
+    height: 0;
+    margin-left: 15%;
+    padding-bottom: 17.27%;
+    background: url(../images/sp_title_special.png) no-repeat 0 0;
+    background-size: 100% auto;
+    margin-bottom: 30px;
+  }
+
+  #special ul {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #special ul li {
+    width: 78%;
+    height: auto;
+    margin: 0 auto 13px;
+    padding-top: 0;
+    background-size: 100% auto;
+  }
+
+  .special_naitei {
+    background-image: url(../images/sp_img_special_naitei.jpg);
+  }
+  .special_woman {
+    background-image: url(../images/sp_img_special_woman.jpg);
+  }
+  .special_diversity {
+    background-image: url(../images/sp_img_special_diversity.jpg);
+  }
+  .special_rikei {
+    background-image: url(../images/sp_img_special_rikei.jpg);
+  }
+
+  #special ul li dl {
+    position: relative;
+    float: none !important;
+    width: 100%;
+    height: auto;
+    padding: 65% 25px 0 0;
+    box-sizing: border-box;
+  }
+
+  #special ul li dl:after {
+    content: "";
+    position: absolute;
+    top: 81%;
+    left: 93%;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid transparent;
+    border-right-color: #636161;
+    border-top-color: #636161;
+    border-radius: 3px 0 3px 0;
+    -webkit-transform: rotate(45deg) translateY(-5%);
+    transform: rotate(45deg) translateY(-5%);
+  }
+
+  #special ul li dl dt{
+    text-align: left;
+    margin: 10px 0;
+  }
+  #special .special_naitei dt {
+    width: 64%;
+  }
+  #special .special_woman dt {
+    width: 70%;
+  }
+  #special .special_diversity dt {
+    width: 80%;
+  }
+  #special .special_rikei dt {
+    width: 50%;
+  }
+  #special ul li dl dt img{
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+
+  #special ul li dl .text {
+    width: 100%;
+    margin: 0 auto 30px;
+    font-size: 12px;
+  }
+  #special .link_btn{
+    display: none;
+  }
+
+}

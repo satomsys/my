@@ -1,0 +1,466 @@
+@charset 'UTF-8';
+.isSP {
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  .isSP {
+    display: block;
+  }
+  /* layout
+---------------------------------------------------------------------------- */
+  body {
+    position: relative;
+  }
+
+  .lead {
+    min-width: 0;
+    margin-bottom: 30px;
+  }
+  .policy .lead, .history .lead {
+    margin-bottom: 30px;
+  }
+  .lead-bgImage {
+    position: relative;
+    max-height: 200px;
+    background-position: center center;
+  }
+  .lead-catIndex {
+    max-height: 200px;
+  }
+  .lead_ttl{
+    top: 35%;
+    font-size: 24px;
+    letter-spacing: 0;
+  }
+  .lead_ttl:before {
+    bottom: -64%;
+  }
+  .lead-catIndex .lead_txt{
+    top: 105px;
+  }
+  #ContentsWrapTop {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+  .main {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .link-box {
+    width: 48%;
+    height: auto;
+    margin-right: 4%;
+    padding: 28.1% 0 6%;
+    background-size: 100% auto;
+  }
+  .link-box:nth-of-type(3n) {
+    margin-right: 4%;
+  }
+  .link-box:nth-of-type(2n) {
+    margin-right: 0%;
+  }
+  .link_ttl {
+    height: 40px;
+    margin: 0 4% 10px;
+    padding-top: 15px;
+    font-size: 13px;
+    box-sizing: border-box;
+    line-height: 1;
+  }
+  .link_ttl-2,
+  .link_ttl-2 .notes{
+    font-size: 10px;
+  }
+
+  .link_btn {
+    width: 84%;
+    font-size: 10px;
+  }
+
+  .intro {
+    font-size: 20px;
+  }
+  /* outline
+  ---------------------------------------------------------------------------- */
+  .outline .lead{
+    background: url(../img/bg_hero-outline_sp.jpg) no-repeat 50%;
+  }
+  .outline .lead .lead_ttl{
+  text-shadow: 0 0 10px #fff;
+  }
+  #BoxOutline {
+    margin-bottom: 0 !important;
+  }
+  /* field
+---------------------------------------------------------------------------- */
+  .field .lead {
+    margin-bottom: 0;
+  }{
+
+  }
+  .innernav {
+    margin-bottom: 30px;
+  }
+  .innernav_wrap {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .innernav_item {
+    position: relative;
+    box-sizing: border-box;
+    width: 33.3%;
+    width: calc(100% / 3);
+    padding-top: 15%;
+  }
+  .innernav_item:nth-last-of-type(3n) {
+    margin-right: 0;
+  }
+  .innernav_item:nth-of-type(3n) {
+    border-right: 1px solid #fff;
+  }
+  .innernav_ank {
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  .innernav_ank span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    margin: auto;
+  }
+  .innernav_ank, .innernav_ank-left {
+    width: 100%;
+  }
+  .innernav_ank:before {
+    right: 0;
+    bottom: 10%;
+    left: 0;
+    margin: auto;
+  }
+  #ContentsContainer {
+    width: 100%;
+    padding: 0;
+  }
+  [class$='_txt'], [class$='_fig'] {
+    font-size: 13px;
+    margin: 0 auto 20px;
+    padding: 0;
+  }
+  [class*='_ttl'] {
+    margin-bottom: 10px;
+  }
+  .works_ttl {
+    font-size: 20px;
+    line-height: 0;
+    line-height: 4;
+    width: 100%;
+    height: 95px !important;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-top: 0;
+  }
+  .under_orange {
+    top: 30%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+  .works_txt {
+    display: block;
+    float: none;
+    width: 90%;
+  }
+  .works_fig {
+    display: block;
+    float: none;
+    width: 90%;
+    text-align: center;
+  }
+  .defig {
+    width: 100%;
+  }
+  .relevant {
+    position: static;
+    display: block;
+    width: 90%;
+    min-height: 0;
+    margin: 0 auto;
+  }
+  .relevent_ttl, .relevent_txt {
+    display: block;
+    padding-left: 0;
+  }
+  .relevent_ttl {
+    width: 100%;
+  }
+  .relevent_txt {
+    margin-bottom: 10px;
+  }
+  /* policy
+---------------------------------------------------------------------------- */
+  #BoxPolicy ul, #BoxPolicy ul li, #CotegoryPolicy, #BoxCorpmark div.TxtCorpmark, #BoxCorpmark, #BoxCorpmark div.TxtCorpmark p {
+    width: 100%;
+  }
+  #BoxCorpmark div.TxtCorpmark p {
+    margin-left: 0;
+  }
+  #BoxPolicy>ul img, #BoxCorpmark img {
+    display: none;
+  }
+  #BoxPolicy .BoxPolicySP {
+    font-family: 游明朝, YuMintyo, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'ＭＳ Ｐ明朝', serif;
+    font-size: 13px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #BoxPolicy .BoxPolicySP ul li{
+    border-bottom: 1px dotted #000;
+  }
+  #BoxPolicy .BoxPolicySP ol li,#BoxPolicy .BoxPolicySP ul li:last-child{
+    border: none;
+  }
+  #BoxPolicy .BoxPolicySP ul li {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+  #BoxPolicy .BoxPolicySP ol {
+    margin: 0 auto;
+    counter-reset: li;
+  }
+  #BoxPolicy .BoxPolicySP ol li {
+    width: 95%;
+    margin-bottom: 10px;
+    margin-left: 1em;
+    text-align: left;
+    text-indent: -1em;
+    padding-bottom: 0;
+  }
+  #BoxPolicy .BoxPolicySP ol li:before {
+    margin-right: 4px;
+    content: counter(li)'.';
+    counter-increment: li;
+  }
+  #BoxPolicy .BoxPolicySP p {
+    color: #333;
+  }
+  #BoxPolicy .BoxPolicySP h3 {
+    font-size: 22px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #b5b5b5;
+  }
+  /* history
+---------------------------------------------------------------------------- */
+  #BoxEnkaku ul li h4 img, .photo img {
+    width: 100%;
+  }
+  #BoxCorpmark {
+    width: 90%;
+    margin: 0 auto !important;
+  }
+  #BoxCorpmark>p {
+    margin: 0 auto;
+  }
+  #BoxCorpmark>p img {
+    display: block;
+  }
+  #BoxCorpmark div.TxtCorpmark {
+    background-size: 100% 100%;
+  }
+  #BoxCorpmark div.TxtCorpmark p {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .BoxS, #BoxEnkaku ul, #BoxEnkaku ul li, .box_photo, #Boxtanjyo, .box_tanjyo, .box_tanjyo .box_txt, .BoxS div.txtBox, .BoxS .photoBox p.btn {
+    float: none;
+    width: 100%;
+  }
+  #BoxEnkaku, .history_h01 {
+    margin-bottom: 30px !important;
+  }
+  #BoxEnkaku ul {
+    margin-bottom: 0;
+  }
+  #BoxEnkaku ul li {
+    margin-left: 0;
+  }
+  #BoxEnkaku ul li h4 {
+    width: 100%;
+    margin-bottom: 20px !important;
+    height: 27px;
+    text-align: center;
+    background: url(../img/tit_sp.gif) no-repeat left top;
+    background-size: cover;
+  }
+  #BoxEnkaku ul li h4 span{
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+  }
+  #BoxEnkaku ul li h4 img{
+    display: none;
+  }
+  .BoxS .photoBox, .BoxS div.txtBox {
+    float: none;
+  }
+  .BoxS .photoBox p.photo {
+    width: 48%;
+  }
+  .BoxS p.btn:last-of-type {
+    display: none;
+  }
+  .txtBox>.mb15 img {
+    position: absolute;
+    bottom: 109%;
+    left: 52%;
+  }
+  .txtBox {
+    position: relative;
+    padding-bottom: 30px;
+  }
+  .txtBox .btn {
+    display: none;
+  }
+  .txtBox p.isSP a {
+    font-size: 13px;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 37px;
+    padding-top: 8px;
+    text-indent: 58px;
+    color: #219a85;
+    background: url(../img/btn_head.gif) no-repeat left center;
+    background-color: #e4e4e4;
+  }
+  .txtBox p.isSP a span {
+    position: relative;
+  }
+  .txtBox p.isSP a span:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -12%;
+    display: block;
+    width: 9px;
+    height: 9px;
+    margin: auto;
+    content: '';
+    background: url(../img/link_head.png) no-repeat left center;
+  }
+  #CotegoryHistory {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #CotegoryHistory h3 img {
+    display: none;
+  }
+  #CotegoryHistory h3 span.isSP {
+    font-family: 游明朝, YuMintyo, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'ＭＳ Ｐ明朝', serif;
+    font-size: 18px;
+    text-align: left;
+  }
+  #CotegoryHistory p.histoy_txt {
+    font-size: 13px;
+  }
+  #CotegoryHistory [class$='_txt'], #CotegoryHistory [class$='_fig'] {
+    width: 100%;
+  }
+  #CotegoryHistory [class*='_ttl'] {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  #CotegoryHistory .BoxS .photoBox {
+    position: relative;
+    width: 100%;
+  }
+  .history_h02 {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #CotegoryHistory h3.history_h02 .isSP {
+    margin-top: -30px;
+    text-align: center;
+    text-decoration: underline;
+  }  
+  #Boxtanjyo {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .box_tanjyo {
+    margin: 0 auto;
+  }
+  .box_ttl h3{
+      font-family: 游明朝, YuMintyo, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'ＭＳ Ｐ明朝', serif;
+    font-size:5vw;
+    color: #426996;
+    border-bottom: 1px solid #426996;
+    margin-bottom: 20px;
+  }
+  .box_ttl img,.box_txt img{
+    display: none;
+  }
+  .btnMy img {
+    width: 70%;
+  }
+  #CotegoryOutline, #BoxOutline ul, #BoxOutline ul li, .slide-box, .slide {
+    width: 100%;
+  }
+  .slide {
+    background-position: 97% 13px;
+    background-size: 18px 18px;
+  }
+  .slide img{
+    max-width: 80%;
+  }
+  .slide-box {
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+ /* .close-contents .floatRight {
+    float: none;
+  }*/
+  .close-contents>img {
+    width: 30%;
+    height: auto;
+    margin-bottom: 7px;
+    padding-left: 0 !important;
+  }
+  #BoxOutline ul li {
+    margin-left: 0;
+    padding: 10px 0;
+  }
+
+  .slide02 img, .slide img {
+    display: inline;
+    padding-left: 0;
+    text-align: left;
+  }
+}
+
+
+@media screen and (max-width:320px) {
+  /* iphone5 */
+  .is_ios .innernav_item {
+    border-bottom-width: 2px;
+    font-size: 12px;
+  }
+}

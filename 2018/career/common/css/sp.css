@@ -1,0 +1,654 @@
+@charset 'UTF-8';
+.isSP {
+  display: none !important;
+}
+
+@media screen and (max-width:768px) {
+  .isPC {
+    display: none !important;
+  }
+  .isSP {
+    display: block !important;
+  }
+  /* layout
+  ---------------------------------------------------------------------------- */
+  body {
+    position: relative;
+  }
+  .container {
+    width: 100%;
+    margin-top: 0;
+  }
+  .lead.ac-title,
+  .training-title {
+    max-height: 150px;
+    min-width: 0;
+    margin-bottom: 0;
+  }
+  .lead_ttl {
+    top: 42px;
+    font-size: 24px;
+    letter-spacing: 0;
+  }
+
+  .ac-title.lead-tiny .lead_ttl{
+    top: 30px;
+  }
+
+  .lead_ttl_small {
+    margin-top: 0;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+  }
+  .lead_ttl:before {
+    bottom: -34%;
+  }
+  .houjin.index .lead_ttl:before {
+    bottom: -60%;
+  }
+  .lead-tiny .lead_txt {
+    top: 95px;
+    // top: 115px;
+  }
+  .course {
+    width: 100%;
+  }
+  .main_visual {
+    max-width: 1200px;
+    min-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+  }
+  .main_visual img {
+    width: 100%;
+    height: auto;
+  }
+  #ContentsContainer {
+    width: 90%;
+    margin: 30px auto 0;
+    padding: 0;
+  }
+
+  /*index
+  -----------------------------------------------------------------------------*/
+  .lead-bgImage {
+    max-height: 200px;
+  }
+   .houjin .index-title-hs.lead-bgImage{
+     height: 200px;
+     margin-bottom: 30px;
+   }
+  .index-title-chiiki {
+    margin-bottom: 30px;
+    background: url(../../sougoushoku_chiiki/images/index/index_chiiki_main.jpg) -150px top no-repeat;
+  }
+  .index-title-zenkoku {
+    margin-bottom: 30px;
+    background: url(../../sougoushoku_zenkoku/images/index/sp-index_zenkoku_main.jpg) right top no-repeat;
+  }
+  .index-title-hs {
+    margin-bottom: 30px;
+    background: url(../../hs/images/index/index_hs_main.jpg) 59% top no-repeat;
+  }  
+  .index-title-chiiki .lead_ttl{
+    top: 48px;
+    text-shadow: 0 0 15px rgba(255,255,255,.8);
+    color: #000;
+  }
+  .index .lead-bgImage .lead_ttl {
+    top: 35px;
+    text-shadow: 0 0 15px rgba(255,255,255,.8);
+    color: #000;
+  }
+  .index .lead_ttl:before {
+    bottom: -60%;
+  }
+  .index-title-zenkoku .wrap .comment, .index-title-chiiki .wrap .comment {
+    width: 100%;
+    padding-top: 0;
+  }
+  .index-title-chiiki .wrap .comment ,
+  .index-title-zenkoku .wrap .comment{
+    top: 85px;
+    text-shadow: 0 0 10px rgba(255,255,255,1);
+    color: #000;
+  }
+  .index_h2 {
+    width: 90%;
+    margin: 0 auto 20px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #008b80;
+    letter-spacing: 0;
+    font-size: 12px;
+  }
+  .course {
+    width: 90%;
+  }
+  .course.mt30{
+    margin-top: 0 !important;
+  }
+  .c-image {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  .c-image img{
+    width: 100%;
+  }
+  .c-box {
+    float: none;
+    width: 100%;
+    padding: 5% 2% 5% 5%;
+    height: auto;
+    box-sizing: border-box;
+  }
+  .c-box h3 {
+    padding-bottom: 15px;
+    font-size: 20px;
+  }
+  .c-box h3:after {
+    width: 100px;
+  }
+  .c-text {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 12px;
+  }
+ .btn_course {
+    display: inline-block;
+    width: 160px;
+    line-height: 30px;
+    padding: 0 0 0 10px;
+    height: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 0;
+  }
+  .c-menu {
+    text-align: left;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    letter-spacing: -.4em;
+  }
+  .c-menu .btn_comming,
+  .c-menu .btn_program{
+    display: inline-block;
+    width: 48%;
+    line-height: 1.5;
+    margin-right: 4%;
+    margin-bottom: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    letter-spacing: normal;
+    font-size: 10px;
+  }
+  .c-menu .btn_program{
+    background: url(../../../common/images/ico_yaji_right.png) 95% center no-repeat #009676;
+  }
+  .c-menu > *:nth-child(even){
+    margin-right: 0;
+  }
+  .c-menu .btn_comming span {
+    margin-left: 0;
+    font-size: 8px;
+    letter-spacing: 0;
+  }
+  .index #next_cont_toparea .active:after, .index .innernav .arrowNav .active:after {
+    bottom: 5px;
+  }
+  /*.training
+  -----------------------------------------------------------------------------*/
+  .training .read {
+    width: 90%;
+    margin: 15px auto 0;
+    font-size: 13px;
+    text-align: left;
+  }
+  .trainingContentsBox {
+    width: 100%;
+    margin: 30px auto 30px;
+    padding: 30px 0 30px;
+    background-color: #FAFAFA;
+  }
+  .trainingContentsHeader {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 0 5px;
+  }
+  .trainingContentsList {
+    width: 90%;
+    margin: 30px auto 10px;
+  }
+  .trainingContentsBox h4 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .trainingContentsHeader .text {
+    text-align: left;
+  }
+  .trainingContentsHeader .text br {
+    display: none;
+  }
+  .trainingContentsList dt img {
+    width: auto;
+    height: 18px;
+  }
+  .trainingContentsList ul li#globalSpecial {
+    padding-top: 28vw;
+    background: url(../../sougoushoku_zenkoku/images/training/sp_bg_global_special.png) no-repeat top center;
+    background-size: 62.5% auto;
+  }
+  /*.houjin
+  -----------------------------------------------------------------------------*/
+  .houjin .lead {
+    height: 150px;
+    margin-bottom: 0;
+    position: relative;
+    background-color: #009676;
+  }
+  .index-title-hs .lead_txt {
+    top: 85px;
+    font-size: 13px;
+  }
+  .houjin.index.hero_cont{
+    margin-top: -10px;
+    
+  }
+  .hero_cont {
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
+  .hero_wrap {
+    width: 90%;
+    margin: -10px auto 0;
+    padding: 0;
+  }
+  .hero_ttl {
+    position: static;
+    float: none;
+    display: block;
+    width: 35%;
+    height: auto;
+    margin: 0 0 15px;
+  }
+  .hero_txt {
+    float: none;
+    width: 100%;
+    margin: 0;
+    font-size: 13px;
+  }
+  .houjin .article {
+    margin-bottom: 30px !important;
+  }
+  #BoxIdx .article > .article_images {
+    float: none;
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .houjin .article > dl {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .houjin .article-odd dl {
+    padding-left: 0;
+    float: none;
+  }
+  .houjin .article-even dl {
+    padding-right: 0;
+    float: none;
+  }
+  .houjin .article_txt {
+    height: auto;
+    font-size: 11px;
+  }
+  .houjin .article_ttl {
+    margin-bottom: 10px;
+  }
+  .houjin .article-no1 .article_ttl:before, .houjin .article-no2 .article_ttl:before, .houjin .article-no3 .article_ttl:before, .houjin .article-no4 .article_ttl:before {
+    font-size: 45px;
+    vertical-align: baseline;
+  }
+  .houjin .article_ttl-strong {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 20px;
+  }
+
+  .houjin .training .trainingArea{
+    margin-bottom: 40px !important;
+  }
+  .houjin .training .lead-tiny {
+    max-height: 150px;
+    margin-bottom: 0;
+  }
+  .houjin .training .lead_ttl {
+    margin-left: 0;
+  }
+  .houjin .training .read{
+    width: 100%;
+    margin-bottom: 35px !important;
+  }
+  .houjin .training .main_lead {
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    letter-spacing: none;
+    margin-bottom: 35px;
+  }
+  .main_lead:before {
+    top: 40px;
+  }
+  .houjin .traninig .notes,
+   .houjin .career .notes{
+    width: 100%;
+    color: #595757;
+    line-height: 1.3;
+    font-size: 0.8em;
+    text-align: left;
+  }
+  .houjin .training .planArea,
+   .houjin .career .planArea{
+    margin-bottom: 40px !important;
+  }
+  .houjin .training .plan,
+   .houjin .career .plan{
+    margin-bottom: 25px !important;
+  }
+  .houjin .training .plan .notes,
+   .houjin .career .plan .notes{
+    /*display: none;*/
+  }
+  .houjin .training .article05,
+   .houjin .career .article05{
+    margin-bottom: 10px !important;
+  }
+.houjin .training .attentionArea,
+.houjin .career .attentionArea{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 0.8em;
+}
+.houjin .training .attentionArea dt,
+.houjin .career .attentionArea dt{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  color: #fff;
+  line-height: 1;
+ }
+
+.houjin .training .attentionArea .attentionArea_kenshu dt,
+.houjin .career .attentionArea .attentionArea_kenshu dt{
+  background-color: #959595;
+}
+.houjin .training .attentionArea .attentionArea_fukushunin dt,
+.houjin .career .attentionArea .attentionArea_fukushunin dt{
+  background-color: #666;
+}
+.houjin .training .attentionArea .attentionArea_shunin dt,
+.houjin .career .attentionArea .attentionArea_shunin dt{
+  background-color: #4d4d4d;
+}
+
+  .career .article_ttl {
+    padding: 6px;
+    font-size: 15px;
+  }
+  .career .article_images {
+    width: 34.7%;
+    margin-top: 0;
+    padding: 40px 0 0 10px;
+  }
+  .career .article-even .article_dc {
+    width: 100%;
+  }
+
+  /*.tokushou
+  -----------------------------------------------------------------------------*/
+  .tokushou,
+  .lotaticon {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    height: auto;
+  }
+  .tokushou .block,
+  .lotaticon .block {
+    position: static;
+    display: block;
+    width: 35%;
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+  .tokushou p,
+  .lotaticon p {
+    position: static;
+    margin-bottom: 45px;
+    padding: 0;
+    font-size: 13px;
+  }
+  .sub {
+    position: static;
+    height: auto;
+  }
+  .sub .text_area,
+  .sub .photo {
+    float: none;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .tokushou .sub .text_area {
+    padding-left: 0;
+    width: 100%;
+    font-size: 13px;
+  }
+  .tokushou .sub .text_area h3 {
+    width: 35%;
+    margin-bottom: 15px;
+    padding-top: 0;
+  }
+  .tokushou .sub .text_area h3 img {
+    max-width: 100%;
+  }
+  .tokushou .sub p {
+    padding-top: 0;
+    position: static;
+  }
+  .tokushou p.omoi,
+  .lotaticon p.omoi {
+    margin-bottom: 35px;
+    padding: 0;
+  }
+  .acContentsBox {
+    padding-top: 0;
+    margin-bottom: 50px;
+  }
+  .acContentsHeader .title {
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  .acContentsList {
+    margin: 10px 0 10px;
+    border-top: solid 1px #ADADAD;
+    border-bottom: solid 1px #ADADAD;
+  }
+  .acContentsList ul li {
+    background: none !important;
+  }
+  .acContentsList ul li .listTitle {
+    position: relative;
+    padding-bottom: 0;
+    letter-spacing: 0;
+    font-size: 15px;
+  }
+  .acContentsList ul li dt:after,
+  .acContentsList ul li dt:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    display: block;
+    width: 12px;
+    height: 2px;
+    background-color: #2F7A6C;
+  }
+  .acContentsList ul li .listTitle.open {
+    margin-bottom: 10px;
+  }
+  .acContentsList ul li dt.open:after,
+  .acContentsList ul li dt.open:before {
+    display: none;
+  }
+  .acContentsList ul li dt:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  .acContentsList ul li dd {
+    display: none;
+  }
+  .acContentsList ul li#list01 dd,
+  .acContentsList ul li#list03 dd,
+  .acContentsList ul li#list05 dd {
+    width: 100%;
+  }
+  .acContentsList ul li dd .img_box {
+    float: right;
+    width: 40%;
+    padding: 0 0 10px 10px;
+  }
+  .close_btn {
+    position: relative;
+    display: block;
+    margin: 10px auto 0;
+    width: 20px;
+    height: 20px;
+  }
+  .close_btn:after,
+  .close_btn:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #2F7A6C;
+  }
+  .close_btn:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  .close_btn:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  /*.innernav
+  -----------------------------------------------------------------------------*/
+  .innernav_wrap {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .innernav_ttl {
+    width: 90%;
+    margin: 0 auto 15px;
+    text-align: center;
+    letter-spacing: normal;
+  }
+  .innernav_items {
+    width: 90%;
+  }
+  .innernav_item,
+  .innernav .innernav_items li {
+    width: 49%;
+    margin: 0 2% 2% 0;
+  }
+  .houjin .innernav_item,
+  .houjin .innernav .innernav_items li {
+    width: 32%;
+    margin: 0 1% 2% 0;
+  }
+  .innernav-3 .innernav_items li {
+    margin-right: 2%;
+  }
+  .innernav .innernav_items li:nth-child(even) {
+    margin-right: 0;
+  }
+  .houjin .innernav_item,
+  .houjin .innernav .innernav_items li:nth-child(even) {
+    margin: 0 1% 2% 0;
+  }
+  .houjin .innernav_item,
+  .innernav .innernav_items li:nth-child(3n) {
+    margin-right: 0;
+  }
+  /*#next
+-----------------------------------------------------------------------------*/
+  #next_cnt_area {
+    padding: 30px 0 60px;
+  }
+  #next_cnt_area .innernav_cont {
+    display: block;
+    margin: auto;
+    width: 90%;
+    overflow: hidden;
+  }
+  #next_cnt_area ul li {
+    display: block;
+    width: 100%;
+    float: none;
+    margin: 0 0 6px;
+  }
+  #next_cnt_area ul li img {
+    width: 100%;
+  }
+  #next_cnt_area #next_cnt_btarea {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #fff;
+  }
+  #next_cont_toparea .active:after,
+  .innernav .arrowNav .active:after {
+    bottom: 139px;
+  }
+  .houjin #next_cont_toparea .active:after,
+  .houjin .innernav .arrowNav .active:after {
+    bottom: 5px;
+  }
+  #next_cont_toparea .active,
+  .innernav .arrowNav .active {
+    border: none;
+  }
+  #next_cont_toparea .active img,
+  .innernav .arrowNav .active img {
+    border-bottom: solid 5px #009676;
+  }
+  #next_cnt_area #next_cnt_btarea {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  #next_cnt_area #next_cnt_btarea li {
+    width: 100%;
+    height: auto;
+    line-height: 1;
+    margin: 0 0 5px 0;
+    border-radius: 2px;
+    background-color: #009676;
+    font-size: 13px;
+    text-align: left;
+  }
+  #next_cnt_area #next_cnt_btarea li a {
+    padding: 10px 0 10px 10px;
+  }
+  #next_cnt_btarea .active:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width:320px) {
+  /* iphone5 */
+}

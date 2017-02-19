@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*============================================================
+	Font
+============================================================*/
+html, body {
+	font-family: 'Arial', "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.75;
+}
+
+.serif{
+	font-family:Times New Roman , "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", Hiragino Mincho ProN , "MSP明朝","MS PMincho","MS 明朝",serif;
+}
+
+		 
+pre, code, kbd, samp, tt {
+	font-family: monospace;
+	*font-size: 108%;
+	line-height: 100%;
+}
+
+
+.Bold {	font-weight:bold;}
+.TxtRed { color:#ff0000;}
+
+.fS3s{font-size:0.6em;line-height:1.1;}
+.fS3m{font-size:0.6em;line-height:1.2;}
+.fS3l{font-size:0.6em;line-height:1.5;}
+
+.fS2s{font-size:0.85em;line-height:1.1;}
+.fS2m{font-size:0.85em;line-height:1.4;}
+.fS2l{font-size:0.85em;line-height:1.6;}
+
+.fS1s{font-size:0.9em;line-height:1.1;}
+.fS1m{font-size:0.9em;line-height:1.4;}
+.fS1l{font-size:0.9em;line-height:1.6;}
+
+.fMs{font-size:1em;line-height:1.1;}
+.fMm{font-size:1em;line-height:1.4;}
+.fMl{font-size:1em;line-height:1.6;}
+.fMll{font-size:1em;line-height:2;}
+
+.fL1s{font-size:1.1em;line-height:1.1;}
+.fL1m{font-size:1.1em;line-height:1.4;}
+.fL1l{font-size:1.1em;line-height:1.6;}
+
+.fL2s{font-size:1.3em;line-height:1.1;}
+.fL2m{font-size:1.3em;line-height:1.4;}
+.fL2l{font-size:1.3em;line-height:1.6;}
+
+.fL3s{font-size:1.5em;line-height:1.1;}
+.fL3m{font-size:1.5em;line-height:1.4;}
+.fL3l{font-size:1.5em;line-height:1.6;}
+
+
+.lead_ttl{
+	letter-spacing: 0.065em;
+	// letter-spacing: 5px;
+}
+
+/*============================================================
+	簡易リセット
+============================================================*/
+a img{
+	border: none;
+	outline: none;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+img{
+	line-height: 1;
+}
+
+
+/*============================================================
+	リンク
+============================================================*/
+
+/*a{ transition: all 0.4s ease-in 0s;  }*/
+/*a:link { color: #009d84;   }  
+a:visited {  color: #31408e; }*/
+
+/*a:active { color: #f9be01;} 
+a:hover { color: #f9be01;}*/
+
+/*パンくず通常*/
+/*a.topicPath:link { color: #009d84;  text-decoration: none ; }     
+a.topicPath:visited {  color: #31408e; }*/
+#topicPath a{transition: all 0.2s;}
+#topicPath a:active { color: #f9be01;} 
+#topicPath a:hover { color: #f9be01;}
+
+// .link_btn,
+// .link_ank,
+a img{
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;	
+}

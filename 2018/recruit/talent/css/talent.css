@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#CategoryTalent {
+	width:960px;
+	margin:0 auto;
+}
+
+#BoxTalent p.leadtext {
+	text-align:center;
+}
+
+#BoxTalent p.list {
+	text-align:center;
+}
+
+#BoxTalent p.graph{
+	text-align:center;
+}
+.lead{
+	position: relative;
+	width: 100%;
+	min-width:1000px;
+	height: 300px;
+	background: url("../img/bg_hero-talent.jpg") no-repeat 50%;
+	background-size: 1780px auto;
+}
+@media (min-width:1781px){
+	.lead{
+		min-width:1780px;
+		background-size: 100% auto;
+	}
+}
+.lead_ttl{
+	top: 120px;
+}
+.leadtext img{
+	margin-top: 50px;
+}
+

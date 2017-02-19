@@ -1,0 +1,78 @@
+@charset 'UTF-8';
+.isSP {
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  .isSP {
+    display: block;
+  }
+  /* layout
+---------------------------------------------------------------------------- */
+  body {
+    position: relative;
+  }
+
+  .lead {
+    min-width: 0;
+    margin-bottom: 30px;
+  }
+  .policy .lead, .history .lead {
+    margin-bottom: 30px;
+  }
+  .lead-bgImage {
+    position: relative;
+    max-height: 200px;
+    background-position: center center;
+  }
+  .lead-catIndex {
+    max-height: 200px;
+  }
+  .seihoSchoolLogo {
+    margin-bottom: 5px;
+  }
+  .lead-catIndex .lead_ttl{
+    top: 52px;
+    font-size: 24px;
+  }
+  .lead_ttl:before {
+    bottom: -70%;
+  }
+  .lead-catIndex .lead_txt{
+    top: 110px;
+  }
+
+  .main {
+    overflow: hidden;
+    width: 100%;
+    padding: 0 7%;
+    margin: 0 auto 75px;
+    box-sizing: border-box;
+  }
+  .link-box {
+    float: none;
+    width: 100%;
+    height: 88px;
+    padding-top: 58.2%;
+    margin: 0 0 15px;
+    background-size: 100% auto;
+  }
+  .link_ttl {
+    height: auto;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    box-sizing: border-box;
+    line-height: 1;
+  }
+  .notes {
+    font-size: 10px;
+    margin-top: 6px;
+  }
+}
+
+
+@media screen and (max-width:320px) {
+
+}

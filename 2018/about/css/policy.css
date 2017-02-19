@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.bc-policy{
+	background-color:#ffffff;
+}
+
+#CotegoryPolicy{
+	width:960px;
+	margin:0 auto;
+}
+
+#BoxPolicy ul{
+	width:960px;
+	list-style-type:none;
+}
+#BoxPolicy ul li{
+	width:960px;
+}
+
+/* コーポレートマーク */
+#BoxCorpmark{
+	width:709px;
+	margin:0 auto;
+}
+#BoxCorpmark div.TxtCorpmark{
+	width:709px;
+	background-image:url(../img/bg_corpmark.gif);
+	background-repeat:repeat-y;
+}
+#BoxCorpmark div.TxtCorpmark p{
+	width: 600px;
+	margin:0 0 0 70px;
+	font-size: 0.95em;
+}
+.lead{
+	width: 100%;
+	min-width:1000px;
+	background: url(../img/bg_hero-policy.jpg) no-repeat 50%;
+	height: 300px;
+	background-size: 1500px auto;
+}
+@media (min-width:1500px){
+	.lead{
+		min-width:1500px;
+		background-size: 100% auto;
+	}
+}
+.lead_ttl{
+	top: 110px;
+/*	margin-left: -80px;*/
+	color: #000;
+}
+
+
+
+
+
+/*
+#About .col01{
+	width:670px;
+	margin:20px auto 0 auto;
+}
+
+#About .box-under{
+	display:block;
+	width:670px;
+	margin:15px auto 0 auto;
+}
+
+#About .box-under .col02{
+	float:left;
+}
+
+#About .box-under .col03{
+	float:right;
+}
+
+#About h4{
+	margin-top:50px;
+}
+
+#About .about-mark{
+	width:670px;
+	margin:20px auto 20px auto;
+	padding-bottom:20px;
+	background-image:url(../img/policy_bg.gif);
+	background-position:top left;
+	background-repeat:no-repeat;
+}
+
+#About .about-mark .mark{
+	margin:10px auto 0 auto;
+}
+
+#About .about-mark .mark img{
+	padding-top:55px;
+}
+
+
+#About .about-mark .lead img{
+	padding-top:5px;
+	padding-bottom:60px;
+}
+
+#About .about-mark p{
+	width:540px;
+	line-height:1.8;
+	margin:0 auto 20px 65px;
+
+}
+*/

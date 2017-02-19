@@ -1,0 +1,306 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#mainContents{
+	width:960px;
+	margin:0 auto;
+	text-align:left;
+}
+
+.ttl {
+	position: relative;
+}
+
+.ttl a {
+	position: absolute;
+	bottom: 20px;
+	right: 0;
+}
+
+/*　タブ切り替え */
+
+.tabnavi{
+	margin:20px 0 0 0;
+	line-height: 0;
+	position: relative;
+	overflow: hidden;
+}
+.tabnavi.tabnavi_foot {
+	margin-top: -5px;
+}
+
+.tabnavi li {
+	display:inline-block;
+	margin:5px 15px 0 0;
+	position: relative;
+	top: 1px;
+}
+
+.tabnavi li:last-child{
+	margin:0 0 0 0;
+}
+
+.tabnavi.tabnavi_foot li {
+	top: -1px;
+}
+
+#tabcontent {
+	border:1px solid #00bec5;
+}
+
+
+/**/
+.ontime{
+	padding:0 0 20px 0;
+	border-bottom:1px solid #00bec5;
+}
+
+.ontime .txtImg{
+	margin:30px 0 0 20px;
+	float:left;
+}
+.ontime .phImg{
+  float:right;
+}
+
+/* タイトル */
+.lead{
+ position: relative;
+ width: 100%;
+ min-width:1000px;
+ height: 190px;
+ margin-bottom: 60px;
+ background-color: #009676;
+ background-size: 1500px auto;
+ background-image: none;
+}
+@media (min-width:1501px){
+ .lead{
+	 min-width:1500px;
+	 background-size: 100% auto;
+ }
+}
+.lead_ttl{
+    top: 45px;
+	color: #fff;
+}
+.lead_txt{
+ top: 95px;
+	color: #fff;
+}
+
+/**/
+.discovery{
+	padding:0 0 20px 0;
+	border-bottom:1px solid #00bec5;
+}
+.discovery dl{
+	margin-bottom:30px;
+}
+.discovery dl dt{
+	margin:0 0 40px 0;
+}
+.discovery dl dd{
+	margin:0 0 30px 30px;
+}
+
+.discovery dl dd.txtImg{
+  float:left;
+}
+
+.discovery dl dd.phImg{
+  float:right;
+	margin:-130px 30px 0;
+}
+
+.discovery .desk{
+	background:#e5f8f9;
+	margin:0 30px;
+	padding:20px 0 0px 30px;
+}
+.desk dt img{
+	margin:-50px 0 0 0;
+}
+.desk dd img{
+ display:block;
+}
+
+.desk dd.txtImg{
+ margin:10px 0 0 20px;
+}
+
+.desk dd.phImg img{
+	margin:-20px 0 0 0;
+	position: relative;
+	right:-60px;
+}
+
+
+/**/
+.attetion{
+	padding:0 0 20px 0;
+	border-bottom:1px solid #00bec5;
+}
+.attetion dt{
+	text-align: right;
+	margin-bottom:30px;
+}
+.attetion dd img{
+ display:block;
+ margin:0 60px 0 0;
+}
+
+.attetion dd.phImg img{
+	margin:-60px 0 0 30px;
+}
+
+.bag dt{
+ margin:0 0 0 20px;
+}
+.bag dd{
+	background:#e5f8f9;
+	margin:30px 30px 0 0;
+	padding:28px 0 28px 20px;
+}
+.bag dd img{
+	margin:0 20px 0 0;
+}
+
+.favorite{
+	margin:30px 0;
+}
+.favorite dt{
+ margin:0 0 0 20px;
+}
+.favorite dd{
+	margin:30px 30px 0 0;
+	padding:28px 0 28px 20px;
+}
+
+/**/
+.vision{
+	background: url(../img/okada_vision_ph.jpg) no-repeat 0 0;
+	width:958px;
+	height:274px;
+	padding:120px 30px 0 30px;
+}
+.vision p.txtImg{
+	margin:30px 0 0 0;
+}
+
+/**/
+.healing{
+	padding:0 0 20px 0;
+	border-bottom:1px solid #00bec5;
+}
+.healing dt{
+	text-align: right;
+	margin-bottom:30px;
+}
+.healing dd img{
+ display:block;
+ margin:0 0 0 30px;
+}
+
+.healing dd.phImg img{
+	margin:-190px 30px 0 0;
+}
+
+.room{
+	background:#e5f8f9;
+	margin:10px 60px;
+	padding:20px 0 20px 0px;
+}
+.room dt img{
+	margin:-50px 0 0 0;
+}
+.room dd img{
+ display:block;
+}
+
+.community{
+	padding:0 0 20px 0;
+	border-bottom:1px solid #00bec5;
+}
+.community dl{
+	margin-bottom:30px;
+}
+.community dl dt{
+	margin:0 0 40px 0;
+}
+.community dl dd{
+	margin:0 0 30px 30px;
+}
+
+.community dl dd.txtImg{
+  float:left;
+}
+
+.community dl dd.phImg{
+  float:right;
+	margin:-100px 10px 0;
+}
+
+
+/*kazama*/
+.kazama .ontime{
+	padding:0 0 20px 0;
+	border-bottom:1px solid #00bec5;
+}
+
+.kazama .ontime .txtImg{
+	margin:30px 0 0 30px;
+	float:left;
+}
+.kazama .ontime .phImg{
+  float:right;
+	margin:0 10px 0 0;
+}
+
+.kazama .desk dd img{
+ display:block;
+}
+
+.kazama .desk dd.txtImg{
+ margin:0px 0 20px 20px;
+}
+
+.kazama .bag dt{
+ margin:0 0 0 20px;
+}
+.kazama .bag dd{
+	background:#e5f8f9;
+	margin:30px 30px 0 0;
+	padding:19px 0 19px 20px;
+}
+.kazama .bag dd img{
+	margin:0 20px 0 0;
+}
+.kazama .vision{
+	background: url(../img/kazama_vision_ph.png) no-repeat 0 0;
+	width:958px;
+	height:274px;
+	padding:120px 30px 0 30px;
+}
+
+.kazama .offtime{
+	border-bottom:1px solid #00bec5;
+}
+.kazama .offtime .txtC{
+	display:block;
+}
+
+.kazama .offtime .txtImg{
+	margin:30px 0 0 20px;
+	float:left;
+}
+.kazama .offtime .phImg{
+  float:right;
+	margin:-30px 0 0 0;
+	position: relative;
+	z-index:1000;
+}
+
+.kazama .healing dd.phImg img{
+	margin:0px 30px 0 0;
+}

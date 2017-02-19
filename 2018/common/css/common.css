@@ -1,0 +1,468 @@
+@charset "UTF-8";
+/*============================================================
+  Common
+============================================================*/
+body {
+  color:#333333;
+  background-color:#ffffff;
+  -webkit-text-size-adjust: 100%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+strong { font-weight:bold;}
+em { font-weight:bold;}
+
+.clear{ clear:both;
+  font-size: 1%;
+    line-height: 1%;
+    width: 1%;
+  }
+.clearboth { clear:both;}
+.floatLeft{ float:left;}
+.floatRight{ float:right;}
+
+.lhS { line-height:1.2;}
+.lhM { line-height:1.7; *line-height:1.5;}
+.lhL { line-height:2;}
+
+.txtL { text-align:left;}
+.txtC { text-align:center;}
+.txtR { text-align:right;}
+
+/*============================================================
+　　li ぶら下がり
+============================================================*/
+ul li.indent,ol li.indent {padding-left: 1.5em; text-indent:-1.5em; padding-bottom:7px;}
+
+/*============================================================
+　　P要素 両端揃い
+============================================================*/
+p {
+  // text-align:justify;/* IE以外のモダンブラウザへの指定 */
+  // text-justify: distribute;/* IE（5以上）への指定 */
+  /*text-justify: distribute-all-lines;*/
+}
+
+/*============================================================
+　　IE7｢hasLayout｣問題（ズーム時のレイアウト崩れ）を回避
+============================================================*/
+*:first-child+html * { letter-spacing:0;}
+
+
+/*============================================================
+　　Clear Fix
+============================================================*/
+.cf:after{
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
+.cf{ display:inline-table;}
+* html .cf{ display:inline-block;}
+
+/* hides from ie mac ＼*/
+* html .cf { height:1%;}
+*+html .cf { height:1%;}
+.cf { display:block;}
+/**/
+
+/* Clear Fix for IE7*/
+*:first-child+html .cf { zoom:1;}
+
+
+/*============================================================
+　　Clear Fix 2
+============================================================*/
+.cf2 { overflow:hidden;}
+* html .cf2 { height:1%; zoom:1;}
+
+
+/*============================================================
+　　汎用マージン
+============================================================*/
+/*top*/
+.mt0 {margin-top:0!important;}
+.mt5 {margin-top:5px!important;}
+.mt10 {margin-top:10px!important;}
+.mt15 {margin-top:15px!important;}
+.mt20 {margin-top:20px!important;}
+.mt25 {margin-top:25px!important;}
+.mt30 {margin-top:30px!important;}
+.mt35 {margin-top:35px!important;}
+.mt40 {margin-top:40px!important;}
+.mt45 {margin-top:45px!important;}
+
+/*right*/
+.mr0 {margin-right:0!important;}
+.mr5 {margin-right:5px!important;}
+.mr10 {margin-right:10px!important;}
+.mr15 {margin-right:15px!important;}
+.mr20 {margin-right:20px!important;}
+.mr25 {margin-right:25px!important;}
+.mr30 {margin-right:30px!important;}
+.mr35 {margin-right:35px!important;}
+.mr40 {margin-right:40px!important;}
+
+/*bottom*/
+.mb0 {margin-bottom:0!important;}
+.mb5 {margin-bottom:5px!important;}
+.mb10 {margin-bottom:10px!important;}
+.mb15 {margin-bottom:15px!important;}
+.mb20 {margin-bottom:20px!important;}
+.mb25 {margin-bottom:25px!important;}
+.mb30 {margin-bottom:30px!important;}
+.mb35 {margin-bottom:35px!important;}
+.mb40 {margin-bottom:40px!important;}
+.mb45 {margin-bottom:45px!important;}
+.mb50 {margin-bottom:50px!important;}
+.mb55 {margin-bottom:55px!important;}
+.mb60 {margin-bottom:60px!important;}
+.mb70 {margin-bottom:70px!important;}
+.mb80 {margin-bottom:80px!important;}
+.mb90 {margin-bottom:90px!important;}
+.mb100 {margin-bottom:100px!important;}
+
+/*left*/
+.ml0 {margin-left:0!important;}
+.ml5 {margin-left:5px!important;}
+.ml10 {margin-left:10px!important;}
+.ml15 {margin-left:15px!important;}
+.ml20 {margin-left:20px!important;}
+.ml25 {margin-left:25px!important;}
+.ml30 {margin-left:30px!important;}
+.ml35 {margin-left:35px!important;}
+.ml40 {margin-left:40px!important;}
+
+
+
+/*============================================================
+　　汎用パディング
+============================================================*/
+/*top*/
+.pt0 {padding-top:0!important;}
+.pt5 {padding-top:5px!important;}
+.pt10 {padding-top:10px!important;}
+.pt15 {padding-top:15px!important;}
+.pt20 {padding-top:20px!important;}
+.pt25 {padding-top:25px!important;}
+.pt30 {padding-top:30px!important;}
+.pt35 {padding-top:35px!important;}
+.pt40 {padding-top:40px!important;}
+.pt50 {padding-top:50px!important;}
+
+/*right*/
+.pr0 {padding-right:0!important;}
+.pr5 {padding-right:5px!important;}
+.pr10 {padding-right:10px!important;}
+.pr15 {padding-right:15px!important;}
+.pr20 {padding-right:20px!important;}
+.pr25 {padding-right:25px!important;}
+.pr30 {padding-right:30px!important;}
+.pr35 {padding-right:35px!important;}
+.pr40 {padding-right:40px!important;}
+
+/*bottom*/
+.pb0 {padding-bottom:0!important;}
+.pb5 {padding-bottom:5px!important;}
+.pb10 {padding-bottom:10px!important;}
+.pb15 {padding-bottom:15px!important;}
+.pb20 {padding-bottom:20px!important;}
+.pb25 {padding-bottom:25px!important;}
+.pb30 {padding-bottom:30px!important;}
+.pb35 {padding-bottom:35px!important;}
+.pb40 {padding-bottom:40px!important;}
+.pb50 {padding-bottom:50px!important;}
+.pb60 {padding-bottom:60px!important;}
+
+
+/*left*/
+.pl0 {padding-left:0!important;}
+.pl5 {padding-left:5px!important;}
+.pl10 {padding-left:10px!important;}
+.pl15 {padding-left:15px!important;}
+.pl20 {padding-left:20px!important;}
+.pl25 {padding-left:25px!important;}
+.pl30 {padding-left:30px!important;}
+.pl35 {padding-left:35px!important;}
+.pl40 {padding-left:40px!important;}
+
+/*四方*/
+.p10 { padding:10px!important;}
+
+
+
+/*============================================================
+　　module ( 2016.11.16)
+　　
+  @doc: 各見出しは.lead要素に
+  ベタ塗りの場合は.lead-color
+  背景ありの場合は.lead-bgImageで共通プロパティ指定。下層CSSで背景画像は指定。
+
+  lead_ttl中央寄せを変更。文字間隔を調整してもネガティブマージンの調節がいらないようにしました。
+
+============================================================*/
+
+/****************** 見出し エリア設定 ********************/
+
+.lead{
+  height: 300px;
+  margin-bottom: 60px;
+   position: relative;
+   background-color: #009676;
+}
+/*@media (min-width:1501px){
+   .lead{
+     min-width:1500px;
+     background-size: 100% auto;
+   }
+ }*/
+
+
+/***** 背景イメージあり *****/
+
+/* 高さ高（第2階層：コンテンツページ） */
+.lead-bgImage{
+  max-height: 300px;
+  /*background-size: 100% auto!important;*/
+  background-size:cover!important;
+}
+
+
+/***** 背景イメージなし塗り *****/
+
+/* 高さ中（第2階層：各種インデックス） */
+.lead-catIndex{
+  max-height: 250px;
+}
+/* 高さ低い（第4階層 ~ ） */
+.lead-tiny{
+  max-height: 200px;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* 高さ低い（第4階層 ~ ） */
+  .lead-tiny{
+    max-height: 150px;
+  }
+
+}
+
+
+/****************** 見出し設定 ********************/
+
+/***** 共通 *****/
+
+/*中央寄せ*/
+.lead_ttl,
+.lead_txt{
+  line-height: 1;
+  margin-left: auto;
+   margin-right: auto;
+   left: 0;
+   right: 0;
+   text-align: center;
+   display: block;
+   position: absolute;
+}
+
+
+/*　メイン文字 */
+.lead_ttl{
+  position: absolute;
+  font-size: 40px;
+   font-family:Times New Roman, "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro","ＭＳ Ｐ明朝", serif;
+   letter-spacing: 5px;
+}
+.lead_ttl.en{
+  font-size: 44px;
+}
+.lead-catIndex .lead_ttl,
+.lead-catIndex .lead_txt,
+.lead-tiny .lead_ttl,
+.lead-tiny .lead_txt{
+  color: #fff;
+}
+/* リード文字黒 */
+.lead-black .lead_ttl{
+  color: #121212;
+}
+/*　メイン文字中 副題など */
+.lead_ttl_small{
+  margin-top: 0.5em;
+  display: block;
+  font-size: 0.53em;
+  text-align: inherit;
+}
+.lead_ttl_small-top{
+  margin-bottom: 0.5em;
+}
+
+/*　サブ文字 */
+.lead_txt{
+  line-height: 1.75;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+}
+/* 下線　*/
+ .lead_ttl:before{
+   content: "";
+   display: block;
+   position: absolute;
+   top: auto;
+   bottom: -20px;
+   left: 50%;
+   margin-left: -50px;
+   width: 100px;
+   height: 2px;
+   background-color: #E8AD02;
+ }
+
+
+/***** ポジション設定 *****/
+/* 第３階層ベタ */
+.lead_ttl{
+
+}
+.lead_txt{}
+.lead-tiny .lead_ttl{
+  top: 45px;
+}
+.lead-tiny .lead_txt{
+  top: 120px;
+  /*top: 140px;*/
+}
+/* カテゴリインデックス */
+.lead-catIndex .lead_ttl{
+  top: 60px;
+}
+.lead-catIndex .lead_txt{
+  top: 140px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  .lead-catIndex .lead_ttl,
+  .lead-catIndex .lead_txt{
+    padding: 0 4%;
+  }
+  .lead-catIndex .lead_ttl{
+    top: 50px;
+    letter-spacing: 0;
+  }
+  .lead-catIndex .lead_txt{
+    font-size: 12px;
+  }
+}
+
+/******************** ボタン ********************/
+
+/***** カテゴリインデックス *****/
+
+.link_btn,
+.link_btn-soon{
+    letter-spacing: 0.05em;
+}
+.link_btn,
+.link_ank {
+    border-radius: 2px;
+}
+
+.link_btn{
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    vertical-align: baseline;
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #FFF;
+    text-align: center;
+    letter-spacing: 0.05em;
+    background-color: #595757;
+}
+
+.link_ank {
+    display: block;
+    position: relative;
+    background-color: #019676;
+    vertical-align: middle;
+    color: #fff;
+    /*color: #fff !important;*/
+}
+
+.link_ank:hover,
+.link_ank:active{
+  background-color: #006049;
+}
+.link_ank:after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  right: 5px;
+  width: 6px;
+  height: 10px;
+  background: url("../images/icn_arw-r-white.png") no-repeat center;
+  background-size: cover;
+}
+.link_ank-blank:after{
+  width: 10px;
+  background: url("../images/icn_page.png") no-repeat center;
+  background-size: cover;
+}
+.link_btn-soon{
+  font-style: italic;
+  width: 120px;
+}
+
+
+
+
+/******************** 各種カテゴリインデックスパーツ ********************/
+
+/*　背景塗り　*/
+.link-box{
+  float: left;
+  width: 310px;
+  height: 110px;
+  padding-top: 190px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  text-align: center;
+  background: #eee no-repeat top;
+  background-size: 310px 180px;
+}
+
+.link-box:nth-child(3n){
+  margin-right: 0px;
+}
+
+/*タイトル*/
+.link_ttl{
+  height: 53px;
+  padding-top: 17px;
+  text-align: center;
+  font-size: 18px;
+  box-sizing: border-box;
+  line-height: 1;
+}
+.link_ttl-2{
+  padding-top: 10px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+.coming-soon .link_ttl{
+  color: #a8a8a8;
+}

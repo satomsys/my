@@ -1,0 +1,73 @@
+/* CSS Document */
+/*h2 {
+	padding-top: 30px;
+}
+*/
+
+.main_visual{
+	max-width: 1200px;
+	min-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow-x: hidden;
+}
+.trainingContentsBox {
+	width: 960px;
+	margin: 30px auto 30px;
+	padding: 30px 0 30px;
+	background-color:	#FAFAFA;
+}
+	.trainingContentsHeader {
+		margin: 0 30px;
+		padding: 0 0 5px;
+		text-align: center;
+	}
+	.trainingContentsHeader .text {
+		padding: 20px 0;
+		text-align: center;
+	}
+	
+	.trainingContentsList {
+		margin: 30px 30px 10px;
+		border-top: solid 3px #ADADAD;
+		border-bottom: solid 3px #ADADAD;
+	}
+	.trainingContentsList ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.trainingContentsList ul li {
+		margin: 10px 0;
+		padding: 10px 0;
+		border-top: solid 1px #AFAFAF;
+	}
+	.trainingContentsList ul li:first-child {
+		border-top: none;
+	}
+		.trainingContentsList ul li#globalSpecial {
+			background:url(../../sougoushoku_zenkoku/images/training/bg_global_special.jpg) no-repeat top right;
+		}
+
+	.trainingContentsList ul dl dd {
+		margin: 0;
+		padding: 0;
+	}
+	.trainingContentsList dl.trainee {
+		overflow: hidden;
+	}
+	.trainingContentsList dl.trainee dt {
+		float: left;
+		color: #008B80;
+		padding: 0 10px 0 0;
+		background: url(../../sougoushoku_zenkoku/images/training/spacer.png) no-repeat right 1px;
+	}
+	.trainingContentsList dl.trainee dd {
+		float: left;
+		padding: 0 0 0 10px;
+	}
+	
+	.trainingContentsBox .comment {
+		margin: 0 30px 0;
+		font-size: 10px;
+	}

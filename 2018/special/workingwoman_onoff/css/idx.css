@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#ttlContents,
+#mainContents{
+	width:960px;
+	margin:0 auto;
+	overflow:hidden;
+}
+#ttlContents p{
+	text-align: center;
+	margin:0 0 30px 0;
+}
+
+/* タイトル */
+.lead{
+	 background: url("../img/bg_hero.jpg") no-repeat 50%;
+	 margin-bottom: 0;
+}
+@media (min-width:1501px){
+ .lead{
+	 min-width:1500px;
+	 background-size: 100% auto;
+ }
+}
+.lead_ttl{
+ top: 90px;
+}
+
+.text-area{
+	margin-bottom: 60px;
+	background-color: #F9F9F9;
+}
+.text-cont{
+	width: 470px;
+	margin: 0 auto;
+	padding: 55px 0;
+	text-align: center;
+	line-height: 1.75;
+	letter-spacing: 0.05em;
+}
+.MainBox01,
+.MainBox02{
+	width:480px;
+	margin:0;
+}
+.MainBox01{
+	float:left;
+}
+
+.MainBox02{
+	float:right;
+}
+
+.MainBox01 ul,
+.MainBox02 ul{
+	width: 90%;
+	margin:25px auto 0;
+	display: table;
+	table-layout: fixed;
+}
+
+.MainBox01 li,
+.MainBox02 li{
+	display:table-cell;
+	width:211px;
+	margin:0 10px 0 0;
+}
+
+.MainBox01 li:last-child,
+.MainBox02 li:last-child{
+	text-align: right;
+	margin:0 0 0 0;
+}
+
+.MainBox01 li a,
+.MainBox02 li a {
+	opacity: 1;
+}
+
+.MainBox01 li a:hover,
+.MainBox02 li a:hover {
+	opacity: .6;
+}

@@ -1,0 +1,280 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/************ utilities ************/ 
+.ul{
+   background: linear-gradient(transparent 70%, #dcefad 0%);
+}
+.sub{
+	font-size: 0.85em;
+}
+.link_btn{
+	margin-left: 0;
+}
+dt .link_btn{
+  margin-top: 1em;
+}
+dd.mark .link_btn{
+  display: inline-block;
+}
+.link_btn-toBottom .link_ank:after {
+    content: "";
+    margin: auto;
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    right: 0px;
+    width: 10px;
+    height: 5px;
+    background: url(../../../common/images/icon_arrow_toBottom.png) no-repeat center;
+    background-size: cover;
+}
+.link_btn-wide{
+	width: 300px;
+}
+.link_btn a{
+	text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+ .link_btn{
+ 	width: auto;
+ }
+ .link_btn-wide{
+	height: auto;	
+}
+  dd.mark .link_btn{
+    display: inherit;
+  }
+ // .link_btn a{
+ // 	line-height: 1.2;
+ // }
+}
+
+
+
+/************ setting ************/ 
+.lead-bgImage{
+	position: relative;
+	height: 300px;
+	background: url("../img/bg_flow.jpg") no-repeat 50%;
+}
+
+.lead_ttl{
+	top: 120px;
+}
+.leadtext img{
+	margin-top: 50px;
+}
+.lead-tiny .lead_ttl{
+	top: 65px;
+}
+
+
+
+
+/************ modules ************/ 
+.flow_index {
+  line-height: 1;
+  margin-top: 50px;
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-family: Times New Roman, "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro","ＭＳ Ｐ明朝", serif;
+  text-align: center;
+  color: #008b80;
+}
+
+@media screen and (max-width: 768px) {
+ .flow_index {
+    font-size: 1.5em;
+    line-height: 1.4;
+    margin-top: 35px;
+  }
+}
+
+.flow_content{
+	// border-top: solid 1px #e2e2e2;
+}
+
+#CategoryFlow {
+	width:960px;
+	margin:0 auto;
+}
+
+#BoxFlow p.leadtext {
+	text-align:center;
+	padding:0 0 30px 0;
+	border-bottom:1px solid #E2E2E2;
+}
+dl{
+	margin: 0 0 0 0;
+	padding: 0 0 30px 0;
+}
+dl:first-child{
+	padding-top: 30px;
+	border-top:1px solid #E2E2E2;
+}
+dl:last-child{
+	border-bottom:1px solid #E2E2E2;
+}
+hr{
+	background: url(../img/hr_pc.png) no-repeat 0 0;
+	height: 30px;
+  margin: 0;
+  padding: 0;
+	border: 0px none;
+}
+dt{
+	float: left;
+	width: 20%;
+	vertical-align:top;
+}
+
+dd{ 
+	float: right;
+	width: 78%;
+}
+dd.line{
+	// font-size: 16px;
+	padding:0 0 8px 0;
+	margin:0 0 8px 0;
+	// background: url(../img/dot_line.gif) no-repeat 0 bottom;
+	border-bottom: dashed 1px #e2e2e2;
+}
+dd.attn{
+	font-size: 14px;
+	color: #727171;
+}
+.attn_footer{
+	margin-top: 1em;
+}
+dd.mark:before {
+  content: "　";
+	padding: 0 0 0 5px;
+	display: inline-block;
+	background: url(../../../common/images/icon_check_gray.png) no-repeat 0 8px;
+	background-size: 10px;
+}
+dd.mark{
+	// font-size: 16px;
+	padding:0 0 10px 0;
+	margin: -5px 0 0 0;
+}
+
+.mark_footer{
+	margin-top: 1em;
+}
+dd img{
+	margin:30px 0 0 0;
+}
+dd a{
+	color: #009676;
+	text-decoration: underline;
+}
+
+
+
+
+/**********  tab **********/
+.fakeTab {
+  width: 100%;
+  line-height: 1;
+  display: table;
+  table-layout: fixed;
+  border-bottom: solid 4px;
+  /***** フッター ******/
+}
+
+.fakeTab li {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.fakeTab li.fakeTab_active a {
+  height: 65px;
+  margin-bottom: 0;
+  line-height: 65px;
+  background-color: #232323;
+  background-image: none;
+}
+
+.fakeTab li.fakeTab_active a:hover {
+  cursor: default;
+  background-color: #232323;
+}
+
+@media screen and (max-width: 768px) {
+  .fakeTab li.fakeTab_active a {
+    height: 45px;
+    line-height: 45px;
+  }
+}
+
+.fakeTab li a {
+  margin-right: 1px;
+  margin-bottom: 1px;
+  margin-left: 1px;
+  line-height: 50px;
+  height: 50px;
+  display: block;
+  color: #fff;
+  transition: all 0.1s;
+  text-decoration: none;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  text-align: center;
+  background: #008b80 url("../../../common/images/icon_arrow_toBottom.png") center 95% no-repeat;
+  background-size: 10px;
+}
+
+.fakeTab li a:hover {
+  background-color: #005851;
+  background-position: center  101%;
+}
+
+@media screen and (max-width: 768px) {
+  .fakeTab li a {
+    height: 37px;
+    line-height: 37px;
+    background-size: 6px;
+  }
+}
+
+.fakeTab-bottom {
+  border-top: solid 4px;
+  border-bottom: none;
+}
+
+.fakeTab-bottom li {
+  vertical-align: top;
+}
+
+.fakeTab-bottom li.fakeTab_active a {
+  margin-top: 0px;
+}
+
+.fakeTab-bottom li a {
+  margin-top: 1px;
+  margin-bottom: 0;
+  border-radius: 0;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background: #008b80 url("../../../common/images/icon_arrow_toTop.png") center 5% no-repeat;
+  background-size: 10px;
+}
+
+.fakeTab-bottom li a:hover {
+  background-color: #005851;
+  background-position: center  1%;
+}
+
+@media screen and (max-width: 768px) {
+  .fakeTab li {
+    font-size: 9px;
+  }
+}
+
+

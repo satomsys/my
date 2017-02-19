@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#CotegoryHistory{
+	width:960px;
+	margin:0 auto;
+}
+
+
+/* 旧両生命保険会社 沿革
+------------------------------*/
+.lead{
+	width: 100%;
+	min-width:1000px;
+	background: url(../img/bg_hero-history.jpg) no-repeat 50%;
+	height: 300px;
+	background-size: 1500px auto;
+}
+@media (min-width:1500px){
+	.lead{
+		min-width:1500px;
+		background-size: 100% auto;
+	}
+}
+.lead_ttl{
+	top: 110px;
+/*	margin-left: -40px;*/
+}
+#BoxEnkaku{
+}
+#BoxEnkaku ul{
+	width:960px;
+	overflow:hidden;
+	list-style-type:none;
+	margin:0 0 80px 0;
+}
+#BoxEnkaku ul li{
+	float:left;
+	width:468px;
+	margin:0 0 0 24px;
+}
+#BoxEnkaku ul li:first-child{
+	margin:0;
+}
+
+.BoxS{
+	width:468px;
+	overflow:hidden;
+}
+
+/* 左側ボックス（写真） */
+.BoxS .photoBox{
+	width:227px;
+	float:left;
+	margin:0 20px 0 0;
+}
+.BoxS .photoBox p.photo{
+	width:227px;
+}
+.BoxS .photoBox p.btn{
+	width:227px;
+	margin:16px 0 0 0;
+}
+
+/* 右側ボックス */
+.BoxS div.txtBox{
+	width:221px;
+	float:right;
+}
+.histoy_txt{
+	width:221px;
+	margin:0;
+	padding:0;
+	line-height:20px;
+	font-size: 13px;
+}
+.history_h01,
+.history_h02{
+	text-align: center;
+}
+
+
+
+/* 明治安田生命保険相互会社誕生
+------------------------------*/
+
+#Boxtanjyo{
+	width: 960px;
+	margin:65px auto;
+}
+
+.box_photo{
+	width:500px;
+	overflow: hidden;
+	float: left;
+}
+
+.box_tanjyo{
+	width: 443px;
+	overflow: hidden;
+	float: right;
+}
+
+.box_tanjyo .box_ttl{
+	margin: 20px 0 0 0 ;
+}
+
+.box_tanjyo .box_txt{
+	width: 443px;
+	line-height: 27.5px;
+}
+
+.btnMy {
+display: block;
+text-align:center;
+}
+
+.btnMy img{
+margin:0 auto;
+padding-bottom:50px;
+}

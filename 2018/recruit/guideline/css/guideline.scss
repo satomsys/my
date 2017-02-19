@@ -1,0 +1,314 @@
+@charset "UTF-8";
+
+$borderColor: #e2e2e2;
+$green : #008b80;
+
+
+.lead
+{
+	position: relative;
+	background: url("../img/bg_hero-guideline.jpg") no-repeat 50%;
+	background-size: 1780px auto;
+	
+	@media screen and (max-width:768px) {
+	    min-width: 0;
+	    margin-bottom: 30px;
+	    background-image: url(../img/bg_hero-guideline_sp.jpg);
+	}	
+	
+
+}
+
+.lead_ttl
+{
+	top: 120px;
+	
+	@media screen and (max-width:768px) {
+    top: 35%;
+    font-size: 24px;
+    letter-spacing: 0;
+	}	
+
+}
+.lead-bgImage {
+
+	@media screen and (max-width:768px) {
+        position: relative;
+	    max-height: 200px;
+	    background-position: center center;
+	}	
+		
+}
+
+
+@media screen and (max-width:768px) {
+	#ContentsContainer{
+		width: 90%;
+		font-size: 13px;
+	}
+	#ContentsWrapTop {
+	    padding-top: 0;
+	    padding-bottom: 50px;
+	}  
+}	
+
+#BoxGuideline
+{
+	///********** utilities **********/
+	.sub{
+		font-size: 0.85em;
+	}
+	.red{
+		color: #cc0000;
+	}
+
+
+	///********** setting **********/
+	p a{
+		color: #008b80;
+		text-decoration: underline;
+	}	
+
+
+	///********** module **********/
+
+	.fakeTab
+	{
+		width: 100%;
+		line-height: 1;
+		display: table;
+		table-layout: fixed;
+		border-bottom: solid 4px ;
+		
+		li
+		{
+			// height: 50px;
+			display: table-cell;
+			vertical-align:bottom;
+			// border-top-left-radius: 2px;
+			// border-top-right-radius: 2px;
+			// text-align: center;
+			// background-color: $green;
+		
+			&.fakeTab_active a{
+				height: 65px;
+				margin-bottom: 0;
+				line-height: 65px;
+				background-color: #232323;
+				background-image: none;
+				&:hover{
+					cursor: default;
+					background-color: #232323;
+				}			
+			}
+
+			@media screen and (max-width:768px) {
+				&.fakeTab_active a{
+					height: 45px;
+					line-height: 45px;
+				}
+
+			}				
+		}
+
+		li a{
+			margin-right: 1px;
+			margin-bottom: 1px;
+			margin-left: 1px;
+			line-height: 50px;
+			height: 50px;
+			display: block;
+			color: #fff;
+			transition: all 0.1s;
+			text-decoration: none;
+			border-top-left-radius: 2px;
+			border-top-right-radius: 2px;
+			text-align: center;
+			background: $green url("../../../common/images/icon_arrow_toBottom.png") center 95% no-repeat;
+			background-size: 10px;
+			
+			&:hover{
+				background-color: darken( $green , 10% );
+				background-position: center  101%;
+			}
+
+			@media screen and (max-width:768px) {
+				height: 37px;
+				line-height: 37px;
+				background-size: 6px;
+			}						
+		}
+
+
+		/***** フッター ******/
+		
+		&-bottom{
+			border-top: solid 4px ;
+			border-bottom: none;
+			
+			li{
+				vertical-align: top;
+				&.fakeTab_active a{
+					margin-top: 0px;
+				}				
+			}
+			
+			li a{
+				margin-top: 1px;
+				margin-bottom: 0;
+				border-radius: 0;
+				border-bottom-left-radius: 2px;
+				border-bottom-right-radius: 2px;
+				background: $green url("../../../common/images/icon_arrow_toTop.png") center 5% no-repeat;
+				background-size: 10px;
+				
+				&:hover{
+					background-color: darken( $green , 10% );
+					background-position: center  1%;
+				}
+			
+			}		
+		}
+
+		@media screen and (max-width:768px) {
+		  li{
+		  	font-size: 9px;
+		  }
+		}			
+
+	}
+
+	.guideline{
+		&_index{
+			line-height: 1;
+			margin-top: 50px;
+			margin-bottom: 1em;
+			font-size: 2em;
+			font-family: Times New Roman, "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro","ＭＳ Ｐ明朝", serif;
+			text-align: center;
+			color: $green;
+			
+
+			@media screen and (max-width:768px) {
+				font-size: 1.5em;
+				line-height: 1.4;
+				margin-top: 35px;
+			}					
+		}
+		
+		&_content
+		{
+			th,td{
+				padding-top: 12px;
+				// padding-top: 30px;
+				padding-bottom: 12px;
+				// padding-bottom: 30px;
+				border-top: #ccc solid 1px;
+				border-bottom: solid 1px $borderColor;
+			}
+
+			th{
+				width: 200px;
+				border-right: solid 1px $borderColor;
+				text-align: center;
+				font-size: 1.285em;
+				font-weight: bold;
+			}
+			td{
+				padding-left: 30px;
+			}
+
+
+			@media screen and (max-width:768px) {
+				line-height: 1.4;
+				margin-top: 35px;
+				
+				tr{
+					display: block;
+				}
+				th,td{
+					padding: 1em;
+					display: block;
+					border-left: solid 1px $borderColor;					
+					border-right: solid 1px $borderColor;					
+				}
+
+				th{
+					width: auto;
+					background-color: #f9f9f9;
+					font-size: 0.8em;
+				}
+				td{
+					border-top: none;
+					border-bottom: none;
+				}				
+
+			}				
+		}
+		.inner
+		{
+
+			/***** border index *****/
+			
+			&_article{
+				margin-top: 1em;
+			}
+			&_article + .inner_article{
+				margin-top: 2.5em;
+			}			
+			&_article_index{
+				padding-bottom: 0.5em;
+				margin-bottom: 0.5em;
+				font-weight: bold;
+				border-bottom: solid 1px $green;	
+			}
+			&_footer
+			{
+				text-align: left;
+				margin-top: 1em;
+				// .link_btn{
+				// 	margin-right: 0;
+				// }
+
+				.link_btn{
+					margin-left: 0;
+				}		
+				@media screen and (max-width:768px) {
+					.link_btn{
+						margin-left: auto;
+					}							
+				}								
+			}
+		
+			/***** dl list *****/
+			&_list
+			{
+				line-height: 1;
+				
+				padding-top: 10px;
+				padding-bottom: 10px;
+				border-bottom: dashed 1px $borderColor;
+				
+				&:last-of-type{
+					border-bottom: none;
+				}
+
+				dt,
+				dd{
+					display: inline-block;
+				}	
+				dt{
+					min-width: 4em;
+					margin-right: 2em;
+					font-weight: bold;
+					color: $green;
+					
+					@media screen and (max-width:768px) {
+						margin-right: 1em;
+					}						
+				}
+			}
+		}
+	}
+	
+}

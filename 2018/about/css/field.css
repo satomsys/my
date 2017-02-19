@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/* CSS Document */
+/*.topicPath{
+	color: #009676 !important;
+}*/
+/* タイトル */
+.lead{
+	margin-bottom: 0;
+	background: url("../img/bg_hero-field.jpg") no-repeat 50%;
+}
+
+.lead_ttl{
+	top: 110px;
+/*	position: absolute;
+	left: 50%;
+	margin-left: -160px;
+  font-size: 40px;
+  color: #000;
+	letter-spacing: 5px;*/
+}
+
+/* インナーナビゲーション */
+.innernav{
+	width: 100%;
+	margin-bottom: 60px;
+	background-color: #eee;
+}
+.innernav_wrap{
+	width: 960px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+.innernav_cont{
+	overflow: hidden;
+	border-top: 1px solid #fff;
+}
+.innernav_item{
+	float: left;
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #fff;
+	background-color: #009676;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;		
+}
+.innernav_item:hover{
+background-color: #006049;	
+}
+.innernav_ank{
+	display: block;
+	position: relative;
+	width: 239px;
+	height: 50px;
+	color: #fff !important;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+}
+.innernav_ank-left{
+	width: 238px;
+}
+.innernav_ank:before{
+	content: "";
+	display: block;
+	position: absolute;
+	left: 118px;
+	bottom: 5px;
+	width: 5px;
+	height: 5px;
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #fff;
+	-webkit-transform: rotate( -45deg);
+	-ms-transform: rotate( -45deg);
+	transform: rotate( -45deg);
+}
+.innernav_item-br a{
+		border-right: 1px solid #fff;
+}
+
+/* イントロ */
+.intro{
+	margin-bottom: 30px;
+	font-size: 23px;
+	text-align: center;
+}
+
+/* コンテンツエリア */
+#ContentsContainer{
+	padding: 0 20px;
+}
+.works{
+	line-height: 1.75;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	margin-bottom: 40px;
+	margin-top: -34px;
+	padding-top: 34px;
+	/*font-size: 13px;*/
+}
+.works_ttl{
+	display: block;
+	position: relative;
+	float: left;
+	width: 190px;
+	height: 365px;
+	text-align: center;
+	font-size: 22.65px;
+	background-color: #eee;
+	line-height: 210px;
+	letter-spacing: 3px;
+}
+.under_orange{
+	display: block;
+	position: absolute;
+	top:145px;
+	left: 70px;
+	width: 50px;
+	height: 1px;
+	background-color: #E8AD02;
+}
+.works_txt{
+	display: block;
+	float: left;
+	width: 420px;
+	/*height: 245px;*/
+	padding-top: 20px;
+	padding-left: 20px;
+	text-align: left;
+}
+.works_fig{
+	float: right;
+	text-align: right;
+	width: 330px;
+}
+.defig{
+	width: 90%;
+
+}
+.relevant{
+	position: absolute;
+	bottom: 0;
+	left: 210px;
+	overflow: hidden;
+	width: 770px;
+	min-height: 80px;
+	border: 1px solid #e2e2e2;
+	border-left: none;
+	border-right: none;
+	display: table;
+}
+.relevent_ttl,
+.relevent_txt{
+	display: table-cell;
+	vertical-align: middle;
+}
+.relevent_ttl{
+	width: 100px;
+	color: #fff;
+	text-align: center;
+	background-color: #898989;
+}
+.relevent_txt{
+	padding-left: 15px;
+	color: #008B80;
+	font-weight: bold;
+	text-align: left;
+}

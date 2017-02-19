@@ -1,0 +1,593 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#footerwrap{
+  margin-top: 0;
+}
+
+/*  .ac-title{
+  width:100%;
+  background:#009676;
+  text-align:center;
+  padding: 2px 0 35px;
+  }
+.ac-title h2{
+    margin-top: 28px;
+    }*/
+/**/
+
+.contents_area{
+  width:100%;
+  background:#d1f2ec;
+  padding:10px 0;
+  text-align:center;
+  height:280px;
+  overflow:hidden;
+  }
+  .contents_area ul{
+    width:960px;
+    margin:0 auto;
+    overflow: hidden;
+    }
+  .contents_area li{
+    float:left;
+    margin-top:20px;
+    padding-right:10px;
+    }
+  .contents_area li:nth-child(3){
+    padding-right:0;
+    }
+
+.container{
+  width:960px;
+  margin-top:50px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.container2{
+  position:relative;
+  }
+
+
+  .tokushou,
+  .lotaticon{
+    width:960px;
+    margin:0 auto;
+    position:relative;
+    height:650px;
+  }
+.tokushou2{
+  height: auto !important;
+}
+
+  .tokushou .block,
+  .lotaticon .block{
+    position:absolute;
+    top:-10px;
+    }
+  .tokushou p{
+    line-height: 1.75;
+  }
+  .tokushou p,
+  .lotaticon p{
+    position:absolute;
+    left:250px;
+    padding-left:50px;
+    padding-top:60px;
+    font-size:130%;
+    }
+  .tokushou p.omoi,
+  .lotaticon p.omoi{
+    position:absolute;
+    left:250px;
+    padding-left:50px;
+    padding-top:38px;
+    font-size:130%;
+    }
+  .sub{
+    position:absolute;
+    top:300px;
+    height:300px;
+    }
+    .tokushou .sub p{
+      padding-top: 25px;
+      position:absolute;
+      left:500px;
+      font-size:100%;
+
+      }
+    .sub .text_area,
+    .sub .photo{float:left;}
+
+    .tokushou .sub .text_area{
+      left:500px;
+      padding-left:50px;
+      width:409px;
+      font-size:100%;
+      }
+    .tokushou .sub .text_area h3{
+      padding-top:67px;
+      }
+
+/**/
+.tokushou .tokuchou{
+  overflow:hidden;
+}
+.acContentsBox{
+  padding-top: 300px;
+  margin-bottom: 50px;
+}
+  .acContentsHeader {
+    text-align: center;
+  }
+  .acContentsHeader .title {
+    line-height: 1;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #00a08d;
+      font-family: Times New Roman, "游明朝", YuMincho, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro',"ＭＳ Ｐ明朝", serif;
+    text-align: center;
+  }
+  .acContentsHeader .title:before{
+      content: "";
+      width: 80px;
+      height: 1px;
+      margin-left: -50px;
+      display: block;
+      position: absolute;
+      top: auto;
+      bottom: -20px;
+      left: 50%;
+      background-color: #E8AD02;
+  }
+    .acContentsHeader .text {
+    position: static;
+    margin: 0;
+    padding: 20px 0 0;
+    text-align: center;
+  }
+  .acContentsList {
+    margin: 30px 30px 10px;
+    border-top: solid 3px #ADADAD;
+    border-bottom: solid 3px #ADADAD;
+  }
+  .acContentsList ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .acContentsList ul li {
+    padding: 20px 0;
+    border-top: solid 1px #AFAFAF;
+  }
+  .acContentsList ul li:first-child {
+    border-top: none;
+  }
+    .acContentsList ul li#list01 {
+      background:url(../../sougoushoku_zenkoku/images/ac/img_list01.png) no-repeat center right;
+    }
+    .acContentsList ul li#list03 {
+      background:url(../../sougoushoku_zenkoku/images/ac/img_list03.png) no-repeat center right;
+    }
+    .acContentsList ul li#list05 {
+      background:url(../../sougoushoku_zenkoku/images/ac/img_list05.png) no-repeat center right;
+    }
+    .acContentsList ul li#list01 dd,
+    .acContentsList ul li#list03 dd,
+    .acContentsList ul li#list05 dd{
+      width: 600px;
+    }
+  .acContentsList ul li .listTitle {
+    line-height: 1;
+    padding-bottom: 10px;
+    letter-spacing: 0.05em;
+    font-size: 23px;
+    color: #00a08d;
+  }
+
+
+/**/
+.index-title-zenkoku{
+  background:url(../../sougoushoku_zenkoku/images/index/index_zenkoku_main.png) top center no-repeat;
+  }
+.index-title-chiiki{
+  background:url(../../sougoushoku_chiiki/images/index/index_chiiki_main.jpg) top center no-repeat;
+  }
+.index-title-hs{
+  background: url(../../hs/images/index/index_hs_main.jpg) top center no-repeat;
+  }
+
+  .index-title-zenkoku .nav_list{color:#000;}
+  .index-title-zenkoku .nav_list a{color:#000;}
+  .index-title-chiiki .nav_list{color:#000;}
+  .index-title-chiiki .nav_list a{color:#000;}
+
+  .index-title-zenkoku .wrap,
+  .index-title-chiiki .wrap{
+    width:960px;
+    margin:0 auto;
+    text-align:center;
+    }
+    .index-title-zenkoku .wrap .comment,
+    .index-title-chiiki .wrap .comment{
+    width:960px;
+    margin:0 auto;
+    text-align:center;
+    padding-top:20px;
+    }
+    .index_h2{
+      margin-bottom:50px;
+      padding-bottom: 20px;
+      border-bottom: solid 1px #008b80;
+      text-align: center;
+      letter-spacing: 0.15em;
+      font-size: 2em;
+      font-family:"游明朝", YuMincho, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro',"ＭＳ Ｐ明朝", serif;
+
+    }
+
+[class^="btn"]{
+  border-radius: 1px;
+}
+
+.course{
+  overflow:hidden;
+  width:960px;
+  margin:0 auto;
+  }
+  .c-image{
+    float:left;
+    width:510px;
+    height:262px;
+    }
+  .c-box{
+    float:left;
+    width:420px;
+    padding:30px 0 0 30px;
+    height:232px;
+    background:#eaeaea;
+    color: #333;
+    }
+    .c-box h3{
+      line-height: 1;
+      padding-bottom: 20px;
+      color: #333;
+      position: relative;
+       font-family:"游明朝", YuMincho, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro',"ＭＳ Ｐ明朝", serif;
+      font-size: 23px;
+      letter-spacing: 0.15em;
+    }
+    .c-box h3:after{
+      content : " ";
+      width: 80px;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      background-color: #E8AD02;
+    }
+    .c-text{
+      padding-top:20px;
+      padding-bottom:30px;
+      }
+    .btn_course{
+      display:inline-block;
+      width:375px;
+      line-height:51px;
+      padding-left:10px;
+      height:51px;
+      text-decoration:none;
+      color: #fff;
+      letter-spacing: 0.1em;
+        background:url(../../../common/images/ico_yaji_right.png) 98% center no-repeat #009676;
+      }
+      .btn_course:hover{
+        background-image:url(../../../common/images/ico_yaji_right.png);
+        background-color:#e8ad01;
+        color:#fff
+      }
+    .c-menu{
+      float:none;
+      text-align:right;
+      padding-top:5px;
+      margin-bottom:20px;
+      }
+      .c-menu .btn_comming{
+        display:inline-block;
+        width:200px;
+        line-height:40px;
+        padding-left:10px;
+        background:#6d6d6d;
+        color:#939393;
+        text-align:left;
+        }
+      .c-menu .btn_comming span{
+        color:#fff;
+        display:inline-block;
+        margin-left:5px;
+        font-size: 0.85em;
+        font-style: italic;
+        letter-spacing: 0.1em;
+        }
+      .c-menu .btn_program{
+        display:inline-block;
+        width:190px;
+        line-height:40px;
+        padding-left:10px;
+        color:#fff;
+        text-align:left;
+        text-decoration:none;
+        background:url(../../../common/images/ico_yaji_right.png) 185px 16px no-repeat #009676;
+        }
+      .c-menu .btn_program:hover{
+        background-color: #e8ad01;
+        color:#fff;
+        }
+#next_cnt_area{
+  width:100%;
+  padding:25px 0 60px;
+  overflow:hidden;
+  background-color:#f9f9f9;
+}
+/*#next_cnt_area h2{
+  text-align:center;
+  padding-bottom:25px;
+}*/
+#next_cnt_area a{
+  display: block;
+}
+#next_cnt_area::after{
+  clear:both;
+}
+#next_cnt_area ul{
+  display:block;
+/*  margin:auto;
+  width:960px;*/
+  overflow:hidden;
+}
+#next_cnt_area ul li{
+  display:block;
+  float:left;
+  margin-right:13px;
+}
+#next_cnt_area ul li:last-child{
+  margin-right:0;
+}
+
+/*#next_cnt_area a:hover,
+#next_cnt_btarea a.centerbt:hover{
+  background-color:#e8ad01;
+}
+*/
+/*上層ページ*/
+#next_cnt_area #next_cnt_btarea {
+  /*display:block;
+  width:940px;*/
+  display:inline-block;
+  width:auto;  
+  padding:10px;
+  background-color:#fff;
+}
+/* 総合職地域型がアクティブな場合、中央に */
+.innernav-banners-chiikiActive{
+  text-align: center;
+}
+.innernav-banners-houjinActive{
+  text-align: right;
+}
+/* 兄弟ページ */
+#next_cnt_area #next_cnt_btarea li {
+  width: 200px;
+  /*width: 25%;*/
+  height: 40px;
+  line-height: 40px;
+  margin:0 1px 0 0;
+  /*width: 33.2%;*/
+  text-align: center;
+  display: inline-block;
+  float: none;
+  border-radius: 2px;
+  background-color:#009676;
+}
+
+#next_cnt_btarea .active{
+  font-size: 12px;
+  color: #fff;
+  background: none !important;
+  background-color:#232323 !important;
+}
+
+
+
+/*********************************************
+
+  modules
+
+*********************************************/
+
+
+/********* ボラン周りのカラー変更 <body class="grayBoard"> *********/
+
+.grayBoard .c-box{
+    background:#eaeaea;
+    color: #333;
+    }
+    .grayBoard .c-box h3{
+      color: #333;
+    }
+    .grayBoard .btn_course{
+      display:inline-block;
+      width:375px;
+      line-height:51px;
+      padding-left:10px;
+      height:51px;
+      text-decoration:none;
+      color: #fff;
+      letter-spacing: 0.1em;
+        background:url(../../../common/images/ico_yaji_right.png) 98% center no-repeat #009676;
+      }
+      .grayBoard .c-menu .btn_program:hover,
+      .grayBoard .btn_course:hover{
+        background-image:url(../../../common/images/ico_yaji_right.png);
+        background-color:#e8ad01;
+        color:#fff
+}
+
+
+
+/********* 見出し *********/
+
+.lead.ac-title{
+  max-height: 200px;
+  box-sizing: border-box;
+}
+.lead.lead-catIndex{
+   margin-bottom: 0;
+}
+
+/*メイン文字*/
+.lead-bgImage .lead_ttl{
+  top: 85px;
+}
+.lead-tiny .lead_ttl{
+  top: 40px;
+}
+.lead-catIndex .lead_ttl {
+  top: 55px;
+}
+.index-title-hs .lead_ttl{
+  top: 50px;
+}
+/*見出し位置*/
+.ac-titleHs .lead_ttl{
+  top: 45px;
+}
+.lead .ttl-hs-content.lead_ttl{
+  top: 50px;
+}
+/*サブ文字*/
+.lead_txt{
+  top: 145px;
+}
+.lead-tiny .lead_txt {
+    top: 140px;
+}
+.lead-catIndex .lead_txt {
+  top: 135px;
+}
+
+/*サブ文字（法人総合*/
+.index-title-hs .lead_ttl {
+  top: 85px;
+}
+.index-title-hs .lead_txt {
+    top: 165px;
+}
+
+.lead.ac-title .lead_txt{
+/*   font-family:"游明朝", YuMincho, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro',"ＭＳ Ｐ明朝", serif;
+*/  font-size: 1.21em;
+}
+.lead_ttl_small{
+  margin-top: 0;
+}
+
+
+
+/***** バナーエリア *****/
+.innernav{
+  clear: both;
+  padding-top: 30px;padding-bottom: 30px;
+  line-height: 1;
+    background-color: #D1F2EC;
+}
+.innernav li{
+
+}
+.innernav-banners{
+}
+.innernav_wrap,
+.innernav_cont {
+    width: 960px;
+    /*padding: 0 20px 40px;*/
+    margin: 0 auto;
+}
+
+.innernav_items{
+    width: 960px;
+    margin: 0 auto;
+  overflow: hidden;
+}
+
+.innernav_item,
+.innernav .innernav_items li {
+  margin-right: 8px;
+    float: left;
+}
+/* 3列 */
+.innernav-3 .innernav_items li{
+  margin-right: 14px;
+}
+.innernav-5 .innernav_items li{
+  margin-right: 5px;
+}
+.innernav .innernav_items li:last-child{
+  margin-right: 0;
+}
+
+.innernav_ttl{
+  margin-bottom: 30px;
+  text-align: center;
+   letter-spacing: 0.15em;
+}
+
+/*矢印マーカーコンテンツ内ナビ*/
+#next_cont_toparea .active,
+.innernav .arrowNav .active{
+  position: relative;
+  border-bottom: solid 10px #009676;
+  /*background-color: #009676;*/
+}
+/*#next_cont_toparea .active img{
+  opacity: 0.8;
+  -webkit-mix-blend-mode: multiply;
+    mix-blend-mode: multiply;
+}*/
+/*#next_cont_toparea li.active:before{
+  content: " ";
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba( 10, 170, 100, 0.9);
+}*/
+#next_cont_toparea .active:after,
+.innernav .arrowNav .active:after{
+  content: " ";
+  width: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  border: solid 10px transparent;
+  border-bottom: solid 10px #009676;
+  display: inline-block;
+
+}
+.arrowNav a{
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.arrowNav a:hover,
+.arrowNav a:active{
+  opacity: 0.8;
+}
+

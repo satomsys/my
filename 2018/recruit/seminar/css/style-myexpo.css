@@ -1,0 +1,606 @@
+@charset "UTF-8";
+
+
+/*********************************************
+
+  modules
+
+*********************************************/
+
+/********* 見出し *********/
+/*
+.lead{
+	background-image: none;
+}
+.lead-tiny .lead_ttl {
+    top: 60px;
+}
+*/
+
+
+/********* section *********/
+.myexpo_section{
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+.myexpo_section h5{
+	font-size: 1em;
+	background-image: none;
+}
+
+.myexpo_section_index,
+.myexpo_section_index p {
+	text-align: center;
+}
+
+.myexpo_section_index{
+	margin-bottom: 50px;
+}
+
+.heading {
+    margin-bottom: 20px;
+    font-family: "游明朝", YuMincho, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro',"ＭＳ Ｐ明朝", serif;
+    font-size: 36px;
+    line-height: 0;
+}
+
+.heading span{
+    display: block;
+    line-height: 1.5;
+}
+
+.heading:after {
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 1px;
+    /* margin-top: 15px; */
+    background-color: #e8ad02;
+}
+
+
+
+/********* プログラムのラベル表示 *********/
+.program-mogi .program_name,
+.myexpoTable .list-mogi{
+	color: #fff;
+	background: #cc5353;
+	background: -moz-radial-gradient(center, ellipse cover,  #cc5959 30%, #cc4141 100%);
+	background: -webkit-radial-gradient(center, ellipse cover,  #cc5959 30%,#cc4141 100%);
+	background: radial-gradient(ellipse at center,  #cc5959 30%,#cc4141 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc5353', endColorstr='#cc3636',GradientType=1 );
+}
+.program-senko .program_name,
+.myexpoTable .list-senko{
+	color: #fff;
+background: #96c97a;
+background: -moz-radial-gradient(center, ellipse cover,  #96c97a 0%, #7aca51 100%);
+background: -webkit-radial-gradient(center, ellipse cover,  #96c97a 0%,#7aca51 100%);
+background: radial-gradient(ellipse at center,  #96c97a 0%,#7aca51 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96c97a', endColorstr='#7aca51',GradientType=1 );
+}
+
+.programWrapper-select .program_name,
+.myexpoTable .list-tiny{
+	border: solid 1px #ccc;
+	border-radius: 2px;
+}
+
+.program-shokuin .program_name,
+.myexpoTable .list-shokuin{
+	border-color: #61CC2F;
+	color: #3F8C1F;
+}
+
+.program-naiteisha .program_name,
+.myexpoTable .list-naiteisha{
+	border-color: #1e8e8b;
+	color: #1E8E8B;
+}
+
+.program-woman .program_name,
+.myexpoTable .list-woman{
+	border-color: #7F2265;
+	color: #7F2265;
+}
+
+
+
+/*********************************************
+
+  style
+
+*********************************************/
+
+/************  当日のプログラム ************/
+.plus{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.plus:before,
+.plus:after{
+	content: " ";
+	line-height: 1;
+    margin-left: auto;
+    margin-right: auto;	
+	display: block;
+	vertical-align: middle;
+	background-color: #939393;
+}
+.plus:before{
+	width: 1px;
+	height: 30px;
+}
+.plus:after{
+	width: 30px;
+	height: 1px;
+	position: relative;
+	top: -15px;
+}
+
+/*** やじるし ***/
+.myexpo_programs{
+	position: relative;
+	border-bottom: solid 1px #ccc;
+}	
+.myexpo_programs:after{
+	content: " ";
+	width: 20px;
+	height: 20px;
+	line-height: 1;
+	margin: auto;
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: absolute;
+	right: 0;
+	bottom: -11px;
+	left: 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	border-right: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
+	background-color: #fff;
+}
+
+.myexpo_section_programWrapper{
+	padding: 20px 0;
+	background-color: #F5F5F5;
+}
+
+.programWrapper_heading{
+	line-height: 1;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.program_thumb,
+.program_name,
+.program_course{
+line-height: 1;	
+}
+
+.programs{
+    display: table;
+    table-layout: fixed;
+    border-spacing: 40px 0;
+    margin: 0px -20px 0;
+}
+.programs li{
+	padding: 15px;
+	box-sizing: border-box;
+	display: table-cell;
+	border-radius: 2px;
+	background-color: #fff;
+}
+/*.programs li:last-child{
+	margin-right: 0;
+}*/
+
+
+/***** パーツ *****/
+
+/*** プログラム名 ***/
+.programs h5.program_name{
+	width: auto;
+	margin: 10px 0;
+	padding: 10px;
+	text-align: center;
+}
+
+/*** プログラム詳細 ***/
+.program_info{
+	font-size: 0.9em;
+	letter-spacing: -0.05em;	
+}
+
+
+/***** 全コース共通した内容 *****/
+
+.programWrapper-all{
+	
+}
+
+.programWrapper-all li{
+	max-width: 430px;
+	/*max-height: 290px;*/
+}
+
+.programWrapper-all li:last-child{
+	position: relative;
+	right: -20px;
+}
+
+.programWrapper-all .programs h5.program_name{
+	color: #fff;
+}
+
+/***** ３つのコースから選択 *****/
+.programWrapper-select{}
+
+.program_course{
+	margin-top: -5px;
+	margin-bottom: 10px;
+	color: #595959;
+	text-align: right;
+	font-weight: bold;
+}
+
+.programWrapper-select li{
+	width: 280px;
+}
+
+
+
+/************  コース選択 ************/
+
+/***** 表　*****/
+.myexpoTable{
+	width: 100%;
+	overflow: hidden;
+}
+
+.myexpoTable th{
+	border-right: solid 1px #ccc;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.myexpoTable tr{
+	border-bottom: solid 1px #ccc;
+}
+
+.myexpoTable th,
+.myexpoTable td{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.myexpoTable td{
+	padding-left: 15px;
+}
+
+.myexpoTable thead td{
+	padding: 10px;
+	text-align: center;
+	color: #fff;
+	background-color: #595959;
+}
+.myexpoTable th{
+	width: 200px;	
+}
+
+
+/***** リスト *****/
+.myexpoTable_list{
+	padding-right: 23px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+.myexpoTable_list:after{
+	content: " ";
+	width: 20px;
+	height: 7px;
+	margin-top: auto;
+	margin-bottom: auto;
+	display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+	background: url(../images/myexpo-icon-arrow.gif) center center no-repeat;
+	-webkit-background-size: 20px;
+	background-size: 20px;	
+}
+
+.myexpoTable_list:last-child{
+	padding: 0;
+}
+.myexpoTable_list:last-child:after{
+	display: none;
+}
+
+
+/***** リスト内ラベル *****/
+.myexpoTable_list small,
+.myexpoTable_list span{
+	text-align: center;
+	color: #595959;
+}
+
+.myexpoTable_list small{
+	line-height: 1;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: block;
+	font-size: 9px;
+}
+
+.myexpoTable_list span{
+	width: 220px;
+	height: 80px;
+	line-height: 80px;
+	display: inline-block;
+	font-size: 0.8em;
+	border-radius: 2px;
+	box-sizing: border-box;
+}
+.myexpoTable_list span.list-tiny{
+	height: 30px;
+	line-height: 30px;
+}
+
+
+
+
+.isSP {
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+	.isSP {
+	display: block;
+	}
+	/* layout
+	---------------------------------------------------------------------------- */
+	body {
+		position: relative;
+	}
+
+	.lead-catIndex {
+		max-height: 200px;
+	}
+
+	.lead {
+		min-width: 0;
+		margin-bottom: 30px;
+	}
+	.policy .lead,
+	.history .lead {
+		margin-bottom: 30px;
+	}
+
+	.lead-bgImage {
+		position: relative;
+		max-height: 200px;
+		background-position: center center;
+	}
+
+	.lead-tiny .lead_ttl{
+		top: 35px;
+	}
+	.lead_ttl:before {
+		bottom: -34%;
+	}
+
+	.lead-catIndex .lead_txt{
+		top: 105px;
+	}
+
+	#ContentsWrapTop {
+		padding-top: 0;
+		padding-bottom: 50px;
+	}
+
+	#ContentInner,
+	#ContentsContainer,
+	#CategoryTalent{
+		overflow: hidden;
+		width: 100%;
+	}
+
+	#ContentsWrapTop{
+		min-width: 0;
+	}
+	#ContentsContainer{
+		padding: 0 7%;
+		margin: 0 auto 0;
+		box-sizing: border-box;
+	}
+
+
+	/********* section *********/
+	.myexpo_section{
+		padding: 30px 7%;
+		margin: 0 auto 0;
+	}
+	.myexpo_section_index{
+		margin-bottom: 25px;
+	}
+
+	.heading {
+	    margin-bottom: 10px;
+	    font-size: 19.5px;
+	  }
+	 .heading:after {
+	    margin-top: 10px;
+	  }		
+
+
+	/************  当日のプログラム ************/
+	
+	.plus{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}	
+
+	.myexpo_section_programWrapper{
+		padding: 15px 10px;
+	}
+
+	.programWrapper_heading{
+		line-height: 1;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+
+	.programs{
+	    display: block;
+	    border-spacing:0;
+	    margin: 0px 0px 10px;
+	}
+
+	.programs li{
+		padding: 10px;
+		margin-bottom: 10px;
+		display: block;
+	}
+	.programs li:last-child{
+		margin-bottom: 0;
+	}
+
+	/***** パーツ *****/
+
+	/*** プログラム名 ***/
+	.programs h5.program_name{
+		text-align: center;
+	}
+
+	/*** プログラム詳細 ***/
+	.program_info{
+		font-size: inherit;
+		letter-spacing: 0;	
+	}
+
+	.program_thumb img{
+		width: 100%;
+	}
+
+
+	/***** 全コース共通した内容 *****/
+
+	.programWrapper-all{
+		
+	}
+
+	.programWrapper-all li:last-child{
+		right: 0;
+	}
+
+	/***** ３つのコースから選択 *****/
+	.programWrapper-select{
+		font-size: 0.8em;
+	}
+
+	.program_course{
+		margin-top: -5px;
+		margin-bottom: 10px;
+		color: #595959;
+		text-align: right;
+		font-weight: bold;
+	}
+
+	.programWrapper-select li{
+		width: auto;
+	}
+
+
+
+	/************  コース選択 ************/
+
+	/***** 表　*****/
+
+	.myexpoTable{
+		width: 100%;
+		overflow: hidden;
+		font-size: 12px;		
+	}
+	.myexpoTable,
+	.myexpoTable tbody,
+	.myexpoTable tr,
+	.myexpoTable th,
+	.myexpoTable td{
+		display: block;
+	}
+
+	.myexpoTable th{
+		line-height: 1;
+		border-right:none;
+		color: #fff;
+		font-weight: bold;
+		font-size: inherit;
+		text-align: center;
+		background-color: #595959;
+	}
+	.myexpoTable tr{
+		border-bottom: none;
+	}
+	.myexpoTable td{
+		padding: 10px;
+		border-left: solid 1px #ccc;
+		border-right: solid 1px #ccc;
+		border-right: solid 1px #ccc;
+	}
+	.myexpoTable td:last-child{
+		border-bottom: solid 1px #ccc;		
+	}	
+
+	.myexpoTable thead{
+		display: none;
+	}
+	.myexpoTable th{
+		width: 100%;	
+	}
+	.myexpoTable tr{
+		margin-bottom: 5px;
+	}
+	/***** リスト *****/
+	.myexpoTable_list{
+		display: block;
+		padding-right: 0;
+		padding-bottom: 30px;
+	}
+	.myexpoTable_list:after{
+		height: 20px;	
+		margin-top: 0;	
+		margin-right: auto;
+		margin-left: auto;
+		top: auto;
+		right: 0;
+		bottom: 5px;
+		left: 0;
+		-webkit-transform: rotate(90deg);
+		transform: rotate(90deg);
+	}
+	.myexpoTable_list:last-child:after{
+		display: none;
+	}
+
+	/***** リスト内ラベル *****/
+	.myexpoTable_list span{
+		width: auto;
+		display: block;
+		font-size: 0.98em;
+	}
+	.myexpoTable_list span.list-tiny,
+	.myexpoTable_list span{
+		height: 30px;
+		line-height: 30px;
+	}
+
+}

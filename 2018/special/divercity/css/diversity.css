@@ -1,0 +1,650 @@
+@charset "UTF-8";
+/*=======================================
+
+　パンくず、メイン画像エリア
+
+=======================================*/
+.lead-bgImage{
+  background: url("../img/hero_img.jpg") no-repeat;
+}
+
+.lead_ttl{
+  top: 120px;
+  color: #fff;
+  -webkit-text-shadow: 0 0 5px rgba(0,0,0,0.8), 0 0 2px rgba(0,0,0,0.5), 0 0 1px rgba(0,0,0,0.3);
+  text-shadow: 0 0 5px rgba(0,0,0,0.8), 0 0 2px rgba(0,0,0,0.5), 0 0 1px rgba(0,0,0,0.3);
+}
+
+/*=======================================
+
+　全体のレイアウト
+
+=======================================*/
+/*.lead{
+  text-align: center;
+}*/
+.intro_title{
+  position: relative;
+  max-width: 1280px;
+  min-width: 960px;
+  width: 100%;
+  height:53px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  font-size: 30px;
+  text-align: center;
+}
+.intro_title:before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  width: 23%;
+  height: 1px;
+  margin-top: -15px;
+  margin-left: -50px;
+  background-color: #dbddde;
+}
+.intro_title:after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 7%;
+  width: 23%;
+  height: 1px;
+  margin-top: -15px;
+  margin-right: -50px;
+  background-color: #dbddde;
+}
+.intro_under-left{
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 20px;
+  height: 4px;
+  margin-left: -20px;
+  background-color: #0FF;
+}
+.intro_under-right{
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 20px;
+  height: 4px;
+  margin-right: -20px;
+  background-color: #FF0;
+}
+.intro_box{
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+.intro_txt{
+  line-height: 1.8;
+  font-size: 1.145em;
+  text-align: center;
+}
+.headline{
+  width: 100%;
+  /*min-width:1000px;*/
+  height:80px;
+  font-size: 28px;
+  vertical-align: middle;
+  text-align:  center;
+  line-height: 80px;
+  color: #FFF;
+}
+.headline_woman{
+  text-align: center;
+  background: #ff4e89;
+  background:-webkit-gradient(linear, left top, right top, from(#ff4e89), to(#ffa07c));
+  background:-webkit-linear-gradient(left, #ff4e89, #ffa07c);
+  background:linear-gradient(to right, #ff4e89, #ffa07c);
+}
+.headline_system{
+  background: #53c9e0;
+  background:-webkit-gradient(linear, left top, right top, from(#53c9e0), to(#80d8b5));
+  background:-webkit-linear-gradient(left, #53c9e0, #80d8b5);
+  background:linear-gradient(to right, #53c9e0, #80d8b5);
+}
+.headline_frgn{
+  background: #e9c56e;
+  background:-webkit-gradient(linear, left top, right top, from(#e9c56e), to(#e9a56e));
+  background:-webkit-linear-gradient(left, #e9c56e, #e9a56e);
+  background:linear-gradient(to right, #e9c56e, #e9a56e);
+}
+.headline-sub{
+  width: 100%;
+  /*min-width:1000px;*/
+  height:60px;
+  font-size: 28px;
+  vertical-align: middle;
+  text-align:  center;
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 20px;
+  line-height: 60px;
+}
+
+
+/* -------------------------
+  共通
+--------------------------- */
+.gray{
+  background:#efefef;
+}
+.btn {
+  text-align: center;
+}
+.bold{
+  font-weight:  bold;
+}
+.main_topic {
+  font-size:  20px;
+  background-color: #FFF;
+  padding:  5px 14px;
+  width: 115px;
+  vertical-align: middle;
+  text-align: center;
+  border:  solid 1px #c7c7c7;
+  margin: 50px 0 0 57px;
+  display: inline-block;
+
+}
+.section01 dt,
+.section02 dt{
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #ff2d59;
+}
+.underline{
+  padding-bottom: 2px;
+  border-bottom: 1px solid #ff2d59;
+}
+
+/*div.section01{
+  text-align: center;
+  background: #fff1f1;
+  background:-webkit-gradient(linear, left top, right top, from(#fff), to(#fff1f1));
+  background:-webkit-linear-gradient(top, #fff, #fff1f1);
+  background:-moz-linear-gradient(top, #fff, #fff1f1);
+  background:-o-linear-gradient(top, #fff, #fff1f1);
+  background:linear-gradient(to top, #fff, #fff1f1);
+}*/
+/*div.section02{
+  text-align: center;
+  background: #fff;
+  background:-webkit-gradient(linear, left top, right top, from(#fff), to(#fff1f1));
+  background:-webkit-linear-gradient(top, #fff, #fff1f1);
+  background:-moz-linear-gradient(top, #fff, #fff1f1);
+  background:-o-linear-gradient(top, #fff, #fff1f1);
+  background:linear-gradient(to top, #fff, #fff1f1);
+}*/
+
+div.section01{
+  background: url(../img/woman_personnel_ph002.png) right bottom no-repeat;
+}
+.section2_area{
+  text-align: center;
+  background: #fff1f1;
+  background:-webkit-gradient(linear, left top, right top, from(#fff), to(#fff1f1));
+  background:-webkit-linear-gradient(top, #fff, #fff1f1);
+  background:-webkit-linear-gradient(bottom, #fff, #fff1f1);
+  background:linear-gradient(to top, #fff, #fff1f1);
+}
+div.section02{
+  background: url(../img/woman_personnel_ph003-single.png) right center no-repeat;
+  /*background: url(../img/woman_personnel_ph003.png) right bottom no-repeat;*/
+}
+.section3_area{
+  text-align: center;
+  background: #fff;
+  background:-webkit-gradient(linear, left top, right top, from(#fff), to(#fff1f1));
+  background:-webkit-linear-gradient(top, #fff, #fff1f1);
+  background:-webkit-linear-gradient(bottom, #fff, #fff1f1);
+  background:linear-gradient(to top, #fff, #fff1f1);
+}
+
+
+
+/* -------------------------
+  パンくず
+--------------------------- */
+#ContentsContainer h2{
+  position: relative;
+}
+/* -------------------------
+  タブ
+--------------------------- */
+.diversityTab{
+  width:960px;
+  margin:  30px auto 25px;
+  overflow:hidden;
+}
+.nav_item{
+  list-style-type:none;
+  float:left;
+  height:80px;
+  margin-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-indent:-9999px;
+}
+.nav_list .nav_item:nth-child(4){
+  margin-right: 0;
+}
+.nav_back,
+.nav_ank{
+  box-sizing: border-box;
+  width: 235px;
+  height: 80px;
+}
+.nav_ank{
+  position: relative;
+  display: block;
+  overflow: visible;
+}
+.nav_ank:after{
+  content: "";
+  position: absolute;
+  display: block;
+  top: 35px;
+  right: 10px;
+  width: 4px;
+  height: 4px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  -webkit-transform: rotate( 45deg);
+  transform: rotate( 45deg);
+}
+.nav_item:hover .nav_ank:after{
+  top: 33px;
+  right: 12px;
+}
+.nav_back[active] .nav_ank:after{
+  top: 33px;
+  right: 12px;
+}
+.nav_seido.nav_item:hover .nav_ank:after{
+  top: 35px;
+  right: 10px;
+}
+.nav_ank:hover:before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -10px;
+  left: 112px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  -webkit-transform: rotate( 90deg);
+  transform: rotate( 90deg);
+}
+.nav-bottom .nav_ank:hover:before {
+  top: -15px;
+  left: 114px;
+  -webkit-transform: rotate( -90deg);
+  transform: rotate( -90deg);
+}
+
+.nav_woman .nav_ank{
+  background:url(../img/icn_txt-woman.png) no-repeat 30px 30px;
+  background-size: 153px 16px;
+}
+.nav_woman:hover .nav_ank,
+.nav_woman .nav_back[active] .nav_ank{
+  background:url(../img/icn_txt-woman.png) no-repeat 28px 28px;
+  background-size: 153px 16px;
+}
+.nav_woman .nav_back{
+  border: 1px solid #ff9bae;
+}
+.nav_woman:hover .nav_back,
+.nav_woman .nav_back[active]{
+  box-sizing: border-box;
+  width: 235px;
+  height: 80px;
+  border: 3px solid #ff9bae;
+  background: #ffdbe8; /* Old browsers */ /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #ffdbe8 0%,#fffef6 50%,#ffdbe8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #ffdbe8 0%,#fffef6 50%,#ffdbe8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdbe8', endColorstr='#ffdbe8',GradientType=1 ); /* IE6-9 */
+}
+.nav_woman a:hover:before {
+  border-left: 11px solid #ff9bae;
+}
+
+
+.nav_worklife .nav_ank{
+  background:url(../img/icn_txt-wlb.png) no-repeat 27px 22px;
+  background-size: 171px 35px;
+}
+.nav_worklife:hover .nav_ank,
+.nav_worklife .nav_ank[active]{
+  background:url(../img/icn_txt-wlb.png) no-repeat 25px 20px;
+  background-size: 171px 35px;
+}
+.nav_worklife .nav_back{
+  border: 1px solid #afe1e5;
+}
+.nav_worklife:hover .nav_back,
+.nav_worklife .nav_back[active]{
+  box-sizing: border-box;
+  width: 235px;
+  height: 80px;
+  border: 3px solid #afe1e5;
+  background: #e0f5f7; /* Old browsers */ /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #e0f5f7 0%,#fffef4 50%,#e0f5f7 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #e0f5f7 0%,#fffef4 50%,#e0f5f7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f5f7', endColorstr='#e0f5f7',GradientType=1 ); /* IE6-9 */
+
+}
+.nav_worklife .nav_back[active] .nav_ank{
+  background:url(../img/icn_txt-wlb.png) no-repeat 25px 20px;
+  background-size: 171px 35px;
+}
+.nav_worklife a:hover:before {
+  border-left: 11px solid #afe1e5;
+}
+
+
+.nav_seido .nav_back{
+  border: 1px solid #b3ff9b;
+}
+.nav_seido .nav_ank,
+.nav_seido:hover .nav_ank,
+.nav_seido .nav_back[active] .nav_ank{
+  background:url(../img/icn_txt-voice.png) no-repeat 28px 30px;
+  background-size: 117px 15px;
+}
+
+.nav_seido:hover .nav_back,
+.nav_seido .nav_back[active]{
+  box-sizing: border-box;
+  width: 235px;
+  height: 80px;
+  border: 3px solid #b3ff9b;
+  background: #fdffe0; /* Old browsers */ /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #dbffe4 0%,#f7fff5 50%,#e5fff6 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #dbffe4 0%,#f7fff5 50%,#e5fff6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbffe4', endColorstr='#e5fff6',GradientType=1 ); /* IE6-9 */
+}
+.nav_seido a:hover:before {
+  border-left: 11px solid #b3ff9b;
+}
+
+.nav_gaikokujin .nav_ank{
+  background:url(../img/icn_txt-frg.png) no-repeat 27px 22px;
+  background-size: 118px 36px;
+}
+.nav_gaikokujin:hover .nav_ank,
+.nav_gaikokujin .nav_back[active] .nav_ank{
+  background:url(../img/icn_txt-frg.png) no-repeat 25px 20px;
+  background-size: 118px 36px;
+}
+.nav_gaikokujin .nav_back{
+  border: 1px solid #e9c56e;
+}
+.nav_gaikokujin:hover .nav_back,
+.nav_gaikokujin .nav_back[active]{
+  box-sizing: border-box;
+  width: 235px;
+  height: 80px;
+  border: 3px solid #e9c56e;
+  background: #fdffe0; /* Old browsers */ /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #fdffe0 0%,#fffef4 50%,#fdffe0 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #fdffe0 0%,#fffef4 50%,#fdffe0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdffe0', endColorstr='#fdffe0',GradientType=1 ); /* IE6-9 */
+}
+.nav_gaikokujin a:hover:before {
+  border-left: 11px solid #e9c56e;
+}
+/* -------------------------
+  ワーク･ライフ･バランス関連制度
+--------------------------- */
+.main_wrap{
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.main_cont{
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.artivle-ttl{
+  width: 100%;
+  height: 80px;
+  margin-top: 25px;
+  padding-left: 20px;
+  background-color: #e9f3f6;
+  text-align: left;
+  line-height: 80px;
+}
+.artivle-ttl h3{
+  font-size: 20px;
+}
+.headline_rest:before{
+  content:"";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-bottom: -13px;
+  margin-right: 10px;
+  background:url(../img/icn_rest.png) center no-repeat;
+  background-size: cover;
+}
+.headline_time:before{
+  content:"";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-bottom: -13px;
+  margin-right: 10px;
+  background:url(../img/icn_time.png) center no-repeat;
+  background-size: cover;
+}
+.headline_subsidy:before{
+  content:"";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-bottom: -13px;
+  margin-right: 10px;
+  background:url(../img/icn_subsidy.png) center no-repeat;
+  background-size: cover;
+}
+.main_article{
+  float: left;
+  width: 307px;
+  height: 180px;
+  margin-top: 25px;
+  border: 1px solid #a1dbed;
+  margin-right: 16px;
+}
+.main_article-br{
+  margin-right: 0;
+}
+.main_article-full{
+  box-sizing: border-box;
+  width: 100%;
+  /*height: 117px;*/
+  margin-bottom: 40px;
+}
+.system-name{
+  padding-top: 20px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  text-align: center;
+  color: #00abcf;
+}
+.system-name-full{
+  text-align: left;
+  margin-left: 20px;
+}
+.system-name_underline{
+  padding-bottom: 8px;
+  line-height: 1;
+  border-bottom: 1px solid #00abcf;
+}
+.system-name{
+  margin-bottom: 10px\9;
+}
+.system-name_underline{
+  padding-bottom: 7px\9;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .system-name{
+    margin-bottom: 10px;
+  }
+  .system-name_underline{
+    padding-bottom: 0px;
+  }
+}
+.system-text{
+  margin-top: 20px;
+  padding: 0 20px;
+  font-size: 14px;
+}
+.wlb .intro_under-left{
+  background-color: #80cfde;
+}
+.wlb .intro_under-right{
+  background-color: #00ed9c;
+}
+/* -------------------------
+  制度利用者の声
+--------------------------- */
+.voice .sect_block{
+  margin: 50px 0 60px;
+}
+.voice .sect_block .main_visual{
+  width: 100%;
+  margin-bottom: 50px;
+}
+.voice .sect_block .txt_box{
+  width: 80%;
+  margin: 0 auto;
+}
+.voice .sect_block p{
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+.voice .sect_block .notes{
+  margin-bottom: 0;
+  font-size: 11px;
+  text-align: right;
+}
+.voice .btn a {
+  opacity: 1;
+}
+.voice .btn a:hover {
+  opacity: .6;
+}
+
+/*++++++++++++++++ マージ ++++++++++++++++*/
+/* -------------------------
+  外国人職員
+--------------------------- */
+.frg .main_article{
+  height: auto;
+  padding: 17px;
+  border: 1px solid #e7c878;
+}
+.frg_img{
+  float: left;
+  width: 400px;
+}
+.frg .system-text{
+  float: right;
+  width: 483px;
+  margin-top: 100px;
+  font-size: 17px;
+  line-height: 34px;
+}
+.frg .intro_under-left{
+  background-color: #e1ea73;
+}
+.frg .intro_under-right{
+  background-color: #e8c773;
+}
+.frg .intro_txt{
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  width: 490px;
+  margin-left: -20px;
+  text-align: left;
+  font-size: 17px;
+  line-height: 33px;
+  text-shadow: 0 0 10px rgba(255,255,255,0.8), 0 0 4px #fff;
+}
+/* -------------------------
+  女性職員の活躍推進
+--------------------------- */
+.wmp .intro_under-left{
+  background-color: #ff4c8a;
+}
+.wmp .intro_under-right{
+  background-color: #ffa27b;
+}
+.wmp .intro_txt{
+  text-align: left;
+}
+.wmp .main_wrap{
+  position: relative;
+  overflow: visible;
+  text-align: left;
+}
+/*.woman .section01,
+.woman .section02{
+  -webkit-background-size: contain;
+  background-size: contain;
+  }*/
+.woman .section01 dl,
+.woman .section02 dl{
+  padding:25px 46% 5px 60px;
+  width: 54%;
+/*  padding:25px 60px 5px 60px;
+  width: 630px;*/
+}
+.main_deta{
+  margin:10px 0 25px 0px;
+  font-size: 14px;
+}
+.img-jinzai{
+  position: absolute;
+  bottom: 0;
+  right: -180px;
+}
+.img-hudo{
+  position: absolute;
+  right: -180px;
+}
+.woman .section03{
+  padding:30px 30px 10px 30px;
+}
+.woman .section03 dl{
+  background:#fff;
+  padding: 20px;
+  margin: 15px auto;
+  border: 1px solid #ffd1db;
+}
+.value-txt{
+  font-size: 16px;
+}
+.kurumin{
+  margin-right: 100px;
+}
+.woman .section03 dl dt{
+  margin:0 0 20px 0;
+}
+.section4_area dl dt{
+  background: url(../img/woman_personnel_ic001.gif) no-repeat 0 6px;
+  padding-left: 20px;
+}

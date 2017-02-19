@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/*
+*	/recruit/seminar/map/ style
+*	
+*	1. override style
+*	2. contents style
+*	
+******************************************************/
+
+#whole {
+	max-width:420px;
+	margin:0 auto;
+}
+	
+h1 {
+	padding-bottom:15px;
+}
+	
+#map {
+	text-align:center;
+}
+	
+#copyright {
+	padding-top:20px;
+}	

@@ -1,0 +1,827 @@
+@charset "UTF-8";
+/* IE10以降 */
+@media all and (-ms-high-contrast:none){
+  .article_ttl{
+    margin-top:40px;
+  }
+	.ac_yabe{
+	 margin-top:  -35px;
+	}
+	.reason_wrap {
+    position: relative;
+  } 
+	.reason_wrap {
+    position: relative;
+  }
+	.art1{
+		position: absolute;
+		top: 50px;
+	}
+	.article{
+		padding: 27px 0;
+	}
+	
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .article_ttl{
+    margin-top:40px;
+  }
+	.ac_yabe{
+	 margin-top:  -35px;
+	}
+	.reason_wrap {
+    padding-right: 50px;
+    position: relative;
+  }
+	.art1{
+		position: absolute;
+		top: 50px;
+	}
+}
+/* CSS Document */
+.container_naiteisha{
+  	/*background: url("../../naiteisha/img/bg_naiteisha.jpg") repeat-y center;*/
+background: rgb(231,246,243);
+background: -moz-linear-gradient(left,  rgba(231,246,243,1) 0%, rgba(246,250,225,1) 100%);
+background: -webkit-linear-gradient(left,  rgba(231,246,243,1) 0%,rgba(246,250,225,1) 100%);
+background: linear-gradient(to right,  rgba(231,246,243,1) 0%,rgba(246,250,225,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7f6f3', endColorstr='#f6fae1',GradientType=1 );
+    
+}
+.main_wrap{
+	width: 960px;
+	padding: 0 20px 60px;
+	margin: 45px auto 0;
+}
+.ttl_main{
+  width: 960px;
+  padding: 30px 20px;
+  margin: 0 auto;
+}
+.nav_naitei{
+  background-color: rgba(255, 255, 255, .6);
+}
+.nav_wrap{
+  overflow: hidden;
+  width: 960px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.nav_item{
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.nav_ank{
+  display: block;
+  position: relative;
+  width: 187px;
+  padding-left: 5px;
+}
+.nav_item:nth-child(5) .nav_ank:after,
+.nav_item:nth-child(12) .nav_ank:after{
+  display: block;
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 1px;
+  height: 30px;
+	background-color: #76cac2;
+	
+}
+.nav_line{
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 1px;
+  height: 30px;
+  background-color: #76cac2;
+}
+.nav_txt{
+  position: absolute;
+  top: 0;
+  left: 72px;
+}
+/* 各-----------各htmlナビの画像 ------------------*/
+/*総合職全国型アクチュアリー*/
+.nav_ntl-ac{
+  display: block;
+  width: 96px;
+  height: 31px;
+  background: url("../../naiteisha/img/naiteisha_navicon_ntl/ac_off.png") no-repeat;/* 職種ごとに変更 */
+  background-size: cover;
+}
+/*総合職地域型 W*/
+.nav_ntl-w{
+  display: block;
+  width: 96px;
+  height: 31px;
+  background: url("../../naiteisha/img/naiteisha_navicon_ntl/w_off.png") no-repeat;/* 職種ごとに変更 */
+  background-size: cover;
+}
+/*総合職地域型 V*/
+.nav_ntl-v{
+  display: block;
+  width: 96px;
+  height: 31px;
+  background: url("../../naiteisha/img/naiteisha_navicon_ntl/v2_off.png") no-repeat;/* 職種ごとに変更 */
+  background-size: cover;
+}
+/*総合職全国型 V*/
+.nav_ntl-vz{
+  display: block;
+  width: 96px;
+  height: 31px;
+  background: url("../../naiteisha/img/naiteisha_navicon_ntl/v_off.png") no-repeat;/* 職種ごとに変更 */
+  background-size: cover;
+}
+/*総合職地域型 A*/
+.nav_ntl-a{
+  display: block;
+  width: 96px;
+  height: 31px;
+  background: url("../../naiteisha/img/naiteisha_navicon_ntl/a_off.png") no-repeat;/* 職種ごとに変更 */
+  background-size: cover;
+}
+/*総合職地域型 S*/
+.nav_ntl-s{
+  display: block;
+  width: 96px;
+  height: 31px;
+  background: url("../../naiteisha/img/naiteisha_navicon_ntl/s_off.png") no-repeat;/* 職種ごとに変更 */
+  background-size: cover;
+}
+.nav_ank:hover .nav_ntl-v{
+  background-image: url("../../naiteisha/img/naiteisha_navicon_ntl/v2_on.png");
+  /* 職種ごとに変更 */
+}
+.nav_ank:hover .nav_ntl-vz{
+  background-image: url("../../naiteisha/img/naiteisha_navicon_ntl/v_on.png");
+  /* 職種ごとに変更 */
+}
+.nav_ank:hover .nav_ntl-a{
+  background: url("../../naiteisha/img/naiteisha_navicon_ntl/a_on.png") no-repeat;
+  background-size: cover;/* 職種ごとに変更 */
+}
+.nav_ank:hover .nav_ntl-s{
+  background: url("../../naiteisha/img/naiteisha_navicon_ntl/s_on.png") no-repeat;
+  background-size: cover;/* 職種ごとに変更 */
+}
+.nav_ntl-s_yabe{
+  background: url("../../naiteisha/img/naiteisha_navicon_ntl/s_on.png") no-repeat;
+  background-size: cover;/* 職種ごとに変更 */
+}
+.nav_ntl-s_okubo{
+  background: url("../../naiteisha/img/naiteisha_navicon_ntl/s_on.png") no-repeat;
+  background-size: cover;/* 職種ごとに変更 */
+}
+.nav_ntl-s_yamamoto{
+  background: url("../../naiteisha/img/naiteisha_navicon_ntl/v_on.png") no-repeat;
+  background-size: cover;/* 職種ごとに変更 */
+}
+.nav_ntl-s_ogura{
+  background: url("../../naiteisha/img/naiteisha_navicon_ntl/v_on.png") no-repeat;
+  background-size: cover;/* 職種ごとに変更 */
+}
+.nav_ntl-s_koizumi{
+  background: url("../../naiteisha/img/naiteisha_navicon_ntl/ac_on.png") no-repeat;
+  background-size: cover;/* 職種ごとに変更 */
+}
+.nav_ntl-s_kai{
+  background: url("../../naiteisha/img/naiteisha_navicon_ntl/v2_on.png") no-repeat;
+  background-size: cover;/* 職種ごとに変更 */
+}
+.nav_ntl-s_takeuchi{
+  background: url("../../naiteisha/img/naiteisha_navicon_ntl/w_on.png") no-repeat;
+  background-size: cover;/* 職種ごとに変更 */
+}
+.nav_ntl-s_otomo{
+  background: url("../../naiteisha/img/naiteisha_navicon_ntl/w_on.png") no-repeat;
+  background-size: cover;/* 職種ごとに変更 */
+}
+.nav_ntl-s_iwata{
+  background: url("../../naiteisha/img/naiteisha_navicon_ntl/a_on.png") no-repeat;
+  background-size: cover;/* 職種ごとに変更 */
+}
+.nav_ntl-s_tokuda{
+  background: url("../../naiteisha/img/naiteisha_navicon_ntl/a_on.png") no-repeat;
+  background-size: cover;/* 職種ごとに変更 */
+}
+.nav_ank:hover .nav_ntl-w{
+ background: url("../../naiteisha/img/naiteisha_navicon_ntl/w_on.png") no-repeat;
+ background-size: cover;/* 職種ごとに変更 */
+}
+.nav_ank:hover .nav_ntl-ac{
+	background: url("../../naiteisha/img/naiteisha_navicon_ntl/ac_on.png") no-repeat;
+	background-size: cover;/* 職種ごとに変更 */
+}
+/* --------------------------------------------------*/
+.nav_name{
+  position: absolute;
+  top: 32px;
+  left: 72px;
+  color: #333;
+  font-size: 15px;
+}
+.nav_ank:hover .nav_name{
+  color:  #008d80;
+}
+
+.nav_icon{
+  display: block;
+  width: 56px;
+  height: 56px;
+}
+.nav_ank:hover .nav_icon{
+  box-sizing: border-box;
+  border: 3px solid #008d80;
+}
+.nav_icon-acrive{
+  box-sizing: border-box;
+  border: 3px solid #008d80;
+}
+/* 各-----------indexナビの画像 ------------------*/
+.nav_icon-yabe{
+  background: url("../../naiteisha/img/naiteisha_navicon/yabe.jpg") no-repeat;/* 内定者ごとに変更 */
+  background-size: 56px 56px;
+  background-position: center;
+}
+.nav_icon-yabe_line{
+  box-sizing: border-box;
+  border: 3px solid #008d80;
+}
+.nav_icon-okubo{
+  background: url("../../naiteisha/img/naiteisha_navicon/okubo.jpg") no-repeat;/* 内定者ごとに変更 */
+  background-size: 56px 56px;
+  background-position: center;
+}
+.nav_icon-okubo_line{
+  box-sizing: border-box;
+  border: 3px solid #008d80;
+}
+
+
+.nav_icon-yamamoto{
+  background: url("../../naiteisha/img/naiteisha_navicon/yamamoto.jpg") no-repeat;/* 内定者ごとに変更 */
+  background-size: 56px 56px;
+  background-position: center;
+}
+.nav_icon-yamamoto_line{
+  box-sizing: border-box;
+  border: 3px solid #008d80;
+}
+
+
+.nav_icon-ogura{
+  background: url("../../naiteisha/img/naiteisha_navicon/ogura.jpg") no-repeat;/* 内定者ごとに変更 */
+  background-size: 56px 56px;
+  background-position: center;
+}
+.nav_icon-ogura_line{
+  box-sizing: border-box;
+  border: 3px solid #008d80;
+}
+
+
+
+.nav_icon-koizumi{
+  background: url("../../naiteisha/img/naiteisha_navicon/koizumi.jpg") no-repeat;/* 内定者ごとに変更 */
+  background-size: 56px 56px;
+  background-position: center;
+}
+.nav_icon-koizumi_line{
+  box-sizing: border-box;
+  border: 3px solid #008d80;
+}
+
+
+
+.nav_icon-kai{
+  background: url("../../naiteisha/img/naiteisha_navicon/kai.jpg") no-repeat;/* 内定者ごとに変更 */
+  background-size: 56px 56px;
+  background-position: center;
+}
+.nav_icon-kai_line{
+  box-sizing: border-box;
+  border: 3px solid #008d80;
+}
+
+
+
+
+
+.nav_icon-takeuchi{
+  background: url("../../naiteisha/img/naiteisha_navicon/takeuchi.jpg") no-repeat;/* 内定者ごとに変更 */
+  background-size: 56px 56px;
+  background-position: center;
+}
+.nav_icon-takeuchi_line{
+  box-sizing: border-box;
+  border: 3px solid #008d80;
+}
+
+
+
+.nav_icon-otomo{	
+  background: url("../../naiteisha/img/naiteisha_navicon/otomo.jpg") no-repeat;/* 内定者ごとに変更 */
+  background-size: 56px 56px;
+  background-position: center;
+}
+.nav_icon-otomo_line{
+  box-sizing: border-box;
+  border: 3px solid #008d80;
+}
+
+
+
+
+.nav_icon-iwata{
+  background: url("../../naiteisha/img/naiteisha_navicon/iwata.jpg") no-repeat;/* 内定者ごとに変更 */
+  background-size: 56px 56px;
+  background-position: center;
+}
+.nav_icon-iwata_line{
+  box-sizing: border-box;
+  border: 3px solid #008d80;
+}
+
+
+.nav_icon-tokuda{
+  background: url("../../naiteisha/img/naiteisha_navicon/tokuda.jpg") no-repeat;/* 内定者ごとに変更 */
+  background-size: 56px 56px;
+  background-position: center;
+}
+.nav_icon-tokuda_line{
+  box-sizing: border-box;
+  border: 3px solid #008d80;
+}
+
+
+
+.nav_hr{
+  float: left;
+  width: 960px;
+  height: 1px;
+  background-color:  #76cac2;
+}
+.nav_hr hr{
+  display: none;
+}
+.hero{
+  position: relative;
+}
+.hero-index{
+  width: 100%;
+  height: 400px;
+  background: url("../../naiteisha/img/bg_hero.jpg") no-repeat center;
+}
+/* 各セクションメイン画像 */
+.hero-otomo{
+  width: 100%;
+  height: 500px;
+  background: url("../../naiteisha/img/naiteisha_otomo/bg_hero.jpg") no-repeat center;
+}
+.hero-iwata{
+  width: 100%;
+  height: 500px;
+  background: url("../../naiteisha/img/naiteisha_iwata/bg_hero.jpg") no-repeat center;
+}
+.hero-ogura{
+  width: 100%;
+  height: 500px;
+  background: url("../../naiteisha/img/naiteisha_ogura/bg_hero.jpg") no-repeat center;
+}
+.hero-okubo{
+  width: 100%;
+  height: 500px;
+  background: url("../../naiteisha/img/naiteisha_okubo/bg_hero.jpg") no-repeat center;
+}
+.hero-takeuchi{
+  width: 100%;
+  height: 500px;
+  background: url("../../naiteisha/img/naiteisha_takeuchi/bg_hero.jpg") no-repeat center;
+}
+.hero-koizumi{
+  width: 100%;
+  height: 500px;
+  background: url("../../naiteisha/img/naiteisha_koizumi/bg_hero.jpg") no-repeat center;
+}
+.hero-tokuda{
+  width: 100%;
+  height: 500px;
+  background: url("../../naiteisha/img/naiteisha_tokuda/bg_hero.jpg") no-repeat center;
+}
+.hero-yabe{
+  width: 100%;
+  height: 500px;
+  background: url("../../naiteisha/img/naiteisha_yabe/bg_hero.jpg") no-repeat center;
+}
+.hero-yamamoto{
+  width: 100%;
+  height: 500px;
+  background: url("../../naiteisha/img/naiteisha_yamamoto/bg_hero.jpg") no-repeat center;
+}
+.hero-kai{
+  width: 100%;
+  height: 500px;
+  background: url("../../naiteisha/img/naiteisha_kai/bg_hero.jpg") no-repeat center;
+}
+/* ---------------- */
+.hero_career{
+  position: absolute;
+  top: 130px;
+  left: 20px;
+}
+.yabe{
+}
+.ookubo{
+}
+.yamamoto{
+}
+.ogura{
+}
+.koizumi{
+}
+.kai{
+}
+.takeuchi{
+}
+.otomo{
+}
+.iwata{
+}
+.tokuda{
+}
+/* ---------------- */
+.hero_name{
+  line-height: 1;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 160px;
+  right: 0;
+  left: 0;
+  text-align: center;
+  font-size: 1.618em;
+  font-weight: bold;
+}
+.hero_name span{
+  padding-top: 5px;
+  font-weight: normal;
+}
+
+.hero_name .hero_status{
+  font-size: 0.8em;
+  display: block;
+}
+/*.hero_name span:before{
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 15px;
+  background-color: #333;
+  margin: 0 15px;
+}*/
+.hero_number{
+  position: absolute;
+  top: -30px;
+  left: -20px;
+  width: 75px;
+  height: 75px;
+  background-color: #008d80;
+}
+.hero_cont{
+  position: absolute;
+  top: 350px;
+  left: 125px;
+  text-align: center;
+}
+.hero-txt{
+  text-align: center;
+}
+.hero_wrap{
+  position: relative;
+  width: 960px;
+  height: 630px;
+  margin: 0 auto;
+}
+.hero_blunk{
+  width: 100%;
+  height: 230px;
+  background-color: #fff;
+}
+.ac_yabe{
+		height: 233px;
+}
+.ac_ogura{
+		height: 233px;
+}
+.ac_yamamoto{
+	height: 233px;
+}
+/* 内定者 */
+.reason{
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+.reason_wrap{
+  overflow: hidden;
+ 
+	overflow: hidden;
+}
+/*
+.reason_wrap02{
+  overflow: hidden;
+  background: url("../../naiteisha/img/bg_2.jpg") no-repeat bottom left;
+}
+.reason_wrap03{
+  overflow: hidden;
+  background: url("../../naiteisha/img/bg_1.jpg") no-repeat bottom left;
+}
+.reason_wrap04{
+  overflow: hidden;
+  background: url("../../naiteisha/img/bg_1.jpg") no-repeat bottom left;
+}
+.reason_wrap05{
+  overflow: hidden;
+  background: url("../../naiteisha/img/bg_1.jpg") no-repeat bottom left;
+}
+.reason_wrap06{
+  overflow: hidden;
+  background: url("../../naiteisha/img/bg_1.jpg") no-repeat bottom left;
+}
+.reason_wrap07{
+  overflow: hidden;
+  background: url("../../naiteisha/img/bg_1.jpg") no-repeat bottom left;
+}
+.reason_wrap08{
+  overflow: hidden;
+  background: url("../../naiteisha/img/bg_1.jpg") no-repeat bottom left;
+}
+.reason_wrap09{
+  overflow: hidden;
+  background: url("../../naiteisha/img/bg_1.jpg") no-repeat bottom left;
+}
+.reason_wrap10{
+  overflow: hidden;
+  background: url("../../naiteisha/img/bg_1.jpg") no-repeat bottom left;
+}*/
+/*--------------------- */
+.article{
+  overflow: hidden;
+  width: 600px;
+  padding-right: 44px;
+  float: right;
+}
+.article02{
+  margin: 50px 0px;
+}
+/*--------------------- */
+.article-01{
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 0px;
+}
+.article_ttl{
+  padding-bottom: 25px;
+}
+.article-01 .article_ttl{
+  float: left;
+  padding: 25px 0px 0px 48px;
+}
+.article-01 .article_text{
+  float: right;
+  width: 496px;
+  padding-right: 44px;
+}
+.yamamoto_tx{
+		height: 100px;
+}
+/* -------セクション画像位置調整-----------------*/
+.person_yabe{
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  height: 600px;
+}
+.person_ookubo{
+  position: absolute;
+  bottom: 27px;
+  left: 40px;
+}
+.person_yamamoto{
+  position: absolute;
+  bottom: 25px;
+  left: 59px;
+}
+.person_ogura{
+  position: absolute;
+  bottom: 6px;
+  left: 26px;
+}
+.person_koizumi{
+  position: absolute;
+  bottom: 0;
+  left: 56px;
+}
+.person_kai{
+  position: absolute;
+  bottom: 0;
+  left: 60px;
+}
+.person_takeuchi{
+  position: absolute;
+  bottom: 0;
+  left: 61px;
+}
+.person_otomo{
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+}
+.person_iwata{
+  position: absolute;
+  bottom: 0;
+  left: 66px;
+}
+.person_tokuda{
+  position: absolute;
+  bottom: 0;
+  left: 70px;
+}
+.section{
+	margin-top: 30px;
+	height: 800px;
+}
+/*ChromeとOperaのみだけに適用されるCSSハック*/
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+ .article02{
+  margin: 20px 0px;
+}
+}
+
+
+
+
+/*----------
+
+佐藤　修正
+
+---------- */
+     
+/* members */
+.person_yabe{
+  position: absolute;
+  bottom: 0px;
+  left: 40px;
+  /*height: 600px;*/
+}
+.person_ookubo{
+  position: absolute;
+  bottom: 80px;
+  left: 40px;
+}
+.person_yamamoto{
+  position: absolute;
+  bottom: 40px;
+  left: 59px;
+}
+.person_ogura{
+  position: absolute;
+  bottom: 50px;
+  left: 26px;
+}
+.person_koizumi{
+  position: absolute;
+  bottom: 60px;
+  left: 56px;
+}
+.person_kai{
+  position: absolute;
+  bottom: 70px;
+  left: 60px;
+}
+.person_takeuchi{
+  position: absolute;
+  bottom: 70px;
+  left: 61px;
+}
+.person_otomo{
+  position: absolute;
+  bottom: 60px;
+  left: -1px;
+}
+.person_iwata{
+  position: absolute;
+  bottom: 60px;
+  left: 66px;
+}
+.person_tokuda{
+  position: absolute;
+  bottom: 60px;
+  left: 70px;
+}
+
+
+/* wrapper */
+.reason_wrap{
+  line-height: 1.7;
+  padding-right: 0;
+    /*padding: 50px;*/
+  overflow: hidden;  
+}
+
+/* module */
+.article{
+  overflow: visible;
+  padding-right: 50px;
+}
+.article > .article{
+  padding-right: 0;
+}
+
+.article-01{
+  width: 100%;
+  padding: 45px 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: solid 1px #ccc;
+}
+.article02{
+ margin-top: 0; 
+}
+
+/* ここ追加 */ 
+.article_wrap{
+	width: 960px !important;
+  padding-bottom: 120px;
+	overflow: hidden;
+ background: url("../../naiteisha/img/bg_1.jpg") no-repeat bottom left;
+	background-size: auto 100%;
+}
+
+.article_ttl{
+  margin-top: 50px;
+}
+.article-01 .article_ttl{
+  padding: 0px;
+}
+.article-01 .article_text{
+  /*width: 490px;*/
+  padding-left: 50px;
+  padding-right: 0px;
+}
+
+.article-01 .article{
+  display: table;
+}
+.article-01 .article_ttl,
+.article-01 .article_text{
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* members article */
+.ac_yabe{
+  height: auto;
+}
+
+#footerwrap{
+  margin-top: 0;
+}
+
+
+/* 採用エリアラベル */
+.saiyoArea{
+  line-height: 1;
+  margin-left: 10px;
+  padding:5px;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  background-color:rgba( 20,20,20,0.75);
+  border-radius: 1px;
+}
+
+/*.saiyoArea:before{
+  content: " ";
+  width: 0.5em;
+  height: 1px;
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -0.5em;
+  background-color:rgba( 20,20,20,0.75);
+}*/
+
+

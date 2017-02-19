@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* 見出し */
+.lead-catIndex .lead_ttl{
+	top: 25px;
+}
+.lead-catIndex .lead_txt{
+	top: 165px;
+}
+
+.seihoSchoolLogo{
+	line-height: 1;
+	width: 1.5em;
+	height: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	vertical-align: middle;
+	background: url(../img/seiho_logo.png) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+
+/* コンテンツエリア */
+.notes{
+	display: block;
+  font-size: 13px;
+	margin-top: 4px;
+}
+.main{
+	overflow: hidden;
+	width: 960px;
+	padding: 20px;
+	margin: 0 auto;
+	margin-bottom: 75px;
+}
+
+
+
+/******************** パネル ********************/
+
+/*イメージ*/
+.link-business{
+	background-image: url("../img/link_business.jpg");
+}
+.link-business_mv{
+	background-image: url("../img/link_business_mv.jpg");
+}
+.link-internship{
+	background-image: url("../img/link_internship.jpg");
+}

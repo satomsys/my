@@ -1,0 +1,85 @@
+@charset 'UTF-8';
+.isSP {
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  .isSP {
+    display: block;
+  }
+  /* layout
+---------------------------------------------------------------------------- */
+  body {
+    position: relative;
+  }
+
+  .lead {
+    min-width: 0;
+    margin-bottom: 30px;
+  }
+  .policy .lead, .history .lead {
+    margin-bottom: 30px;
+  }
+  .lead-bgImage {
+    position: relative;
+    max-height: 200px;
+    background-position: center center;
+  }
+  .lead-catIndex {
+    max-height: 200px;
+  }
+  .lead-catIndex .lead_ttl{
+    top: 25px;
+    font-size: 24px;
+  }
+  .lead_ttl:before {
+    bottom: -64%;
+  }
+  .lead-catIndex .lead_txt{
+    top: 75px;
+  }
+  .lead-catIndex .lead_txt br{
+    display: none;
+  }
+
+
+  .selectArea {
+    width: 100%;
+    height: auto;
+    padding-top: 43.6%;
+    box-sizing: border-box;
+    float: none;
+    text-align: left;
+    border-right: none;
+  }
+
+  #zenkoku.selectArea {
+    padding-top: 40%;
+    background-image: url(../images/img_zenkoku_sp.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+  #chiiki.selectArea {
+    background-image: url(../images/img_chiiki_sp.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+  #houjin.selectArea {
+    margin-bottom: calc( 12% - 30px);
+    background-image: url(../images/img_houjin_sp.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+
+  .imgBox {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width:320px) {
+
+}

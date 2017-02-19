@@ -1,0 +1,412 @@
+@charset 'UTF-8';
+.isSP {
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  .isSP {
+    display: block;
+  }
+  /* layout
+---------------------------------------------------------------------------- */
+  body {
+    position: relative;
+  }
+  #ContentsWrapTop {
+    padding-top: 0;
+  }
+  .hero_wrap, .hero-txt, .main_wrap, .ttl_main {
+    width: 100%;
+  }
+  .container_naiteisha {
+    padding: 0 0 80px;
+  }
+  /* pankz(仮) */
+  #Pankz {
+    display: none;
+  }
+  /* index
+---------------------------------------------------------------------------- */
+  .ttl_main {
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .hero_cont {
+    top: auto;
+    right: 0;
+    bottom: 56%;
+    left: 0;
+    width: 90%;
+    margin: auto;
+  }
+  .hero_cont img {
+    width: 80%;
+  }
+  .hero-txt {
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: left;
+  }
+  .hero-index {
+    height: 100px;
+    background-size: contain;
+  }
+  .hero_blunk {
+    height: 210px;
+  }
+  .main_wrap {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 54px;
+  }
+  .link_wrap {
+    position: relative;
+    width: auto;
+    height: auto;
+  }
+  .link_wrap:hover {
+    opacity: 1;
+  }
+  .link_wrap_hover:after {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(0, 0, 0, .2);
+  }
+  .link_box {
+    width: 46%;
+    height: auto;
+    margin-bottom: 0;
+  }
+  .link_box:nth-last-of-type(n+3) {
+    margin-bottom: 40px;
+  }
+  .link_wrap_iphone {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  .link_box img {
+    display: block;
+    width: 100%;
+  }
+  .link_person {
+    position: relative;
+    z-index: 11;
+  }
+  .link_txt {
+    font-size: 4vw;
+    top: auto;
+    right: 0;
+    bottom: 4%;
+    left: 0;
+    display: block;
+    width: auto;
+  }
+  .link_career-name {
+    position: relative;
+    top: auto;
+    bottom: 34px;
+  }
+  .link_career-number {
+    z-index: 22;
+    top: -8%;
+    right: 4%;
+    bottom: 0;
+    width: 22%;
+    height: 12%;
+  }
+  .link_acdm {
+    font-size: 3vw;
+  }
+  #idx .saiyoArea {
+    display: block;
+    width: 44%;
+    margin: 4px auto 0;
+    padding: 3px 0;
+  }
+  .main_wrap .link_box:nth-child(odd) {
+    margin-right: 8%;
+  }
+  /* naiteisha
+---------------------------------------------------------------------------- */
+  #special .main_wrap {
+    padding: 0 0 30px;
+  }
+  #special .hero {
+    height: 350px;
+    background-size: cover;
+  }
+  .hero_career {
+    top: 44%;
+    left: 0;
+  }
+  .hero_number {
+    left: 0;
+    width: 55px;
+    height: 55px;
+  }
+  .hero_name {
+    font-size: 1.1em;
+    top: 69%;
+    right: 25%;
+  }
+  .hero_name span {
+    padding-top: 3px;
+  }
+  .hero_status span {
+    margin-top: 6px;
+  }
+  .hero_career>img {
+    width: 75%;
+  }
+  .article {
+    float: none;
+    width: 100%;
+  }
+  .article_ttl {
+    margin-top: 0;
+    margin-bottom: 18px;
+    padding: 0;
+    text-align: center;
+  }
+  .article_text p {
+    font-size: 13px;
+  }
+  .article-01 .article_text {
+    width: 100%;
+    padding-left: 0;
+  }
+  .article01 {
+    margin-bottom: 30px;
+    padding: 45px 30px;
+  }
+  .article_wrap .article:first-of-type {
+    margin-bottom: 30px;
+  }
+  .article_wrap {
+    box-sizing: border-box;
+    width: 100% !important;
+    background-image: initial;
+  }
+  article.article.article-01, .article_wrap {
+    margin-bottom: 0;
+    padding: 35px 5%;
+  }
+  .article_wrap article:last-of-type {
+    margin-bottom: 30px;
+  }
+  .ac_yabe {
+    margin-top: 0;
+  }
+  div[class^='person'] {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  div[class^='person'] img {
+    width: 50%;
+  }
+  #footerwrap {
+    position: relative;
+  }
+  /* naiteisha_heading
+---------------------------------------------------------------------------- */
+  article h3.article_ttl img {
+    display: none;
+  }
+  article.article-01 h3.article_ttl {
+    display: block;
+  }
+  article h3.article_ttl {
+    font-family: '游明朝', YuMintyo, 'ヒラギノ明朝 Pro W6', 'Hiragino Mincho Pro', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
+    font-size: 4.4vw;
+    line-height: 1.4;
+    position: relative;
+    text-align: justify;
+    white-space: pre-line;
+    color: #00a291;
+  }
+  article.article-01 h3.article_ttl:first-of-type:after {
+    content: '総合職(全国型) career Sに決めた理由';
+  }
+  .wr_yamamoto article.article-01 h3.article_ttl:first-of-type:after,
+  .wr_ogura article.article-01 h3.article_ttl:first-of-type:after{
+    content: '総合職(全国型) career Vに決めた理由';
+  }
+    .wr_kai article.article-01 h3.article_ttl:first-of-type:after{
+    content: '総合職(地域型) career Vに決めた理由';
+  }
+  .wr_takeuchi article.article-01 h3.article_ttl:first-of-type:after,
+  .wr_otomo article.article-01 h3.article_ttl:first-of-type:after{
+    content: '総合職(地域型) career Wに決めた理由';
+  }
+  .wr_koizumi article.article-01 h3.article_ttl:first-of-type:after{
+    content: '総合職(全国型) アクチュアリーに決めた理由';
+  }
+  .wr_iwata article.article-01 h3.article_ttl:first-of-type:after,
+  .wr_tokuda article.article-01 h3.article_ttl:first-of-type:after{
+    content: '総合職(地域型) career Aに決めた理由';
+  }
+
+
+  .article_wrap article h3.article_ttl:first-of-type:after {
+    content: '明治安田生命に入社を決めた理由';
+  }
+  .naiteisha01 .article_wrap article:last-of-type h3.article_ttl:after, .naiteisha04 .article_wrap article:last-of-type h3.article_ttl:after {
+    content: '今後、挑戦したいこと';
+  }
+  .naiteisha02 .article_wrap article:last-of-type h3.article_ttl:after, .naiteisha03 .article_wrap article:last-of-type h3.article_ttl:after, .naiteisha05 .article_wrap article:last-of-type h3.article_ttl:after, .naiteisha06 .article_wrap article:last-of-type h3.article_ttl:after, .naiteisha07 .article_wrap article:last-of-type h3.article_ttl:after, .naiteisha09 .article_wrap article:last-of-type h3.article_ttl:after {
+    font-size: 4.7vw;
+    content: '明治安田生命の選考で気をつけたこと';
+  }
+  .naiteisha08 .article_wrap article:last-of-type h3.article_ttl:after {
+    content: '明治安田生命の仙台地区採用で良かったこと';
+  }
+  .naiteisha010 .article_wrap article:last-of-type h3.article_ttl:after {
+    content: '明治安田生命の札幌地区採用で良かったこと';
+  }
+  /* nav
+---------------------------------------------------------------------------- */
+  .nav_ank {
+    width: auto;
+    padding-left: 10%;
+  }
+  .nav_wrap {
+    width: 90%;
+    padding: 0;
+  }
+  .nav_item:not(.nav_current) .nav_ank:hover .nav_ntl-s {
+    background-image: url('../../naiteisha/img/naiteisha_navicon_ntl/s_off.png');
+  }
+  .nav_item:not(.nav_current) .nav_ank:hover .nav_ntl-vz {
+    background-image: url('../../naiteisha/img/naiteisha_navicon_ntl/v_off.png');
+  }
+  .nav_item:not(.nav_current) .nav_ank:hover .nav_ntl-v {
+    background-image: url('../../naiteisha/img/naiteisha_navicon_ntl/v2_off.png');
+  }
+  .nav_item:not(.nav_current) .nav_ank:hover .nav_ntl-ac {
+    background-image: url('../../naiteisha/img/naiteisha_navicon_ntl/ac_off.png');
+  }
+  .nav_item:not(.nav_current) .nav_ank:hover .nav_ntl-w {
+    background-image: url('../../naiteisha/img/naiteisha_navicon_ntl/w_off.png');
+  }
+  .nav_item:not(.nav_current) .nav_ank:hover .nav_ntl-a {
+    background-image: url('../../naiteisha/img/naiteisha_navicon_ntl/a_off.png');
+  }
+  .nav_item:not(.nav_current) .nav_ank:hover .nav_icon {
+    border: none;
+  }
+  .nav_item .nav_ank:hover .nav_name {
+    color: inherit;
+  }
+  .nav_item {
+    position: relative;
+    width: 50%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .nav_item a {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .nav_icon {
+    width: 46px;
+    height: 46px;
+    background-size: 46px 46px;
+  }
+  .nav_hr {
+    width: 0;
+  }
+  .nav_line {
+    top: 0;
+    height: 100%;
+  }
+  .nav_item:nth-child(odd) .nav_line {
+    display: none;
+  }
+  .nav_txt {
+    top: -26px;
+    bottom: 0;
+    left: 45%;
+    width: 72px;
+    height: 23px;
+    margin: auto;
+    background-size: 100% 100%;
+  }
+  .nav_name {
+    font-size: 13px;
+    top: 49px;
+    left: 45%;
+  }
+  .nav_item:nth-child(5) .nav_ank:after, .nav_item:nth-child(12) .nav_ank:after {
+    display: none;
+  }
+  .nav_item:nth-last-of-type(n+3):after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 60%;
+    height: 1px;
+    margin: auto;
+    content: '';
+    background-color: #76cac2;
+  }
+  /*unique*/
+  .ac_yamamoto, .yamamoto_tx, .ac_ogura {
+    height: auto;
+  }
+  .article_wrap {
+    padding-bottom: 0;
+  }
+  .reason_wrap {
+    padding-bottom: 35px;
+  }
+  .naiteisha02 .reason_wrap>.article .article_text p:first-line {
+    letter-spacing: -.2px;
+  }
+  .naiteisha06 .reason_wrap .article:last-of-type .article_text span {
+    display: inline-block;
+    margin-left: 1em;
+    text-indent: -1em;
+  }
+}
+
+
+/* landscape */
+
+@media screen and (max-width:768px) and (orientation:landscape) {
+  .link_txt {
+    font-size: 2.7vw;
+    bottom: 3%;
+  }
+  article h3.article_ttl {
+    font-size: 4vw;
+  }
+  .link_acdm {
+    font-size: 2.8vw;
+  }
+  .nav_icon {
+    position: relative;
+    left: 11%;
+  }
+  .nav_txt {
+    top: -21px;
+    left: 39%;
+  }
+  .nav_name {
+    top: 50px;
+    right: 20%;
+    left: auto;
+  }
+}

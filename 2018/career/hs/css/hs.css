@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*****************************
+  法人総合営業職 index 固有CSS
+*****************************/
+
+/**************** reset ******************/
+
+.hero{
+  width: auto;
+  padding-top: 0;
+  background: none;
+}
+.hero_wrap{
+  padding: 0;
+}
+.hero_cont {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+/**************** setting ******************/
+.c-box{
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+    webkit-justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}

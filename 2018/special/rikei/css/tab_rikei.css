@@ -1,0 +1,280 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*=======================================
+
+　職種とキャリア（タブ）
+
+=======================================*/
+/* タイトル */
+.lead{
+ position: relative;
+ width: 100%;
+ min-width:1000px;
+ height: 300px;
+ background-color: #009676;
+ background: url("../img/bg_hero.jpg") no-repeat 50%;
+ background-size: 1500px auto;
+ margin-bottom: 60px;
+}
+@media (min-width:1501px){
+ .lead{
+	 min-width:1500px;
+	 background-size: 100% auto;
+ }
+}
+.lead_ttl{
+ top: 90px;
+/* position: absolute;
+ left: 50%;
+ margin-left: -180px;
+	font-size: 40px;
+ font-family:"游明朝", YuMincho, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro',"ＭＳ Ｐ明朝", serif;
+	color: #000;
+ letter-spacing: 5px;*/
+}
+/*.lead_ttl:before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 78px;
+	left: 50%;
+	margin-left: -50px;
+	width: 100px;
+	height: 2px;
+	background-color: #E8AD02;
+}*/
+.lead_txt{
+ top: 180px;
+ font-size: 25px;
+ font-family:"游明朝", YuMincho, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro',"ＭＳ Ｐ明朝", serif;
+/* position: absolute;
+ left: 50%;
+ margin-left: -336px;
+ letter-spacing: 3px;
+	color: #000;*/
+}
+
+
+/* -------------------------
+	タブ
+--------------------------- */
+.bb-zenkoku {
+	height:5px;
+	background-color:#1da1a5;
+}
+.bb-chiiki {
+	height:5px;
+	background-color:#92cc53;
+}
+.bb-hs {
+	height:5px;
+	background-color:#e17588;
+}
+
+#careerTab {
+	margin:0 0 16px 0;
+}
+
+#careerTab ul {
+	height:47px;
+	width:960px;
+	overflow:hidden;
+}
+
+#careerTab ul li {
+	list-style-type:none;
+	float:left;
+	width:314px;
+	height:47px;
+	margin-left:9px;
+	text-indent:-9999px;
+}
+
+#careerTab ul li a {
+	width:314px;
+	height:47px;
+	display:block;
+}
+#careerTab ul li a:hover {
+	width:314px;
+	height:47px;
+	display:block;
+}
+
+#careerTab ul li:first-child {
+	margin-left:0px;
+}
+
+
+#careerTab ul li.careers{background:url(../img/tab_career_zenkoku_on.gif) no-repeat  0px 0px;}
+#careerTab ul li.careers a {background:url(../img/tab_career_zenkoku_off.gif) no-repeat 0px 0px;}
+#careerTab ul li.careers a:hover{background:url(../img/tab_career_zenkoku_hover.gif) no-repeat  0px 0px;}
+
+#careerTab ul li.careerv {background:url(../img/tab_career_chiiki_on.gif) no-repeat  0px 0px;}
+#careerTab ul li.careerv a {background:url(../img/tab_career_chiiki_off.gif) no-repeat 0px 0px;}
+#careerTab ul li.careerv a:hover {background:url(../img/tab_career_chiiki_hover.gif) no-repeat 0px 0px;}
+
+#careerTab ul li.actuary {background:url(../img/tab_career_hs_on.gif) no-repeat 0px 0px;}
+#careerTab ul li.actuary a {background:url(../img/tab_career_hs_off.gif) no-repeat 0px 0px;}
+#careerTab ul li.actuary a:hover {background:url(../img/tab_career_hs_hover.gif) no-repeat 0px 0px;}
+
+/* ---------------------
+
+  主要コンテンツエリア
+
+---------------------- */
+/* アウトライン */
+#careerArea{
+	width:960px;
+}
+
+/* ボックス幅 */
+.wd300{  width:300px;  }
+.wd340{  width:340px;  }
+.wd360{  width:360px;  }
+.wd380{  width:380px;  }
+.wd400{  width:400px;  }
+.wd420{  width:420px;  }
+.wd440{  width:440px;  }
+.wd460{  width:460px;  }
+.wd480{  width:480px;  }
+.wd960{  width:960px;  }
+
+/* マージン */
+.mb230 {margin-bottom:230px!important;}
+.mb220 {margin-bottom:220px!important;}
+.mb210 {margin-bottom:210px!important;}
+.mb200 {margin-bottom:200px!important;}
+.mb180 {margin-bottom:180px!important;}
+.mb160 {margin-bottom:160px!important;}
+.mb140 {margin-bottom:140px!important;}
+.mb130 {margin-bottom:130px!important;}
+.mb120 {margin-bottom:120px!important;}
+.mb110 {margin-bottom:110px!important;}
+.mb80 {margin-bottom:80px!important;}
+.mb35 {margin-bottom:35px!important;}
+.mb5 {margin-bottom:5px!important;}
+
+/* -------------------------
+	職員紹介タブ
+--------------------------- */
+
+#staffTab {
+	margin-top: 42px;
+	position: relative;
+}
+
+#staffTab .tab_trg {
+	display: table;
+	height: 100px;
+	list-style: none;
+	border-bottom: 1px solid #cccccc;
+	background: #e9e8e8;
+	padding: 13px;
+	margin: 0 0 75px 0;
+}
+
+#staffTab .tab_trg li {
+	display: table-cell;
+	margin-left: 2px;
+	padding: 0;
+	cursor: pointer;
+}
+
+#staffTab .panel {
+	display:none;
+}
+#staffTab .panel.panel-active {
+	display: block;
+}
+
+#staffTab .panel_inner {
+	border: 1px solid #cccccc;
+	padding: 45px 0;
+	position: relative;
+	text-align: center;
+}
+#staffTab .panel_inner:before {
+	content: "";
+	background: url("../img/panel_bg.png") no-repeat;
+	width: 61px;
+	height: 65px;
+	position: absolute;
+	top: -64px;
+	left: 0;
+	z-index: 100;
+}
+
+#staffTab.rikei #panel1 .panel_inner:before {  left: 138px;  }
+#staffTab.rikei #panel2 .panel_inner:before {  left: 449px;  }
+#staffTab.rikei #panel3 .panel_inner:before {  left: 760px;  }
+
+.staffTab_contents {
+	margin: 0 48px;
+	text-align: left;
+}
+
+#staffTab .staffTab_contents p {
+	font-size:14px;
+	line-height:24px;
+	text-align:left;
+}
+
+#staffTab .staffTab_contents.reason {
+	width: 813px;
+	height: 140px;
+	margin: 0 auto;
+	padding: 30px 25px;
+	background: #F6F6F6;
+	text-align: left;
+}
+
+#staffTab .staffTab_contents.rewarding,
+#staffTab .staffTab_contents.goal {
+	width: 575px;
+}
+
+#staffTab .wholebody {
+	position: absolute;
+	top: 700px;
+	right: 70px;
+	z-index: 100;
+}
+
+#staffTab .staffTab_contents.message {
+	background: #e6f5f0;
+	padding: 60px 310px 25px 35px;
+	position: relative;
+}
+
+#staffTab .staffTab_contents.message .midasi_message {
+	position: absolute;
+	top: -40px;
+	left: -8px;
+}
+
+
+
+
+
+
+.tab-index {
+	text-align: center;
+	overflow: hidden;
+	width: 960px;
+}
+
+.tab-index span {
+	margin: 0 0 0 20px;
+	float: left;
+	width: 470px;
+}
+.tab-index span:first-child {
+	margin: 0 0 0 0;
+}
+
+.tab-index span:hover {
+	opacity: .8;
+}

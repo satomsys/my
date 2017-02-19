@@ -1,0 +1,282 @@
+@charset "UTF-8";
+.lead {
+  position: relative;
+  background: url("../img/bg_hero-guideline.jpg") no-repeat 50%;
+  background-size: 1780px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .lead {
+    min-width: 0;
+    margin-bottom: 30px;
+    background-image: url(../img/bg_hero-guideline_sp.jpg);
+  }
+}
+
+.lead_ttl {
+  top: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .lead_ttl {
+    top: 35%;
+    font-size: 24px;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lead-bgImage {
+    position: relative;
+    max-height: 200px;
+    background-position: center center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #ContentsContainer {
+    width: 90%;
+    font-size: 13px;
+  }
+  #ContentsWrapTop {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+}
+
+#BoxGuideline .sub {
+  font-size: 0.85em;
+}
+
+#BoxGuideline .red {
+  color: #cc0000;
+}
+
+#BoxGuideline p a {
+  color: #008b80;
+  text-decoration: underline;
+}
+
+#BoxGuideline .fakeTab {
+  width: 100%;
+  line-height: 1;
+  display: table;
+  table-layout: fixed;
+  border-bottom: solid 4px;
+  /***** フッター ******/
+}
+
+#BoxGuideline .fakeTab li {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+#BoxGuideline .fakeTab li.fakeTab_active a {
+  height: 65px;
+  margin-bottom: 0;
+  line-height: 65px;
+  background-color: #232323;
+  background-image: none;
+}
+
+#BoxGuideline .fakeTab li.fakeTab_active a:hover {
+  cursor: default;
+  background-color: #232323;
+}
+
+@media screen and (max-width: 768px) {
+  #BoxGuideline .fakeTab li.fakeTab_active a {
+    height: 45px;
+    line-height: 45px;
+  }
+}
+
+#BoxGuideline .fakeTab li a {
+  margin-right: 1px;
+  margin-bottom: 1px;
+  margin-left: 1px;
+  line-height: 50px;
+  height: 50px;
+  display: block;
+  color: #fff;
+  transition: all 0.1s;
+  text-decoration: none;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  text-align: center;
+  background: #008b80 url("../../../common/images/icon_arrow_toBottom.png") center 95% no-repeat;
+  background-size: 10px;
+}
+
+#BoxGuideline .fakeTab li a:hover {
+  background-color: #005851;
+  background-position: center  101%;
+}
+
+@media screen and (max-width: 768px) {
+  #BoxGuideline .fakeTab li a {
+    height: 37px;
+    line-height: 37px;
+    background-size: 6px;
+  }
+}
+
+#BoxGuideline .fakeTab-bottom {
+  border-top: solid 4px;
+  border-bottom: none;
+}
+
+#BoxGuideline .fakeTab-bottom li {
+  vertical-align: top;
+}
+
+#BoxGuideline .fakeTab-bottom li.fakeTab_active a {
+  margin-top: 0px;
+}
+
+#BoxGuideline .fakeTab-bottom li a {
+  margin-top: 1px;
+  margin-bottom: 0;
+  border-radius: 0;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background: #008b80 url("../../../common/images/icon_arrow_toTop.png") center 5% no-repeat;
+  background-size: 10px;
+}
+
+#BoxGuideline .fakeTab-bottom li a:hover {
+  background-color: #005851;
+  background-position: center  1%;
+}
+
+@media screen and (max-width: 768px) {
+  #BoxGuideline .fakeTab li {
+    font-size: 9px;
+  }
+}
+
+#BoxGuideline .guideline_index {
+  line-height: 1;
+  margin-top: 50px;
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-family: Times New Roman, "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro","ＭＳ Ｐ明朝", serif;
+  text-align: center;
+  color: #008b80;
+}
+
+@media screen and (max-width: 768px) {
+  #BoxGuideline .guideline_index {
+    font-size: 1.5em;
+    line-height: 1.4;
+    margin-top: 35px;
+  }
+}
+
+#BoxGuideline .guideline_content th, #BoxGuideline .guideline_content td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-top: #ccc solid 1px;
+  border-bottom: solid 1px #e2e2e2;
+}
+
+#BoxGuideline .guideline_content th {
+  width: 200px;
+  border-right: solid 1px #e2e2e2;
+  text-align: center;
+  font-size: 1.285em;
+  font-weight: bold;
+}
+
+#BoxGuideline .guideline_content td {
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  #BoxGuideline .guideline_content {
+    line-height: 1.4;
+    margin-top: 35px;
+  }
+  #BoxGuideline .guideline_content tr {
+    display: block;
+  }
+  #BoxGuideline .guideline_content th, #BoxGuideline .guideline_content td {
+    padding: 1em;
+    display: block;
+    border-left: solid 1px #e2e2e2;
+    border-right: solid 1px #e2e2e2;
+  }
+  #BoxGuideline .guideline_content th {
+    width: auto;
+    background-color: #f9f9f9;
+    font-size: 0.8em;
+  }
+  #BoxGuideline .guideline_content td {
+    border-top: none;
+    border-bottom: none;
+  }
+}
+
+#BoxGuideline .guideline .inner {
+  /***** border index *****/
+  /***** dl list *****/
+}
+
+#BoxGuideline .guideline .inner_article {
+  margin-top: 1em;
+}
+
+#BoxGuideline .guideline .inner_article + .inner_article {
+  margin-top: 2.5em;
+}
+
+#BoxGuideline .guideline .inner_article_index {
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  border-bottom: solid 1px #008b80;
+}
+
+#BoxGuideline .guideline .inner_footer {
+  text-align: left;
+  margin-top: 1em;
+}
+
+#BoxGuideline .guideline .inner_footer .link_btn {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #BoxGuideline .guideline .inner_footer .link_btn {
+    margin-left: auto;
+  }
+}
+
+#BoxGuideline .guideline .inner_list {
+  line-height: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: dashed 1px #e2e2e2;
+}
+
+#BoxGuideline .guideline .inner_list:last-of-type {
+  border-bottom: none;
+}
+
+#BoxGuideline .guideline .inner_list dt,
+#BoxGuideline .guideline .inner_list dd {
+  display: inline-block;
+}
+
+#BoxGuideline .guideline .inner_list dt {
+  min-width: 4em;
+  margin-right: 2em;
+  font-weight: bold;
+  color: #008b80;
+}
+
+@media screen and (max-width: 768px) {
+  #BoxGuideline .guideline .inner_list dt {
+    margin-right: 1em;
+  }
+}

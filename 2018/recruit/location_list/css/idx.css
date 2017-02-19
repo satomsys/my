@@ -1,0 +1,517 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#ContentsWrap {
+	padding-top: 0;
+}
+
+@media screen and ( max-width: 768px ){
+	img[ src $= "svg" ]{
+		display: none;
+	}
+}
+
+
+/* タイトル */
+.lead {
+	margin-bottom: 0;
+	// background: url("../img/bg_location.jpg") no-repeat center;
+}
+.lead-tiny .lead_ttl{
+	top: 65px;
+}
+@media screen and ( max-width: 768px ){
+	.lead-tiny .lead_ttl{
+		font-size: 24px;
+		top: 50px;
+	}	
+}
+
+/* コンテンツエリア */
+.inner {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+@media screen and ( max-width: 768px ){
+	.inner {
+		width: 90%;
+	}			
+}
+
+
+/* selectType */
+.selectType {
+	background: #F4F4F4;
+	padding: 30px 0 20px 0;
+}
+@media screen and ( max-width: 768px ){
+	.selectType{
+		display: none;
+	}
+}
+
+
+.selectType_ttl {
+	text-align: center;
+	margin: 0 0 10px 0;
+}
+
+.type_list {
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.type_list_head {
+	font-weight: bold;
+	text-align: left;
+	width: 25.5%;
+	float: left;
+	line-height: 50px;
+}
+
+.type_list_body {
+	text-align: left;
+	padding: 5px 0 5px 25.5%;
+	border-bottom: 1px solid #E2E2E2;
+}
+.type_list_body.last {
+	border-bottom: none;
+}
+
+.type_btn {
+	font-size: 12px;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	display: inline-block;
+	width: 200px;
+	height: 40px;
+	background: #999999;
+	position: relative;
+	cursor: pointer;
+}
+.type_btn:hover {
+	opacity: .6;
+}
+.type_btn:after {
+	content: "";
+	width: 6px;
+	height: 10px;
+	background: url("../img/selectType_arrow.svg") no-repeat center center;
+	position: absolute;
+	top: 50%;
+	right: 3px;
+	margin-top: -4px;
+}
+.type_btn[data-type="zenkoku_s"] { background: #AD3A3A; }
+.type_btn[data-type="zenkoku_v"] { background:#40C69F; }
+.type_btn[data-type="zenkoku_a"] { background: #38AD8B; }
+.type_btn[data-type="chiiki_v"] { background: #42CC5F; }
+.type_btn[data-type="chiiki_w"] { background: #D1CB00; }
+.type_btn[data-type="chiiki_a"] { background: #3ECCC8; }
+.type_btn[data-type="houjin"] { background: #E38FEF; }
+
+
+/* selectArea */
+.selectArea_wrap {
+	padding: 30px 0 100px 0;
+	min-height: 750px;
+}
+
+@media screen and ( max-width: 768px ){
+	.selectArea{
+		padding-bottom: 5px;
+	}
+	.selectArea:first-child{
+		padding-top: 5px;
+	}
+	.selectArea_wrap_child{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.selectArea_wrap_child:nth-child( even ){
+		background-color: #f9f9f9;
+	}
+	.selectArea > .inner > img{
+		display: none;
+	}
+	.selectArea_wrap{
+		padding: 10px 0 50px 0;
+		min-height: 0;
+	}
+}
+
+
+.selectArea_wrap_child_index{
+	display: none;
+}
+@media screen and ( max-width: 768px ){
+	.selectArea_wrap_child_index{
+		margin-bottom: 0.5em;
+		display: block;
+		text-align: center;
+		font-weight: bold;
+	}
+}
+
+
+.selectArea_ttl_wrap {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #999999;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.selectArea.zenkoku_s .selectArea_ttl_wrap {  border-color: #AD3A3A;}
+.selectArea.zenkoku_v .selectArea_ttl_wrap {  border-color: #40C69F; }
+.selectArea.zenkoku_a .selectArea_ttl_wrap {  border-color: #38AD8B; }
+.selectArea.chiiki_v .selectArea_ttl_wrap {  border-color: #42CC5F; }
+.selectArea.chiiki_w .selectArea_ttl_wrap {  border-color: #D1CB00; }
+.selectArea.chiiki_a .selectArea_ttl_wrap {  border-color: #3ECCC8; }
+.selectArea.houjin .selectArea_ttl_wrap {  border-color: #E38FEF; }
+
+@media screen and ( max-width: 768px ){
+	.selectArea_ttl_wrap {
+		width: auto;
+		height: auto;
+		padding: 0.5em;
+		border: none;
+		position: static;
+		display: block;
+		text-align: center;
+		border-radius: 2px;
+	}
+
+	.selectArea_ttl_wrap{
+		background: url("../img/area_btn_search.svg") no-repeat right 7px center;
+	}
+
+	.selectArea.zenkoku_s .selectArea_ttl_wrap {  background-color: #AD3A3A;}
+	.selectArea.zenkoku_v .selectArea_ttl_wrap {  background-color: #40C69F; }
+	.selectArea.zenkoku_a .selectArea_ttl_wrap {  background-color: #38AD8B; }
+	.selectArea.chiiki_v .selectArea_ttl_wrap {  background-color: #42CC5F; }
+	.selectArea.chiiki_w .selectArea_ttl_wrap {  background-color: #D1CB00; }
+	.selectArea.chiiki_a .selectArea_ttl_wrap {  background-color: #3ECCC8; }
+	.selectArea.houjin .selectArea_ttl_wrap {  background-color: #E38FEF; }	
+		
+}
+
+
+/*  タイトル領域→ボタン */
+.selectArea_ttl {
+	font-size: 23px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+.selectArea_ttl span {
+	font-size: 20px;
+}
+@media screen and ( min-width: 769px ){
+	.selectArea_ttl{
+	font-family: Times New Roman , "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", Hiragino Mincho ProN , "MSP明朝","MS PMincho","MS 明朝",serif;
+	}
+}
+@media screen and ( max-width: 768px ){
+	.selectArea_ttl span,
+	.selectArea_ttl {
+		font-size: 1em;
+	}
+	.selectArea_ttl {
+		color: #fff;
+		position: static;
+		transform: none;
+	}
+	.selectArea_ttl span {
+		margin-right: 0.5em;
+		display: inline-block;
+	}	
+	.selectArea_ttl br{
+		display: none;
+	}
+}
+
+
+
+.activeMap {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.selectArea_area {  }
+
+
+/** 地名表示領域 **/
+.area_wrap {
+	position: absolute;
+}
+.area_wrap[data-area="hokkaido"] { top: 67px; left: 502px; }
+.area_wrap[data-area="tohoku"] { top: 365px; left: 730px; }
+.area_wrap[data-area="hokuriku"] { top: 285px; left: 430px; }
+.area_wrap[data-area="shutoken"] { top: 497px; left: 602px; }
+.area_wrap[data-area="chubu"] { top: 597px; left: 497px; }
+.area_wrap[data-area="kinki"] { top: 472px; left: 318px; }
+.area_wrap[data-area="chugoku"] { top: 512px; left: 204px; }
+.area_wrap[data-area="shikoku"] { top: 682px; left: 263px; }
+.area_wrap[data-area="kyushu"] { top: 602px; left: 87px; }
+.area_wrap[data-area="okinawa"] { top: 591px; left: 670px; }
+
+.area_wrap[data-area="shutoken"] { top: 500px; left:  480px; }
+// .area_wrap[data-area="tokyo"] { top: 491px; left: 367px; }
+.area_wrap[data-area="kanagawa"] { top: 566px; left:  480px; }
+.area_wrap[data-area="saitama"] { top: 407px; left: 340px; }
+.area_wrap[data-area="chiba"] { top: 552px; left: 670px; }
+
+@media screen and ( max-width: 768px ){
+	.area_wrap {
+		position: static;
+	}
+}
+
+
+/* ボタン領域　→　見出し*/
+.area_btn {
+	color: #fff;
+	line-height: 34px;
+	width: 98px;
+	height: 34px;
+	// padding-left: 12px;
+	background: url("../img/area_btn_search.svg") no-repeat right 7px center;
+	background-color: #999999;
+	border-radius: 5px;
+	cursor: pointer;
+	position: relative;
+}
+.area_btn:hover {
+	opacity: .6;
+}
+.selectArea.zenkoku_s .area_btn {  background-color: #AD3A3A; }
+.selectArea.zenkoku_v .area_btn {  background-color: #40C69F; }
+.selectArea.zenkoku_a .area_btn {  background-color: #38AD8B; }
+.selectArea.chiiki_v .area_btn {  background-color: #42CC5F; }
+.selectArea.chiiki_w .area_btn {  background-color: #D1CB00; }
+.selectArea.chiiki_a .area_btn {  background-color: #3ECCC8; }
+.selectArea.houjin .area_btn {  background-color: #E38FEF; }
+
+@media screen and ( max-width: 768px ){
+	.area_btn {
+		width: auto;
+		line-height: 1;
+		height: auto;
+		padding-top: 1em;
+		padding-bottom: 5px;
+		border-bottom: solid 1px #ccc;
+		border-radius: 0px;
+		color: inherit;
+		text-align: left;
+		background-color: transparent!important;
+	}
+
+	.selectArea.zenkoku_s .area_btn {  border-color: #AD3A3A; }
+	.selectArea.zenkoku_v .area_btn {  border-color: #40C69F; }
+	.selectArea.zenkoku_a .area_btn {  border-color: #38AD8B; }
+	.selectArea.chiiki_v .area_btn {  border-color: #42CC5F; }
+	.selectArea.chiiki_w .area_btn {  border-color: #D1CB00; }
+	.selectArea.chiiki_a .area_btn {  border-color: #3ECCC8; }
+	.selectArea.houjin .area_btn {  border-color: #E38FEF; }	
+	
+}
+
+
+
+.area_btn.arrow_bottom.active:before {
+	content: '';
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-top: 10px solid #999999;
+	position: absolute;
+	bottom: -20px;
+	left: 12px;
+}
+.area_btn.arrow_top.active:before {
+	content: '';
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-bottom: 10px solid #999999;
+	position: absolute;
+	top: -20px;
+	left: 12px;
+}
+.selectArea.zenkoku_s .area_btn.arrow_bottom.active:before { border-top-color: #AD3A3A; }
+.selectArea.zenkoku_s .area_btn.arrow_top.active:before { border-bottom-color: #AD3A3A; }
+.selectArea.zenkoku_v .area_btn.arrow_bottom.active:before { border-top-color: #40C69F; }
+.selectArea.zenkoku_v .area_btn.arrow_top.active:before { border-bottom-color: #40C69F; }
+.selectArea.zenkoku_a .area_btn.arrow_bottom.active:before { border-top-color: #38AD8B; }
+.selectArea.zenkoku_a .area_btn.arrow_top.active:before { border-bottom-color: #38AD8B; }
+.selectArea.chiiki_v .area_btn.arrow_bottom.active:before { border-top-color: #42CC5F; }
+.selectArea.chiiki_v .area_btn.arrow_top.active:before { border-bottom-color: #42CC5F; }
+.selectArea.chiiki_w .area_btn.arrow_bottom.active:before { border-top-color: #D1CB00; }
+.selectArea.chiiki_w .area_btn.arrow_top.active:before { border-bottom-color: #D1CB00; }
+.selectArea.chiiki_a .area_btn.arrow_bottom.active:before { border-top-color: #3ECCC8; }
+.selectArea.chiiki_a .area_btn.arrow_top.active:before { border-bottom-color: #3ECCC8; }
+.selectArea.houjin .area_btn.arrow_bottom.active:before { border-top-color: #E38FEF; }
+.selectArea.houjin .area_btn.arrow_top.active:before { border-bottom-color: #E38FEF; }
+
+.area_data {
+	font-size: 12px;
+	text-align: left;
+	display: inline-block;
+	padding: 10px 15px;
+	background: rgba(242, 242, 242, .9);
+	position: absolute;
+	top: 10px;
+	z-index: 10;
+}
+.area_data_closer{
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	padding: 5px;
+	display: block;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	transition: all 0.2s;
+	cursor: pointer;
+	border-radius: 100%;
+	text-align: center;
+	font-size: 2em;
+	color: #fff;
+	background-color: rgba(0,0,0,0.4);
+}
+.area_data_closer:hover{
+	opacity: 0.8;
+	transform: rotate(90deg);
+}
+.area_data dl {
+	max-height: 300px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.area_data_head {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 8px;
+	white-space: wrap;
+}
+@media screen and ( max-width: 768px ){
+	.area_data {
+		width: 100%;
+		text-align: left;
+		display: inline-block;
+		padding: 0;
+		background: #fff;
+		position: static;
+		box-sizing: border-box;
+	}
+	.area_data dl {
+		max-height: none;
+		overflow-y: auto;
+		overflow-x: auto;
+	}
+	.area_data_head {
+		line-height: 1;
+		padding: 5px;
+		margin-top: 1em;
+		font-size: 0.9em;
+		font-weight: bold;
+		white-space: normal;
+		background-color: #ededed;
+	}
+
+	.area_data_closer{
+		display: none;
+	}	
+}
+
+.selectArea.zenkoku_s .area_data_head,
+.selectArea.zenkoku_v .area_data_head,
+.selectArea.zenkoku_a .area_data_head {
+	border-bottom: 1px solid #231815;
+	padding-bottom: 6px;
+}
+
+.area_data_body {
+	white-space: nowrap;
+}
+@media screen and ( max-width: 768px ){
+	.area_data_body {
+		white-space: normal;
+	}
+}
+
+.area_data_body th {
+	font-size: 11px;
+	white-space: nowrap;
+	color: #595757;
+	border-bottom: 1px solid rgba(34, 24, 21, .4);
+}
+
+.area_data_body td {
+	white-space: nowrap;
+	vertical-align: top;
+	padding: 5px 30px 5px 0;
+	border-top: 1px solid rgba(34, 24, 21, .2);
+}
+
+.area_data_body td span {
+	font-size: 10px;
+}
+
+@media screen and ( max-width: 768px ){
+	.area_data_body th ,
+	.area_data_body td {
+		white-space: normal;
+	}
+
+	.area_data_body table {
+		width: 100%;
+	}
+
+	.area_data_body tr:first-child th{
+		padding: 5px;
+		text-align: left;
+	}
+
+	// .area_data_body td:first-child{
+	// 	padding: 10px;
+	// }	
+	.area_data_body tr > td:first-child[rowspan]{
+		width:4em;
+		text-align: left;
+		// width: 1em;
+		// line-height: 1.1;
+		// text-align: center;
+	}
+	.area_data_body td {
+		vertical-align: top;
+		padding: 5px ;
+		border-top: 1px solid rgba(34, 24, 21, .2);
+	}	
+
+	.area_data_body td span {
+		line-height: 1.1;
+		margin-top: 5px;
+		display: block;
+		font-size: 0.8em;
+		letter-spacing: -0.03em;
+		font-weight: lighter;
+	}	
+
+	/*** cell 設定 **/
+	.cell-telnum{
+		width: 10%;
+		line-height: 1.1;
+	}
+	.cell-address{
+		width: 25%;
+	}
+}

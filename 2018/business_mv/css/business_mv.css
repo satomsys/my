@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+@media (min-width:1501px){
+ .lead{
+	 min-width:1500px;
+	 background-size: 100% auto;
+ }
+}
+
+@media print, screen and (min-width: 769px) {
+.pc { display: block; }
+.sp { display: none; }
+
+#CotegoryMovie{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+#CotegoryMovie p.txt{
+	position:absolute;
+	top:18px;
+    display: block;
+    text-align: center;
+    width: 100%;	
+}
+#BoxMovie{
+	width:960px;
+	height:560px;
+	/*height:446px;*/
+	background-image:url(../img/bg_business_mv.gif);
+	background-repeat:no-repeat;
+}
+#BoxMovie ul{
+	width:860px;
+	overflow:hidden;
+	list-style-type:none;
+	/*padding:239px 50px 68px 50px;*/
+	padding:239px 50px 0px 50px;
+}
+#BoxMovie ul li{
+	width:280px;
+	float:left;
+	margin:0 0 0 10px;
+}
+#BoxMovie ul li:first-child{
+	margin:0;
+}
+/* タイトル */
+.lead{
+ position: relative;
+ width: 100%;
+ min-width:1000px;
+ height: 300px;
+ margin-bottom: 60px;
+ background-color: #009676;
+ background: url("../img/bg_hero.jpg") no-repeat 50%;
+ background-size: 1500px auto;
+}
+.lead_ttl{
+ position: absolute;
+ top: 90px;
+/* left: 50%;
+ margin-left: -135px;
+	font-size: 40px;
+ font-family:"游明朝", YuMincho, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro',"ＭＳ Ｐ明朝", serif;
+	color: #000;*/
+ letter-spacing: 5px;
+}
+/*.lead_ttl:before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	margin-left: -50px;
+	width: 100px;
+	height: 2px;
+	background-color: #E8AD02;
+}*/
+.lead_txt{
+ position: absolute;
+ top: 175px;
+/* left: 50%;
+ margin-left: -163px;*/
+ font-size: 25px;
+ font-family:"游明朝", YuMincho, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro',"ＭＳ Ｐ明朝", serif;
+ letter-spacing: 3px;
+	color: #000;
+}
+
+/* MOVIE plug-in
+--------------------*/
+.plugin{
+	width:838px;
+	/*height:50px;*/
+	margin:93px auto 0 auto;
+	padding:7px 10px;
+	border:1px solid #bbb;
+	clear: both;
+	background-color:#ffffff;
+}
+.plugin .floR{
+	float:right;
+}
+.plugin p{
+	color:#333;
+}
+.plugin ul.pageLink li {
+background: url(../img/icon_win.gif) no-repeat 0 4px;
+padding: 0 0 0px 14px !important;
+text-align:left;
+margin:0;
+}
+.plugin .text{
+	font-size:11px;
+	line-height:1.6;
+	padding:0;
+	margin:0;
+}
+.plugin .notes{
+	font-size:11px;
+	line-height:1.6;
+	padding:0;
+	margin:0;
+}
+.plugin .icn_blank {
+vertical-align: middle;
+margin: 0 0 0 8px;
+padding:0;
+}
+.plugin ul.pageLink{
+	margin:0 0 0 0 !important;
+	font-size:11px !important;
+	padding:0 !important;
+}
+.plugin ul.pageLink a{
+	padding:0;
+	margin:0;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+.pc { display: none; }
+.sp { display: block; }
+
+/* タイトル */
+.lead{
+	position: relative;
+	width: 100%;
+	height: 200px;
+	margin-bottom: 30px;
+	background-color: #009676;
+	background: url("../img/bg_hero_sp.jpg") no-repeat 50%;
+	background-size: cover;
+}
+.lead_ttl{
+	position: absolute;
+	top: 60px;
+	letter-spacing: 5px;
+	font-size: 30px;
+}
+.lead_txt{
+	position: absolute;
+	top: 175px;
+	font-size: 20px;
+	font-family:"游明朝", YuMincho, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro',"ＭＳ Ｐ明朝", serif;
+	letter-spacing: 3px;
+	color: #000;
+}
+
+#CotegoryMovieSP p.txt{
+    text-align: center;
+	font-family:"游明朝", YuMincho, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro',"ＭＳ Ｐ明朝", serif;
+	font-size: 16px;
+	margin: 0 auto 15px;
+}
+
+#ContentInnerSP {
+	width: 100%;
+	/*margin: 0 4%;*/
+	padding: 0 4%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+#BoxMovieSP {
+	background:url(../img/bg_business_mv_sp.gif) no-repeat center top / 290px auto;
+	margin: 0 auto;
+}
+#BoxMovieSP ul {
+	width: 100% !important;
+	margin: 0 auto !important;
+	padding-top: 140px;
+	overflow:hidden;
+	list-style-type:none;
+	text-align: center;
+}
+#BoxMovieSP ul li {
+	width: 320px !important;
+	height: 220px;
+	margin: 20px auto;
+	position: relative;
+}
+#BoxMovieSP ul li img.mv_ttl {
+	position: absolute;
+	top: -37px;
+}
+#BoxMovieSP ul li img.mv_thumb {
+	position: absolute;
+	top: 0;
+}
+}
