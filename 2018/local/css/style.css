@@ -732,3 +732,29 @@
   margin-right: auto;
   position: static;
 }
+
+
+
+/* banners */
+
+.banners{
+  line-height: 1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  // background-color: #f9f9f9;
+}
+
+.banners li {
+  display: inline-block;
+  vertical-align: middle;
+  border: solid 1px #ccc;
+}
+
+.banners li a{
+  display: block;
+}
+
+#footerwrap{
+  margin-top: 0;
+}

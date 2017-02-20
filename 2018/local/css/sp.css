@@ -441,4 +441,32 @@
     display: none;
   }
 
+/* banners */
+
+  .banners{
+    line-height: 1;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    // background-color: #f9f9f9;
+  }
+
+  .banners li {
+    margin: 10px 0;
+    padding: 0;
+    display: block;
+    border: solid 1px #ccc;
+  }
+
+  .banners li a{
+    display: block;
+  }
+
+  #footerwrap{
+    margin-top: 0;
+  }  
+
 }
