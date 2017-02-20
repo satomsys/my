@@ -587,6 +587,22 @@
 		line-height: 1.1;
 	}
 	.cell-address{
-		width: 25%;
+		width: 45%;
 	}
+}
+
+/* indent */
+.area_data_body td span.indent{ 
+	font-size: 1em;
+	display: inline-block;
+	}
+.area_data_body td span.indent-2{
+	margin-left: 6.4em;
+	display: block;
+}
+@media screen and ( max-width: 768px ){
+	.area_data_body td span.indent{ 
+		margin-left: 1em;
+		display: inline-block;
+		}
 }

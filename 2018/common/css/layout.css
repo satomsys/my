@@ -434,6 +434,9 @@
   background: url(../images/btn_bg_entry06@2x.png) left top no-repeat;
   background-size: 40px auto;
 }
+#headspecial ul li ul .entry06 a{
+    background: url(../images/ico_win.png) right no-repeat;  
+}
 
 
 /*スペシャル*/
@@ -462,10 +465,14 @@
   background: url(../images/btn_bg_sp05@2x.png) left top no-repeat;
   background-size: 40px auto;
 }
+#headspecial ul li ul .sp05 a{
+    background: url(../images/ico_win.png) right no-repeat;
+}
 
 #headspecial ul li ul .sp06 {
   background: url(../images/btn_bg_sp06.png) left bottom no-repeat;
 }
+
 
 #headspecial ul li ul .btn_coming {
   color: rgba(255, 255, 255, 0.5);
