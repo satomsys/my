@@ -1,35 +1,24 @@
 $(function () {
+
 	var $window = $( window ),
 		breakpoint = 768,
 		timer = null,
 		href = location.href,
 		param = href.split('?');
-	/**
-	* PC幅のみ
-	*/
-	$window.on( 'load', function(){
 
-		clearTimeout( timer );
 
-		timer = setTimeout( function(){
-			var $windowWidth = $window.innerWidth();
+	if( ! g.isSp() ){	
 
-			if(  breakpoint <= $windowWidth ){
+		$window.on( 'load resize', function(){
+				var $windowWidth = $window.innerWidth();
 
-				locationSetter( param, 'pc' );				
-				pc( $window );
-
-			} else {
-
-				sp()
-				locationSetter( param, 'sp' );//spの場合はあとに書く
-
-			}
+				 breakpoint <= $windowWidth ? pc( param ) : sp( param );
 		});
-	} );
+	} else {
+		sp( param );	
+	}
 
-	function pc( $window ){
-		
+	function pc( param ){
 		/**
 		* リサイズ時のUI挙動リセット
 		*/
@@ -117,9 +106,11 @@ $(function () {
 	        }
 	    });
 
+		locationSetter( param, 'pc' );					    
+
 	}
 
-	function sp(){
+	function sp( param ){
 		$('.area_data').add($('.selectArea')).each(function(){
 			$(this).removeAttr('style')
 		});
@@ -133,14 +124,16 @@ $(function () {
 			e.stopPropagation();
 			e.preventDefault();
 			if( $(this).hasClass('active') ){
-				$(this).parent().find('.selectArea_area').slideUp(1000).end().end().removeClass('active').css({'background-image':'url("img/area_btn_search.svg")'});
+				$(this).parent().find('.selectArea_area').stop(true,true).slideUp(1000).end().end().removeClass('active').css({'background-image':'url("img/area_btn_search.svg")'});
 			} else {
-				$(this).parent().find('.selectArea_area').slideDown(1000).end().end().addClass('active').css({'background-image':'url("img/area_btn_close.svg")'});
+				$(this).parent().find('.selectArea_area').stop(true,true).slideDown(1000).end().end().addClass('active').css({'background-image':'url("img/area_btn_close.svg")'});
 			}
 
 		});		
+		locationSetter( param, 'sp' );//spの場合はあとに書く
 	}
 
+	
 	function changeActiveMap(map, data){
 		var src = $(map).attr('src');
 		var file = src.match(".+/(.+?)\.[a-z]+([\?#;].*)?$");

@@ -243,6 +243,24 @@
 }
 
 
+.area_wrap_attention{
+	position: absolute;
+	left: 5px;
+	bottom: -100px;
+	text-align: left;
+	// text-align: right;
+	font-size: 0.8em;	
+}
+@media screen and ( max-width: 768px ){
+	.area_wrap_attention{
+		text-align: left;
+		padding-top: 0.5em;
+		padding-bottom: 1em;
+		position: static;
+		color: #888;
+	}
+}
+
 
 .activeMap {
 	position: absolute;
@@ -464,6 +482,20 @@
 	}
 }
 
+.area_data_body table{
+	width: 100%;
+}
+
+
+.area_data_footer{
+	text-align: right;
+	font-size: 0.8em;	
+}
+.area_data_footer td{
+	padding: 5px;	
+}
+
+
 .area_data_body th {
 	font-size: 11px;
 	white-space: nowrap;
@@ -480,6 +512,17 @@
 
 .area_data_body td span {
 	font-size: 10px;
+}
+
+.cell-area{
+	width: 4em;
+}
+.cell-telnum{
+	width: 10%;
+	// line-height: 1.1;
+}
+.cell-address{
+	width: 25%;
 }
 
 @media screen and ( max-width: 768px ){
@@ -523,6 +566,9 @@
 	}	
 
 	/*** cell 設定 **/
+	.cell-area{
+		width: 4em;
+	}
 	.cell-telnum{
 		width: 10%;
 		line-height: 1.1;
