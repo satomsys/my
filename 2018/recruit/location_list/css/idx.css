@@ -275,9 +275,9 @@
 .area_wrap {
 	position: absolute;
 }
-.area_wrap[data-area="hokkaido"] { top: 67px; left: 502px; }
-.area_wrap[data-area="tohoku"] { top: 365px; left: 730px; }
-.area_wrap[data-area="hokuriku"] { top: 285px; left: 430px; }
+.area_wrap[data-area="hokkaido"] { top: 100px; left: 502px; }
+.area_wrap[data-area="tohoku"] { top: 365px; left: 650px; }
+.area_wrap[data-area="hokuriku"] { top: 355px; left: 430px; }
 .area_wrap[data-area="shutoken"] { top: 497px; left: 602px; }
 .area_wrap[data-area="chubu"] { top: 597px; left: 497px; }
 .area_wrap[data-area="kinki"] { top: 472px; left: 318px; }
@@ -286,7 +286,7 @@
 .area_wrap[data-area="kyushu"] { top: 602px; left: 87px; }
 .area_wrap[data-area="okinawa"] { top: 591px; left: 670px; }
 
-.area_wrap[data-area="shutoken"] { top: 500px; left:  480px; }
+.area_wrap[data-area="shutoken"] { top: 500px; left:  610px; }
 // .area_wrap[data-area="tokyo"] { top: 491px; left: 367px; }
 .area_wrap[data-area="kanagawa"] { top: 566px; left:  480px; }
 .area_wrap[data-area="saitama"] { top: 407px; left: 340px; }
@@ -335,6 +335,7 @@
 		padding-bottom: 5px;
 		border-bottom: solid 1px #ccc;
 		border-radius: 0px;
+		font-weight: bold;
 		color: inherit;
 		text-align: left;
 		background-color: transparent!important;
@@ -426,14 +427,14 @@
 	transform: rotate(90deg);
 }
 .area_data dl {
-	max-height: 300px;
+	max-height: 250px;
 	overflow-y: auto;
 	overflow-x: hidden;
 }
 .area_data_head {
 	font-size: 14px;
 	font-weight: bold;
-	margin-bottom: 8px;
+	margin-bottom: 5px;
 	white-space: wrap;
 }
 @media screen and ( max-width: 768px ){
@@ -514,8 +515,20 @@
 	font-size: 10px;
 }
 
+.cellHeader{
+	padding-bottom: 5px;
+}
+.cellHeader td{
+	line-height: 1;
+	padding: 5px;
+	border-top: 0;
+	color: #fff;
+	background-color: #999;
+}
 .cell-area{
 	width: 4em;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 .cell-telnum{
 	width: 10%;
