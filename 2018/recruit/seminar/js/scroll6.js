@@ -23,9 +23,13 @@
 			* 34pxはグローバルナビの高さ
 			*/
 			$(window).on('load resize', function(){
-				navTop = $nav.offset().top - 34 - $enterBtn.outerHeight();
+
+				if( $nav.length ){
+					navTop = $nav.offset().top - 34 - $enterBtn.outerHeight();					
+				}
+
 				enterBtnTop = $enterBtn.offset().top - 15;
-				console.log( enterBtnTop)
+				console.log( enterBtnTop )
 
 				$cont.each(function(i) {
 					conTop[i] = $(this).offset().top - 180; //各.section-area上端からのOffset
@@ -48,6 +52,8 @@
 				} else {
 					$enterBtn.removeClass("fixed");					
 				}
+
+				if( ! $nav.length ) return;
 
 				/**
 				* ナビのFix カレント
