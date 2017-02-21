@@ -371,6 +371,13 @@
   margin-bottom: 15px;
   font-size: 0.8em;
 }
+
+.houjin .training .attentionArea_header{
+  padding: 1em;
+  text-align: center;
+  border: solid 1px #999;  
+}
+
 .houjin .training .attentionArea dt,
 .houjin .career .attentionArea dt{
   margin-top: 20px;
