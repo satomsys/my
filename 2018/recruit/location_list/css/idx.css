@@ -5,11 +5,9 @@
 	padding-top: 0;
 }
 
-@media screen and ( max-width: 768px ){
-	img[ src $= "svg" ]{
+	.MobileUI img[ src $= "svg" ]{
 		display: none;
 	}
-}
 
 
 /* タイトル */
@@ -20,12 +18,11 @@
 .lead-tiny .lead_ttl{
 	top: 65px;
 }
-@media screen and ( max-width: 768px ){
-	.lead-tiny .lead_ttl{
+	.MobileUI .lead-tiny .lead_ttl{
 		font-size: 24px;
 		top: 50px;
 	}	
-}
+
 
 /* コンテンツエリア */
 .inner {
@@ -33,11 +30,9 @@
 	margin: 0 auto;
 	position: relative;
 }
-@media screen and ( max-width: 768px ){
-	.inner {
+	.MobileUI .inner {
 		width: 90%;
 	}			
-}
 
 
 /* selectType */
@@ -45,11 +40,9 @@
 	background: #F4F4F4;
 	padding: 30px 0 20px 0;
 }
-@media screen and ( max-width: 768px ){
-	.selectType{
+	.MobileUI .selectType{
 		display: none;
 	}
-}
 
 
 .selectType_ttl {
@@ -122,41 +115,37 @@
 	min-height: 750px;
 }
 
-@media screen and ( max-width: 768px ){
-	.selectArea{
+	.MobileUI .selectArea{
 		padding-bottom: 5px;
 	}
-	.selectArea:first-child{
+	.MobileUI .selectArea:first-child{
 		padding-top: 5px;
 	}
-	.selectArea_wrap_child{
+	.MobileUI .selectArea_wrap_child{
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
-	.selectArea_wrap_child:nth-child( even ){
+	.MobileUI .selectArea_wrap_child:nth-child( even ){
 		background-color: #f9f9f9;
 	}
-	.selectArea > .inner > img{
+	.MobileUI .selectArea > .inner > img{
 		display: none;
 	}
-	.selectArea_wrap{
+	.MobileUI .selectArea_wrap{
 		padding: 10px 0 50px 0;
 		min-height: 0;
 	}
-}
 
 
 .selectArea_wrap_child_index{
 	display: none;
 }
-@media screen and ( max-width: 768px ){
-	.selectArea_wrap_child_index{
+	.MobileUI .selectArea_wrap_child_index{
 		margin-bottom: 0.5em;
 		display: block;
 		text-align: center;
 		font-weight: bold;
 	}
-}
 
 
 .selectArea_ttl_wrap {
@@ -177,8 +166,7 @@
 .selectArea.chiiki_a .selectArea_ttl_wrap {  border-color: #2a7f38; }
 .selectArea.houjin .selectArea_ttl_wrap {  border-color: #E38FEF; }
 
-@media screen and ( max-width: 768px ){
-	.selectArea_ttl_wrap {
+	.MobileUI .selectArea_ttl_wrap {
 		width: auto;
 		height: auto;
 		padding: 0.5em;
@@ -189,21 +177,20 @@
 		border-radius: 2px;
 	}
 
-	.selectArea_ttl_wrap{
+	.MobileUI .selectArea_ttl_wrap{
 		background: url("../img/area_btn_search.svg") no-repeat right 7px center;
 	}
 
-	.selectArea.zenkoku_s .selectArea_ttl_wrap {  background-color: #AD3A3A;}
-	.selectArea.zenkoku_v .selectArea_ttl_wrap {  background-color: #40C69F; }
-	.selectArea.zenkoku_a .selectArea_ttl_wrap {  background-color: #38AD8B; }
-	.selectArea.chiiki_v .selectArea_ttl_wrap {  background-color: #42CC5F; }
+	.MobileUI .selectArea.zenkoku_s .selectArea_ttl_wrap {  background-color: #AD3A3A;}
+	.MobileUI .selectArea.zenkoku_v .selectArea_ttl_wrap {  background-color: #40C69F; }
+	.MobileUI .selectArea.zenkoku_a .selectArea_ttl_wrap {  background-color: #38AD8B; }
+	.MobileUI .selectArea.chiiki_v .selectArea_ttl_wrap {  background-color: #42CC5F; }
 	// .selectArea.chiiki_w .selectArea_ttl_wrap {  background-color: #D1CB00; }
-	.selectArea.chiiki_w .selectArea_ttl_wrap {  background-color: #349943; }
+	.MobileUI .selectArea.chiiki_w .selectArea_ttl_wrap {  background-color: #349943; }
 	// .selectArea.chiiki_a .selectArea_ttl_wrap {  background-color: #3ECCC8; }
-	.selectArea.chiiki_a .selectArea_ttl_wrap {  background-color: #2a7f38; }
-	.selectArea.houjin .selectArea_ttl_wrap {  background-color: #E38FEF; }	
+	.MobileUI .selectArea.chiiki_a .selectArea_ttl_wrap {  background-color: #2a7f38; }
+	.MobileUI .selectArea.houjin .selectArea_ttl_wrap {  background-color: #E38FEF; }	
 		
-}
 
 
 /*  タイトル領域→ボタン */
@@ -223,24 +210,22 @@
 	font-family: Times New Roman , "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", Hiragino Mincho ProN , "MSP明朝","MS PMincho","MS 明朝",serif;
 	}
 }
-@media screen and ( max-width: 768px ){
-	.selectArea_ttl span,
-	.selectArea_ttl {
+	.MobileUI .selectArea_ttl span,
+	.MobileUI .selectArea_ttl {
 		font-size: 1em;
 	}
-	.selectArea_ttl {
+	.MobileUI .selectArea_ttl {
 		color: #fff;
 		position: static;
 		transform: none;
 	}
-	.selectArea_ttl span {
+	.MobileUI .selectArea_ttl span {
 		margin-right: 0.5em;
 		display: inline-block;
 	}	
-	.selectArea_ttl br{
+	.MobileUI .selectArea_ttl br{
 		display: none;
 	}
-}
 
 
 .area_wrap_attention{
@@ -251,15 +236,13 @@
 	// text-align: right;
 	font-size: 0.8em;	
 }
-@media screen and ( max-width: 768px ){
-	.area_wrap_attention{
+	.MobileUI .area_wrap_attention{
 		text-align: left;
 		padding-top: 0.5em;
 		padding-bottom: 1em;
 		position: static;
 		color: #888;
 	}
-}
 
 
 .activeMap {
@@ -292,11 +275,9 @@
 .area_wrap[data-area="saitama"] { top: 407px; left: 340px; }
 .area_wrap[data-area="chiba"] { top: 552px; left: 670px; }
 
-@media screen and ( max-width: 768px ){
-	.area_wrap {
+	.MobileUI .area_wrap {
 		position: static;
 	}
-}
 
 
 /* ボタン領域　→　見出し*/
@@ -326,8 +307,7 @@
 .selectArea.houjin .area_btn {  background-color: #E38FEF; }
 
 
-@media screen and ( max-width: 768px ){
-	.area_btn {
+	.MobileUI .area_btn {
 		width: auto;
 		line-height: 1;
 		height: auto;
@@ -341,17 +321,16 @@
 		background-color: transparent!important;
 	}
 
-	.selectArea.zenkoku_s .area_btn {  border-color: #AD3A3A; }
-	.selectArea.zenkoku_v .area_btn {  border-color: #40C69F; }
-	.selectArea.zenkoku_a .area_btn {  border-color: #38AD8B; }
-	.selectArea.chiiki_v .area_btn {  border-color: #42CC5F; }
-	// .selectArea.chiiki_w .area_btn {  border-color: #D1CB00; }
-	.selectArea.chiiki_w .area_btn {  border-color: #349943; }
-	// .selectArea.chiiki_a .area_btn {  border-color: #3ECCC8; }
-	.selectArea.chiiki_a .area_btn {  border-color: #2a7f38; }
-	.selectArea.houjin .area_btn {  border-color: #E38FEF; }	
+	.MobileUI .selectArea.zenkoku_s .area_btn {  border-color: #AD3A3A; }
+	.MobileUI .selectArea.zenkoku_v .area_btn {  border-color: #40C69F; }
+	.MobileUI .selectArea.zenkoku_a .area_btn {  border-color: #38AD8B; }
+	.MobileUI .selectArea.chiiki_v .area_btn {  border-color: #42CC5F; }
+	.MobileUI // .selectArea.chiiki_w .area_btn {  border-color: #D1CB00; }
+	.MobileUI .selectArea.chiiki_w .area_btn {  border-color: #349943; }
+	.MobileUI // .selectArea.chiiki_a .area_btn {  border-color: #3ECCC8; }
+	.MobileUI .selectArea.chiiki_a .area_btn {  border-color: #2a7f38; }
+	.MobileUI .selectArea.houjin .area_btn {  border-color: #E38FEF; }	
 
-}
 
 
 
@@ -437,8 +416,7 @@
 	margin-bottom: 5px;
 	white-space: wrap;
 }
-@media screen and ( max-width: 768px ){
-	.area_data {
+	.MobileUI .area_data {
 		width: 100%;
 		text-align: left;
 		display: inline-block;
@@ -447,12 +425,12 @@
 		position: static;
 		box-sizing: border-box;
 	}
-	.area_data dl {
+	.MobileUI .area_data dl {
 		max-height: none;
 		overflow-y: auto;
 		overflow-x: auto;
 	}
-	.area_data_head {
+	.MobileUI .area_data_head {
 		line-height: 1;
 		padding: 5px;
 		margin-top: 1em;
@@ -462,10 +440,9 @@
 		background-color: #ededed;
 	}
 
-	.area_data_closer{
+	.MobileUI .area_data_closer{
 		display: none;
 	}	
-}
 
 .selectArea.zenkoku_s .area_data_head,
 .selectArea.zenkoku_v .area_data_head,
@@ -477,11 +454,9 @@
 .area_data_body {
 	white-space: nowrap;
 }
-@media screen and ( max-width: 768px ){
-	.area_data_body {
+	.MobileUI .area_data_body {
 		white-space: normal;
 	}
-}
 
 .area_data_body table{
 	width: 100%;
@@ -538,17 +513,16 @@
 	width: 25%;
 }
 
-@media screen and ( max-width: 768px ){
-	.area_data_body th ,
-	.area_data_body td {
+	.MobileUI .area_data_body th ,
+	.MobileUI .area_data_body td {
 		white-space: normal;
 	}
 
-	.area_data_body table {
+	.MobileUI .area_data_body table {
 		width: 100%;
 	}
 
-	.area_data_body tr:first-child th{
+	.MobileUI .area_data_body tr:first-child th{
 		padding: 5px;
 		text-align: left;
 	}
@@ -556,20 +530,20 @@
 	// .area_data_body td:first-child{
 	// 	padding: 10px;
 	// }	
-	.area_data_body tr > td:first-child[rowspan]{
+	.MobileUI .area_data_body tr > td:first-child[rowspan]{
 		width:4em;
 		text-align: left;
 		// width: 1em;
 		// line-height: 1.1;
 		// text-align: center;
 	}
-	.area_data_body td {
+	.MobileUI .area_data_body td {
 		vertical-align: top;
 		padding: 5px ;
 		border-top: 1px solid rgba(34, 24, 21, .2);
 	}	
 
-	.area_data_body td span {
+	.MobileUI .area_data_body td span {
 		line-height: 1.1;
 		margin-top: 5px;
 		display: block;
@@ -579,17 +553,20 @@
 	}	
 
 	/*** cell 設定 **/
-	.cell-area{
+	.MobileUI .cell-area{
 		width: 4em;
 	}
-	.cell-telnum{
-		width: 10%;
+	.MobileUI .cell-telnum{
+		width: 30%;
 		line-height: 1.1;
 	}
-	.cell-address{
-		width: 45%;
+	.MobileUI .cell-address{
+	 	width: 45%;
 	}
-}
+
+	.MobileUI .selectArea.houjin .cell-address{
+		width: auto;
+	}	
 
 /* indent */
 .area_data_body td span.indent{ 
@@ -600,9 +577,7 @@
 	margin-left: 6.4em;
 	display: block;
 }
-@media screen and ( max-width: 768px ){
-	.area_data_body td span.indent{ 
+	.MobileUI .area_data_body td span.indent{ 
 		margin-left: 1em;
 		display: inline-block;
 		}
-}

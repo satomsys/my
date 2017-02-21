@@ -4,19 +4,31 @@ $(function () {
 		breakpoint = 768,
 		timer = null,
 		href = location.href,
-		param = href.split('?');
+		param = href.split('?'),
+		$windowWidth;
+
+	// $window.on( 'load resize', function(){
+	// 	$windowWidth = $window.innerWidth();
+
+	// 	clearTimeout( timer );
+
+	// 	timer = setTimeout( function(){
+	// 		if(  breakpoint <= $windowWidth ){
+	// 			$('body').removeClass('MobileUI')
+	// 			pc( param );
+	// 		}			
+	// 	}, 200);
+
+	// });
+
+	if( ! g.isSp()  ){
+		pc( param );
+	} else  {
+		$('body').addClass('MobileUI')
+		sp( param );
+	} 
 
 
-	if( ! g.isSp() ){	
-
-		$window.on( 'load resize', function(){
-				var $windowWidth = $window.innerWidth();
-
-				 breakpoint <= $windowWidth ? pc( param ) : sp( param );
-		});
-	} else {
-		sp( param );	
-	}
 
 	function pc( param ){
 		/**
