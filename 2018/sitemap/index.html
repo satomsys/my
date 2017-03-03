@@ -28,6 +28,16 @@
 	<!--ページ固有-->
 	<link href="css/sitemap.css" rel="stylesheet" type="text/css" media="screen,print">
 <link href="css/sp.css" rel="stylesheet" type="text/css" media="screen,print">
+<script>
+	/**
+	* sitemapに戻ったときにiPhoneのみ画像がキャッシュされないケースに対応
+	*/
+	window.onpageshow = function( e ){
+		if( e.persisted ){
+			window.location.reload();
+		}
+	}
+</script>
 
 </head>
 
@@ -123,7 +133,7 @@
 								<!-- <li class="coming">所在地一覧</li> -->
 								<li class=""><a href="../recruit/guideline/gl_zenkoku.html">募集要項</a></li>
 								<li class=""><a href="../recruit/flow/fl_sougo.html">応募(エントリー)方法</a></li>
-								<li class="newwindow"><a href="https://job.career-tasu.jp/2018/corp/00000488/faq/ " target="_blank">よくある質問 Q&amp;A</a></li>
+								<li class="newwindow"><a href="http://job.mynavi.jp/conts/n/sp/18/35_18meijiyasuda/faq/" target="_blank">よくある質問 Q&amp;A</a></li>
 
 							</ul>
 						</div> <!-- end of .list -->

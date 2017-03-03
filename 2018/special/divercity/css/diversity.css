@@ -11,8 +11,8 @@
 .lead_ttl{
   top: 120px;
   color: #fff;
-  -webkit-text-shadow: 0 0 5px rgba(0,0,0,0.8), 0 0 2px rgba(0,0,0,0.5), 0 0 1px rgba(0,0,0,0.3);
-  text-shadow: 0 0 5px rgba(0,0,0,0.8), 0 0 2px rgba(0,0,0,0.5), 0 0 1px rgba(0,0,0,0.3);
+  -webkit-text-shadow: 0 0 5px rgba(0,0,0,0.4), 0 0 2px rgba(0,0,0,0.25), 0 0 1px rgba(0,0,0,0.1);
+  text-shadow: 0 0 5px rgba(0,0,0,0.4), 0 0 2px rgba(0,0,0,0.25), 0 0 1px rgba(0,0,0,0.1);
 }
 
 /*=======================================
@@ -262,14 +262,8 @@ div.section02{
   -webkit-transform: rotate( 45deg);
   transform: rotate( 45deg);
 }
-.nav_item:hover .nav_ank:after{
-  top: 33px;
-  right: 12px;
-}
-.nav_back[active] .nav_ank:after{
-  top: 33px;
-  right: 12px;
-}
+
+
 .nav_seido.nav_item:hover .nav_ank:after{
   top: 35px;
   right: 10px;
@@ -297,11 +291,6 @@ div.section02{
   background:url(../img/icn_txt-woman.png) no-repeat 30px 30px;
   background-size: 153px 16px;
 }
-.nav_woman:hover .nav_ank,
-.nav_woman .nav_back[active] .nav_ank{
-  background:url(../img/icn_txt-woman.png) no-repeat 28px 28px;
-  background-size: 153px 16px;
-}
 .nav_woman .nav_back{
   border: 1px solid #ff9bae;
 }
@@ -310,7 +299,8 @@ div.section02{
   box-sizing: border-box;
   width: 235px;
   height: 80px;
-  border: 3px solid #ff9bae;
+  box-shadow: inset 0 0 0px 3px #ff9bae;
+  
   background: #ffdbe8; /* Old browsers */ /* FF3.6-15 */
   background: -webkit-linear-gradient(left,  #ffdbe8 0%,#fffef6 50%,#ffdbe8 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right,  #ffdbe8 0%,#fffef6 50%,#ffdbe8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -325,11 +315,6 @@ div.section02{
   background:url(../img/icn_txt-wlb.png) no-repeat 27px 22px;
   background-size: 171px 35px;
 }
-.nav_worklife:hover .nav_ank,
-.nav_worklife .nav_ank[active]{
-  background:url(../img/icn_txt-wlb.png) no-repeat 25px 20px;
-  background-size: 171px 35px;
-}
 .nav_worklife .nav_back{
   border: 1px solid #afe1e5;
 }
@@ -338,16 +323,13 @@ div.section02{
   box-sizing: border-box;
   width: 235px;
   height: 80px;
-  border: 3px solid #afe1e5;
+  box-shadow: inset 0 0 0px 3px #afe1e5;
+
   background: #e0f5f7; /* Old browsers */ /* FF3.6-15 */
   background: -webkit-linear-gradient(left,  #e0f5f7 0%,#fffef4 50%,#e0f5f7 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right,  #e0f5f7 0%,#fffef4 50%,#e0f5f7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f5f7', endColorstr='#e0f5f7',GradientType=1 ); /* IE6-9 */
 
-}
-.nav_worklife .nav_back[active] .nav_ank{
-  background:url(../img/icn_txt-wlb.png) no-repeat 25px 20px;
-  background-size: 171px 35px;
 }
 .nav_worklife a:hover:before {
   border-left: 11px solid #afe1e5;
@@ -369,7 +351,8 @@ div.section02{
   box-sizing: border-box;
   width: 235px;
   height: 80px;
-  border: 3px solid #b3ff9b;
+  // border: 3px solid #b3ff9b;
+  box-shadow: inset 0 0 0px 2px #b3ff9b;
   background: #fdffe0; /* Old browsers */ /* FF3.6-15 */
   background: -webkit-linear-gradient(left,  #dbffe4 0%,#f7fff5 50%,#e5fff6 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right,  #dbffe4 0%,#f7fff5 50%,#e5fff6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -383,11 +366,6 @@ div.section02{
   background:url(../img/icn_txt-frg.png) no-repeat 27px 22px;
   background-size: 118px 36px;
 }
-.nav_gaikokujin:hover .nav_ank,
-.nav_gaikokujin .nav_back[active] .nav_ank{
-  background:url(../img/icn_txt-frg.png) no-repeat 25px 20px;
-  background-size: 118px 36px;
-}
 .nav_gaikokujin .nav_back{
   border: 1px solid #e9c56e;
 }
@@ -396,7 +374,8 @@ div.section02{
   box-sizing: border-box;
   width: 235px;
   height: 80px;
-  border: 3px solid #e9c56e;
+  // border: 3px solid #e9c56e;
+  box-shadow: inset 0 0 0px 3px #e9c56e;  
   background: #fdffe0; /* Old browsers */ /* FF3.6-15 */
   background: -webkit-linear-gradient(left,  #fdffe0 0%,#fffef4 50%,#fdffe0 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right,  #fdffe0 0%,#fffef4 50%,#fdffe0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -545,6 +524,12 @@ div.section02{
 }
 .voice .btn a:hover {
   opacity: .6;
+}
+.voice .intro_under-left{
+  background-color: #C7D130;
+}
+.voice .intro_under-right{
+  background-color: #2FD1A1 ;
 }
 
 /*++++++++++++++++ マージ ++++++++++++++++*/

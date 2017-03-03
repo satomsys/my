@@ -79,4 +79,9 @@ $(function () {
     });
   }
 
+  /**
+  * 募集要項 PCのみ同ウィンドウ
+  */
+  var $boshuyokoLink = $('#boshuyoko').find('a');
+  g.isSp() ? $boshuyokoLink.attr('target', '_blank') : $boshuyokoLink.attr('target', '_self'); 
 });

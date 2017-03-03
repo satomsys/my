@@ -60,7 +60,7 @@
     width: 100%;
   }
   #ContentsBox{
-    padding: 0 7%;
+    padding: 0 5%;
     margin: 0 auto 0;
     box-sizing: border-box;
   }
@@ -118,9 +118,9 @@
   	background-size:contain;
   }
 
-  dd.mark > .link_btn{
-    display: none;
-  }
+  // dd.mark > .link_btn{
+  //   display: none;
+  // }
 
   dd.mark .isSP{
     display: inline;

@@ -141,6 +141,11 @@
 				width: 64px;
 				margin: 0 0 0 8px;
 				}
+			.nav-area .nav-13 li {
+				width: 63px;
+				margin: 0 0 0px 3px;
+				font-size: 0.96em;
+				}				
 			.nav-area ul li:first-child {
 				width: 92px;
 				height: 50px;
@@ -561,6 +566,9 @@
 		.nav-area .nav-12 li {
 			width: 31.3%
 			}
+		.nav-area .nav-13 li {
+			width: 18%
+			}			
 		.nav-area ul li:first-child {
 			float: none;
 			width: 151px;

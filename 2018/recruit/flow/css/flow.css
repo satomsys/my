@@ -49,6 +49,10 @@ dd.mark .link_btn{
   dd.mark .link_btn{
     display: inherit;
   }
+  .link_btn-wide.isPC .link_ank {
+        line-height: 1.25;
+      padding: 1em;
+  }
  // .link_btn a{
  // 	line-height: 1.2;
  // }
@@ -109,42 +113,42 @@ dd.mark .link_btn{
 	padding:0 0 30px 0;
 	border-bottom:1px solid #E2E2E2;
 }
-dl{
+.container dl{
 	margin: 0 0 0 0;
 	padding: 0 0 30px 0;
 }
-dl:first-child{
+.container dl:first-child{
 	padding-top: 30px;
 	border-top:1px solid #E2E2E2;
 }
-dl:last-child{
+.container dl:last-child{
 	border-bottom:1px solid #E2E2E2;
 }
-hr{
+.container hr{
 	background: url(../img/hr_pc.png) no-repeat 0 0;
 	height: 30px;
   margin: 0;
   padding: 0;
 	border: 0px none;
 }
-dt{
+.container dt{
 	float: left;
 	width: 20%;
 	vertical-align:top;
 }
 
-dd{ 
+.container dd{ 
 	float: right;
 	width: 78%;
 }
-dd.line{
+.container dd.line{
 	// font-size: 16px;
 	padding:0 0 8px 0;
 	margin:0 0 8px 0;
 	// background: url(../img/dot_line.gif) no-repeat 0 bottom;
 	border-bottom: dashed 1px #e2e2e2;
 }
-dd.attn{
+.container dd.attn{
 	font-size: 14px;
 	color: #727171;
 }
@@ -167,14 +171,19 @@ dd.mark{
 .mark_footer{
 	margin-top: 1em;
 }
-dd img{
+.container dd img{
 	margin:30px 0 0 0;
 }
-dd a{
-	color: #009676;
-	text-decoration: underline;
-}
 
+.container a[target="_blank"]{
+  line-height: 1;
+  padding-right: 15px;
+  display: inline-block;
+  border-bottom: solid 1px #009676;
+  text-decoration: none;
+  background: url(../../../common/images/icon_win_green.gif) 98% top no-repeat;
+  background-size: 10px;  
+}
 
 
 

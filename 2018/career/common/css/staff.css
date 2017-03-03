@@ -45,6 +45,11 @@
 .tab_inner{
   cursor: pointer;
 }
+.tab_inner img,
+.tab_inner .img
+{
+    transition: all 0.2s;
+}
 
 .tab_inner:hover .img{
   background-color: #fff;
@@ -330,14 +335,22 @@ background-color: #00564e;;
   .lead.ac-title, .training-title {
     margin-bottom: 30px !important;
   }
+  .lead-tiny{
+    max-height: 200px;
+  }
   .lead-tiny .lead_ttl {
-    top: 24px;
+    top: 33px;
     font-size: 24px;
   }
   .lead.ac-title .lead_txt {
     top: 100px;
     font-size: 11px;
   }
+  .lead.lead-tiny .lead_txt{
+    top: 100px;
+    line-height: 1.5;
+  }
+
   .tab_block {
     width: 90%;
     margin: 0 auto 10px;

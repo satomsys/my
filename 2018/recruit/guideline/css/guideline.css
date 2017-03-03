@@ -58,7 +58,9 @@
 }
 
 #BoxGuideline .fakeTab {
-  width: 100%;
+  width: 112%;
+  margin-left: -6%;
+  margin-right: -6%;
   line-height: 1;
   display: table;
   table-layout: fixed;
@@ -151,7 +153,9 @@
 
 @media screen and (max-width: 768px) {
   #BoxGuideline .fakeTab li {
-    font-size: 9px;
+    font-feature-settings: 'palt';
+    font-size: 2.35vw;
+    letter-spacing: -0.08em;
   }
 }
 

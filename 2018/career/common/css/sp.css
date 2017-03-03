@@ -32,7 +32,7 @@
   }
 
   .ac-title.lead-tiny .lead_ttl{
-    top: 30px;
+    top: 35px;
   }
 
   .lead_ttl_small {
@@ -46,8 +46,11 @@
   .houjin.index .lead_ttl:before {
     bottom: -60%;
   }
-  .lead-tiny .lead_txt {
+  .lead-tiny.ac-title .lead_txt {
     top: 95px;
+  }
+  .lead-tiny .lead_txt {
+    top: 80px;
     // top: 115px;
   }
   .course {

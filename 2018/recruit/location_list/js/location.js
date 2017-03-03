@@ -104,13 +104,13 @@ $(function () {
 			var $map = $this.closest('.selectArea').find('.activeMap');
 	        var speed = 300;
 	        if($this.hasClass('active')){
-				$this.removeClass('active').css({'background-image':'url("img/area_btn_search.svg")'});
+				$this.removeClass('active').css({'background-image':'url("img/area_btn_search.png")'});
 				$myWrap.find('.area_data').stop(true,true).fadeOut(speed);
 				$map.fadeOut(speed);
 	        }
 	        else {
-				$('.area_btn').removeClass('active').css({'background-image':'url("img/area_btn_search.svg")'});
-				$this.addClass('active').css({'background-image':'url("img/area_btn_close.svg")'});
+				$('.area_btn').removeClass('active').css({'background-image':'url("img/area_btn_search.png")'});
+				$this.addClass('active').css({'background-image':'url("img/area_btn_close.png")'});
 				changeActiveMap($map, $myWrap.attr('data-area'));
 				$map.stop(true,true).fadeIn(speed);
 				$('.area_data').fadeOut(speed);
@@ -136,9 +136,9 @@ $(function () {
 			e.stopPropagation();
 			e.preventDefault();
 			if( $(this).hasClass('active') ){
-				$(this).parent().find('.selectArea_area').stop(true,true).slideUp(1000).end().end().removeClass('active').css({'background-image':'url("img/area_btn_search.svg")'});
+				$(this).parent().find('.selectArea_area').stop(true,true).slideUp(1000).end().end().removeClass('active').css({'background-image':'url("img/area_btn_search.png")'});
 			} else {
-				$(this).parent().find('.selectArea_area').stop(true,true).slideDown(1000).end().end().addClass('active').css({'background-image':'url("img/area_btn_close.svg")'});
+				$(this).parent().find('.selectArea_area').stop(true,true).slideDown(1000).end().end().addClass('active').css({'background-image':'url("img/area_btn_close.png")'});
 			}
 
 		});		

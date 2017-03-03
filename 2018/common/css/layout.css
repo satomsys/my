@@ -437,6 +437,9 @@
 #headspecial ul li ul .entry06 a{
     background: url(../images/ico_win.png) right no-repeat;  
 }
+#headspecial ul li ul .entry06 a:hover{
+    background: url(../images/ico_win2.png) right no-repeat;  
+}
 
 
 /*スペシャル*/
@@ -467,6 +470,9 @@
 }
 #headspecial ul li ul .sp05 a{
     background: url(../images/ico_win.png) right no-repeat;
+}
+#headspecial ul li ul .sp05 a:hover{
+    background: url(../images/ico_win2.png) right no-repeat;
 }
 
 #headspecial ul li ul .sp06 {
@@ -940,7 +946,7 @@
   #headspecial ul li ul .btn_acor a,
   #headspecial ul li ul .coming {
     padding: 10px 0 10px 45px;
-    border-bottom: 1px solid #80c3bd;
+    // border-bottom: 1px solid #80c3bd;
     box-sizing: border-box;
   }
   #headspecial ul li ul .coming {
