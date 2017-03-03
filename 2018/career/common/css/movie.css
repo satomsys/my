@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/*****************************
+コース紹介動画
+*****************************/
+.movie {
+  
+}
+.movie_intro{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.movie_wrap video,
+.movie_wrap iframe{
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+@media screen and ( max-width : 768px ){
+
+  .movie_intro{
+    margin-top: 0;
+    margin-bottom: 2em;
+  }
+
+  .movie_wrap video,
+  .movie_wrap iframe{
+    width: 100%!important;
+    height: auto!important;
+    min-height: 250px;
+  }
+  
+}
